@@ -1,0 +1,113 @@
+/bin/sh: sox: command not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+Loading Qwen CustomVoice 0.6B on mps...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 57260.12it/s]
+/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/gradio/routes.py:1368: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Traceback (most recent call last):
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/gradio/blocks.py", line 2277, in process_api
+    result = await self.call_function(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/gradio/blocks.py", line 1654, in call_function
+    prediction = await anyio.to_thread.run_sync(  # type: ignore
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/gradio/utils.py", line 1061, in wrapper
+    response = f(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/app_qwen.py", line 27, in generate
+    wavs, sr = model.generate_custom_voice(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/inference/qwen3_tts_model.py", line 838, in generate_custom_voice
+    wavs, fs = self.model.speech_tokenizer.decode([{"audio_codes": c} for c in talker_codes_list])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/inference/qwen3_tts_tokenizer.py", line 358, in decode
+    dec = self.model.decode(audio_codes_padded, return_dict=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/core/tokenizer_12hz/modeling_qwen3_tts_tokenizer_v2.py", line 1015, in decode
+    audio_values = self.decoder.chunked_decode(audio_codes.transpose(1, 2)).squeeze(1)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/core/tokenizer_12hz/modeling_qwen3_tts_tokenizer_v2.py", line 893, in chunked_decode
+    wav_chunk = self(codes_chunk)
+                ^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/core/tokenizer_12hz/modeling_qwen3_tts_tokenizer_v2.py", line 883, in forward
+    wav = block(wav)
+          ^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/core/tokenizer_12hz/modeling_qwen3_tts_tokenizer_v2.py", line 657, in forward
+    hidden = block(hidden)
+             ^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/core/tokenizer_12hz/modeling_qwen3_tts_tokenizer_v2.py", line 632, in forward
+    hidden_state = self.conv1(hidden_state)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/qwen_tts/core/tokenizer_12hz/modeling_qwen3_tts_tokenizer_v2.py", line 192, in forward
+    return self.conv(hidden_state).contiguous()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wl/Desktop/job/learn/leyutangyulu/.venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ^^^^^^^^^
+NotImplementedError: Output channels > 65536 not supported at the MPS device. 
+/Users/wl/.pyenv/versions/3.11.11/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
