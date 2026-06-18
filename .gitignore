@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+output_audio/
+batch_render.log
+app_qwen.log
