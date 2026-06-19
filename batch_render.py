@@ -234,18 +234,11 @@ def render_one(drama_file: str, max_chars: int = 500):
         return False
 
 
-def is_chinese_numeral_dup(filepath: Path) -> bool:
-    """Detect if this is a Chinese-numeral duplicate for vol 1 (skip it)"""
+def should_skip(filepath: Path) -> bool:
     stem = filepath.stem
-    m = re.match(r'解读_卷一第([\u4e00-\u9fff]+)条', stem)
-    if not m:
-        return False
-    num_str = m.group(1)
-    if num_str.isdigit():
-        return False
     if 'for_tts' in stem:
         return True
-    return True
+    return False
 
 
 def main():
@@ -268,9 +261,7 @@ def main():
     files = sorted(DRAMA_DIR.glob("解读_*.md"))
     to_render = []
     for f in files:
-        if is_chinese_numeral_dup(f):
-            continue
-        if 'for_tts' in f.stem:
+        if should_skip(f):
             continue
         audio_name = drama_to_audio_path(str(f))
         if args.resume and (AUDIO_DIR / audio_name).exists():
