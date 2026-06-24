@@ -126,6 +126,7 @@ def tts_edge(voice: str, text: str, output_path: str, max_chars: int = 500):
         }
         if speed != 1.0:
             payload["speed"] = speed
+        ok = False
         for attempt in range(3):
             resp = subprocess.run([
                 "curl", "-s", "-X", "POST", EDGE_TTS_API,
@@ -135,9 +136,47 @@ def tts_edge(voice: str, text: str, output_path: str, max_chars: int = 500):
                 "-o", tmp,
             ], capture_output=True)
             if resp.returncode == 0 and os.path.getsize(tmp) > 200:
+                ok = True
                 break
             time.sleep(2)
-        else:
+        if not ok and len(seg) > 100:
+            sub_segs = []
+            while seg:
+                sub_segs.append(seg[:100])
+                seg = seg[100:]
+            print(f"↪ 拆小重试({len(sub_segs)}段) ", end="", flush=True)
+            sub_tmp = []
+            for sub_seg in sub_segs:
+                stmp = tempfile.NamedTemporaryFile(delete=False, suffix=".mp3").name
+                sub_payload = dict(payload, input=sub_seg)
+                for attempt in range(3):
+                    resp = subprocess.run([
+                        "curl", "-s", "-X", "POST", EDGE_TTS_API,
+                        "-H", "Content-Type: application/json",
+                        "-H", f"Authorization: {EDGE_TTS_AUTH}",
+                        "-d", json.dumps(sub_payload),
+                        "-o", stmp,
+                    ], capture_output=True)
+                    if resp.returncode == 0 and os.path.getsize(stmp) > 200:
+                        break
+                    time.sleep(2)
+                else:
+                    for f in sub_tmp:
+                        os.unlink(f)
+                    print(f"✗ 拆小仍失败", end="", flush=True)
+                    break
+                sub_tmp.append(stmp)
+            else:
+                concat_input = "|".join(sub_tmp)
+                result = subprocess.run([
+                    "ffmpeg", "-y", "-i", f"concat:{concat_input}",
+                    "-c", "copy", tmp
+                ], capture_output=True)
+                for f in sub_tmp:
+                    os.unlink(f)
+                if result.returncode == 0 and os.path.getsize(tmp) > 200:
+                    ok = True
+        if not ok:
             for f in temp_files:
                 os.unlink(f)
             return None
@@ -246,7 +285,7 @@ def main():
     parser.add_argument("--resume", action="store_true", help="跳过已存在的文件")
     parser.add_argument("--start", type=int, default=None, help="起始序号")
     parser.add_argument("--end", type=int, default=None, help="结束序号")
-    parser.add_argument("--max-chars", type=int, default=500, help="每段最大字符数")
+    parser.add_argument("--max-chars", type=int, default=250, help="每段最大字符数")
     parser.add_argument("--list", action="store_true", help="仅列出待处理文件")
     args = parser.parse_args()
 
