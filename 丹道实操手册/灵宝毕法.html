@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《灵宝毕法》修炼实操手册</title>
+<style>
+:root {
+  --bg: #f8f5f0;
+  --card-bg: #fff;
+  --text: #333;
+  --text-light: #666;
+  --accent: #8b4513;
+  --accent-light: #a0522d;
+  --border: #e0d5c8;
+  --stage-bg: #f0e6d8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 16px;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 30px;
+}
+header h1 { font-size: 2.2em; color: var(--accent); margin-bottom: 10px; font-weight: 600; }
+header p { color: var(--text-light); font-size: 0.95em; }
+.nav-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 20px; background: #fff; border-radius: 8px;
+  margin-bottom: 25px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-link { color: var(--accent); text-decoration: none; font-weight: 500; padding: 6px 14px; border-radius: 6px; transition: background 0.2s; }
+.nav-link:hover { background: var(--bg); }
+.stage-section { margin: 40px 0 30px; }
+.stage-title {
+  font-size: 1.6em; color: var(--accent); margin-bottom: 20px;
+  padding: 12px 18px; background: var(--stage-bg);
+  border-left: 5px solid var(--accent); border-radius: 4px;
+}
+.step-card {
+  background: var(--card-bg); border-radius: 12px; padding: 25px 30px;
+  margin-bottom: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+.step-card h3 {
+  font-size: 1.25em; color: var(--accent); margin-bottom: 18px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.field { margin-bottom: 16px; }
+.field-label {
+  display: inline-block; min-width: 110px;
+  font-weight: 600; color: var(--accent-light);
+  padding: 2px 10px; background: var(--stage-bg);
+  border-radius: 4px; font-size: 0.9em; margin-right: 8px;
+}
+.field-content { display: inline; }
+.field-content blockquote {
+  border-left: 4px solid var(--accent); padding: 10px 16px;
+  margin: 10px 0; color: var(--text-light); font-style: italic;
+  background: #faf8f4; border-radius: 4px;
+  white-space: pre-wrap;
+}
+.field-content ul { margin: 6px 0 6px 22px; }
+.field-content li { margin-bottom: 4px; }
+.footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--text-light); font-size: 0.85em;
+  border-top: 1px solid var(--border); margin-top: 40px;
+}
+.toc { background: #fff; padding: 20px 25px; border-radius: 8px; margin-bottom: 30px; border: 1px solid var(--border); }
+.toc h2 { font-size: 1.2em; color: var(--accent); margin-bottom: 12px; }
+.toc ol { margin-left: 22px; }
+.toc li { margin-bottom: 6px; }
+.toc a { color: var(--accent-light); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.intro { background: #fff; padding: 20px 25px; border-radius: 8px; margin-bottom: 30px; border: 1px solid var(--border); line-height: 1.9; }
+.intro p { margin-bottom: 10px; color: var(--text); }
+.intro strong { color: var(--accent); }
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  header h1 { font-size: 1.6em; }
+  .step-card { padding: 18px; }
+  .field-label { display: block; margin-bottom: 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav-bar">
+  <a href="index.html" class="nav-link">← 返回总目录</a>
+  <a href="#footer" class="nav-link">↓ 底部</a>
+</div>
+
+<header>
+  <h1>《灵宝毕法》修炼实操手册</h1>
+  <p>汉·钟离权著 吕洞宾传 · 钟吕派内丹学实修规程</p>
+</header>
+
+<div class="intro">
+  <p>本书基于《正统道藏·太清部·秘传正阳真人灵宝毕法》（汉·钟离权著、吕洞宾传）原文整理，是钟吕派内丹学最古老的实修规程之一。首创<strong>"三乘十法"</strong>的操作阶梯，从人仙、地仙到天仙，层层递进，时点、火候、验应俱有明文，为内丹实修者之圭臬。</p>
+  <p>全书分三卷十法：<strong>小乘安乐延年法四门</strong>（人仙）、<strong>中乘长生不死法三门</strong>（地仙）、<strong>大乘超凡入圣法三门</strong>（天仙）。每一法皆有时辰、卦象、节气之明确规定，与火候加减之精微次第。</p>
+  <p><strong>实修总则</strong>：凡行此法，必于幽室静宅之中，远妇人女子，使鸡犬不闻声，臭秽不入鼻，五味不入口，以绝七情六欲。饮食多少、寒热有度，寤寐之间恐有损失，心不可暂离于道。</p>
+</div>
+
+<div class="toc">
+  <h2>目录 · 三乘十法</h2>
+  <ol>
+    <li><strong>第一编 小乘安乐延年法（人仙）</strong>
+      <ul>
+        <li><a href="#m1">第一法 匹配阴阳</a></li>
+        <li><a href="#m2">第二法 聚散水火</a></li>
+        <li><a href="#m3">第三法 交媾龙虎</a></li>
+        <li><a href="#m4">第四法 烧炼丹药</a></li>
+      </ul>
+    </li>
+    <li><strong>第二编 中乘长生不死法（地仙）</strong>
+      <ul>
+        <li><a href="#m5">第五法 肘后飞金晶</a></li>
+        <li><a href="#m6">第六法 玉液还丹</a></li>
+        <li><a href="#m7">第七法 金液还丹</a></li>
+      </ul>
+    </li>
+    <li><strong>第三编 大乘超凡入圣法（天仙）</strong>
+      <ul>
+        <li><a href="#m8">第八法 朝元</a></li>
+        <li><a href="#m9">第九法 内观</a></li>
+        <li><a href="#m10">第十法 超脱</a></li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+<!-- =================== 第一编 小乘安乐延年法 =================== -->
+<section class="stage-section">
+  <h2 class="stage-title">第一编 小乘安乐延年法（人仙）</h2>
+  <p style="color:var(--text-light); margin-bottom:20px; padding:0 6px;">目标：匹配气液相生，采补还丹，延年益寿，止于住世为人仙。</p>
+
+  <!-- ===== 第一法 匹配阴阳 ===== -->
+  <div class="step-card" id="m1">
+    <h3>第一法 匹配阴阳</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">小乘入门第一法。人生受形于父母，六欲七情耗散元阳，本宫之气反为天地所夺。此法以"多入少出"匹配气液相生，夺天地之造化，使气散难生液、液少难生气之困局得以扭转，积而生五脏之液，还元愈多。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <ul>
+          <li>于气旺之时（卯卦），多入少出，强留元气于腹。</li>
+          <li>自下而升者不出，自外而入者暂住，二气相合。</li>
+          <li>积而生五脏之液，还元愈多，积日累功，见验方止。</li>
+        </ul>
+        <blockquote>《真訣》曰：當其氣旺之時，日用卯卦，而於氣也多入少出，強留在腹，當時自下而升者，不出自外而入者，暫住二氣相合，積而生五臟之液，還元愈多，積日累功，見驗方止。</blockquote>
+        <blockquote>《道要》曰：欲見陽公長子，須是多入少出。從他兒女相爭，過時求取真的。乃積氣生液，積液生氣，匹配氣、液相生之法也。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>进得饮食，疾病消除</li>
+          <li>头目清利，心腹空快</li>
+          <li>多力少倦</li>
+          <li>腹中时闻风雷之声</li>
+        </ul>
+        <blockquote>百日為期，旬日之見驗。進得飲食而疾病消除，頭目清利而心腹空快，多力少倦，腹中時聞風雷之聲，餘驗不可勝紀。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">旬日见验即腹中时闻风雷之声，乃气液相合、真气渐生之征。心腹空快、多力少倦，皆气旺液生之象。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">本宫之气每为天地所夺（一呼元气出，一吸元气入，既入不能留之，随呼而复出），故须"强留在腹"。闭气生液须匹配两停，过时自得真水，不可急求。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>日用卦象</strong>：卯卦（比一年春分之节）</li>
+          <li><strong>生理对应</strong>：子时肾中气生，卯时气到肝，午时气到心</li>
+          <li><strong>取象</strong>：以一日比一年，以子午比冬夏，卯酉比春秋</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">百日为期，旬日见验；行持不过一年，夺功以一并三。见验方止，方可进入下一法（聚散水火）。</span>
+    </div>
+  </div>
+
+  <!-- ===== 第二法 聚散水火 ===== -->
+  <div class="step-card" id="m2">
+    <h3>第二法 聚散水火</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">小乘第二法。于艮卦养元气（散火/小炼形），于乾卦聚元气（聚火/太一含真气），使根源牢固。盖人当艮卦气微不知养气之端，乾卦气散不知聚气之理，日夕以六欲七情耗散元阳，故须朝屯暮蒙以养、以聚。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>（一）早朝艮卦——散火（小炼形）</strong>：披衣静坐，绝念忘情；微作导引，手脚递互伸缩三五下，使四体之气齐生；内保元气上升以朝于心府；咽津一两口，搓摩头面三二十次；呵出终夜壅聚恶浊之气。</p>
+        <p style="margin-bottom:8px;"><strong>（二）晚间乾卦——聚火（太一含真气）</strong>：入室静坐；咽气（纳心火于下）；搐外肾（收膀胱之气于内）；上下相合肾气之火，三火聚而为一，以补暖下田；无液则聚气生液，有液则炼液生气。</p>
+        <blockquote>《真訣》曰：是以日出當用艮卦之時，以養元氣，勿以利名動其心，勿以好惡介其意。當披衣靜坐，以養其氣。絕念忘情，微作導引。手腳遞互伸縮三五下，使四體之氣齊生，內保元氣上升以朝於心府。或咽津一兩口，搓摩頭面三、二十次，呵出終夜壅聚惡濁之氣。久而色澤充美，肌膚光潤。艮卦養元氣。又於日入用乾卦之時，以聚元氣。當入室靜坐咽氣，搐外腎。咽氣者，是納心火於下。搐外腎者，是收膀胱之氣於內。乾卦聚元氣。上下相合腎氣之火，三火聚而為一，以補暖下田。無液則聚氣生液，有液則煉液生氣，名曰聚火，又曰太一含真氣也。早朝咽津摩面，手足遞互伸縮，名曰散火，又名曰小煉形也。</blockquote>
+        <blockquote>《道要》曰：花殘葉落深秋，楊妃懶上危樓。欲得君民和會，當時宴罷頻收。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>容颜光泽，肌肤充悦</li>
+          <li>下田温暖</li>
+          <li>小便减省</li>
+          <li>四体轻健，精神清爽</li>
+          <li>痼疾宿病尽皆消除</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">色泽充美、肌肤光润（散火之验）；下田温暖、三火合一（聚火之验）；痼疾宿病尽除（根源牢固之验）。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">朝屯者，取一阳为屈而未伸之义，养而伸之，勿以耗散；暮蒙者，取童蒙求我以就明弃暗，乃阴间求阳之义，昧而明之，勿以走失。勿以利名动其心，勿以好恶介其意。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>日出·艮卦（丑寅）</strong>：比一年立春之节——养元气、散火（小炼形）</li>
+          <li><strong>日入·乾卦（戌亥）</strong>：比一年立冬之节——聚元气、聚火（太一含真气）</li>
+          <li><strong>乾卦三元</strong>：乾、艮、震三元用事应验方止</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">以交立冬为首，见验方止；百日为期，旬日见验，行持不过一年。可于匹配阴阳功内稍见验后，叙入此功。乾卦三元用事应验方止，方可进入第三法。</span>
+    </div>
+  </div>
+
+  <!-- ===== 第三法 交媾龙虎 ===== -->
+  <div class="step-card" id="m3">
+    <h3>第三法 交媾龙虎</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">小乘第三法。使肾气与心气相合，真水真气相交，名曰"交媾龙虎"，又名"采补还丹"或"水火既济"，可延年益寿为人仙。若火候无差，抽添合宜，三百日养就真胎而成大药，为朝元超脱之本。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <ul>
+          <li>当离卦肾气到心之时，神识内定。</li>
+          <li>鼻息少入迟出，绵绵若存。</li>
+          <li>津满口勿吐勿咽，自然肾气与心气相合，太极生液。</li>
+          <li>液与真水相合，真气恋液，真水恋气；液中有真气，气中有真水，互相交合相恋而下——名曰交媾龙虎。</li>
+          <li>火候无差，抽添合宜。</li>
+        </ul>
+        <blockquote>《真訣》曰：當離卦腎氣到心，神識內定，鼻息少入遲出，綿綿若存，而津滿口勿吐勿咽，自然腎氣與心氣相合，太極生液。以液與真水相合，真氣戀液，真水戀氣。本不相合，蓋液中有真氣，氣中有真水，互相交合相戀而下，名曰交姤龍虎。若以火候無差，而抽添合宜，三百日養就真胎而成大藥，煉質焚身，朝元超脫之本也。</blockquote>
+        <blockquote>《道要》曰：一氣初回元運，真陽欲到離宮，捉取真龍真虎，玉池春水溶溶。此恐泄元氣而走真水於身外也。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>口生甘津</li>
+          <li>心境自除，情欲不动</li>
+          <li>百骸无病</li>
+          <li>神光暗中自见双目，时若惊电</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">真龙（心液中真气，元阳为真龙）与真虎（肾气中真水）相交，玉池（口）春水（津）溶溶。神光暗中自见双目、时若惊电，乃真气渐凝、神光内显之征。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">此法恐泄元气而走真水于身外。气散难生液，液少而无真气，气水不交则安成大药。故须神识内定、鼻息绵绵、津满勿吐勿咽，使二气自然相合，不可强求。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>年中用月</strong>：以冬至为始</li>
+          <li><strong>日中用时</strong>：以离卦（午时）为期</li>
+          <li><strong>取象</strong>：子时坎卦肾中气生，午时离卦气到心（离卦肾气到心，乃交合之时）</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">以冬至日为始节，用法三百日胎仙具。若晚年奉道、根源不固，十年之损一年补之，名"采补还丹"；补数足后止行此法，名"水火既济"，可延年益寿，乃曰人仙。胎仙具后可进入第四法烧炼丹药。</span>
+    </div>
+  </div>
+
+  <!-- ===== 第四法 烧炼丹药 ===== -->
+  <div class="step-card" id="m4">
+    <h3>第四法 烧炼丹药</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">小乘第四法，人仙之极。采药、勒阳关、烧炼金丹，三百日胎仙完。当绝迹幽居，内境不出外境不入，如妇养孕，龙之养珠，使气液造化成金丹。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>（一）离卦采药</strong>：龙虎交媾，名曰采药。药＝心中真气，兔＝肾中真水，黄婆＝脾中液，和合气水而入黄庭。</p>
+        <p style="margin-bottom:8px;"><strong>（二）乾卦勒阳关——烧炼丹药</strong>：神识内守，鼻息绵绵；以肚腹微胁脐肾；觉热太甚微放轻勒腹脐，未热紧勒，渐热即守常；任意放志，以满乾坤；使气不上行，同真水经脾宫，随呼吸搬运于命府黄庭之中。</p>
+        <p style="margin-bottom:8px;"><strong>造化次第</strong>：气液→精→珠→汞→砂→金（金丹）。</p>
+        <blockquote>《真訣》曰：離卦龍虎交姤，名曰採藥……神識內守，鼻息綿綿，以肚腹微脅臍腎，覺熱太甚，微放輕，勒腹臍。未熱緊勒，漸熱即守常，任意放志，以滿乾坤，乃曰勒陽關而鍊丹藥。使氣不上行，以同真水經脾宮，隨呼吸而搬運於命府黃庭之中。氣液造化，時變而為精，精變而為珠，珠變而為汞，汞變而為砂，砂變而為金，乃曰金丹。其功不小矣。</blockquote>
+        <blockquote>《道要》曰：採藥須憑玉兔，採藥心氣，玉兔腎水。成親必藉黃婆，等到雍州相見，雍州乾卦。奏傳一曲陽歌。此乃與採藥日用對行。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>100日：药力全</li>
+          <li>200日：圣胎坚</li>
+          <li>300日：真气生，胎仙完</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">勒阳关时肚腹微胁脐肾，觉热太甚或未热紧勒，渐热即守常——乃火候抽添之征。气液造化依次为精、珠、汞、砂、金，乃金丹将成之景。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">
+        <ul>
+          <li>当绝迹幽居，心在内观，内境不出而外境不入，如妇养孕，龙之养珠。</li>
+          <li>饮食寤寐之间，语默如婴儿，举止如室女，犹恐有失有损，心不可暂离于道。</li>
+          <li>火候火候：药力全而后进火加数→小周天数→周天火候，不可躐等。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>午时·离卦</strong>：采药（龙虎交媾）</li>
+          <li><strong>戌亥·乾卦</strong>：进火烧药（勒阳关）</li>
+          <li><strong>四季加减</strong>：春冬多采少炼（乾一而离二倍用功）；秋夏少采多炼（离一而乾二倍用功），随年月气旺采炼。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">药力全（100日）而后进火加数→小周天数→周天火候。胎圆真气生（300日胎仙完），方为入道。补完坚固、见验方止，方可进入中乘（年中择月冬至之节、月中择日甲子之日、日中择时坎离乾三卦为始下功）。</span>
+    </div>
+  </div>
+
+</section>
+
+<!-- =================== 第二编 中乘长生不死法 =================== -->
+<section class="stage-section">
+  <h2 class="stage-title">第二编 中乘长生不死法（地仙）</h2>
+  <p style="color:var(--text-light); margin-bottom:20px; padding:0 6px;">目标：五行颠倒，三田返覆，胎圆真气生，炼形住世，长生不死。前提：须小乘四门见验，补完坚固，方于年中择月（冬至之节）、月中择日（甲子之日）、日中择时（坎、离、乾卦三时为始）下功。</p>
+
+  <!-- ===== 第五法 肘后飞金晶 ===== -->
+  <div class="step-card" id="m5">
+    <h3>第五法 肘后飞金晶</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">中乘第一法。又名"抽铅"，使肾气生肝气。飞金晶入脑，下田返上田；采药下田返中田；烧药进火中田返下田——名曰三元用事。三百日胎完气足，内丹就、真气生。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <ul>
+          <li>静室中披衣握固，正坐盘膝。</li>
+          <li>蹲下腹肚，须臾升身前出胸，微偃头于后。</li>
+          <li>后闭夹脊双关，肘后微扇一二伸腰。</li>
+          <li>自尾闬穴如火相似，自腰而起，拥在夹脊，慎勿开关。</li>
+          <li>热气壮时，渐次开夹脊关，放气过关。</li>
+          <li>仰面，脑后紧偃，闭上关，慎勿开之。</li>
+          <li>觉热极气壮，渐次入顶，以补泥丸髓海。</li>
+          <li>火不起时，静坐内观，如法再作，以至火起为度。</li>
+          <li>自丑行之，至寅终而止。</li>
+        </ul>
+        <blockquote>《真訣》曰：坎卦陽生，當正子時，非始非終，艮卦腎氣交肝氣。未交之前，靜室中披衣握固，正坐盤膝，蹲下腹肚，須臾升身前出胸，而微偃頭於後。後閉夾脊雙關，肘後微扇一二伸腰，自尾閭穴如火相似，自腰而起，擁在夾脊，慎勿開關，即時甚熱氣壯，漸次開夾脊關，而放氣過關。仍仰面，腦後緊偃，以閉上關，慎勿開之，即覺熱極氣壯，漸次入頂，以補泥丸髓海。須身耐寒暑，方為長生之基。次用還丹之法如是前件，出胸伸腰，閉夾脊，蹲而升之腰間。火不起，當靜坐內觀，如法再作，以至火起為度。自丑行之，至寅終而可止。乃曰肘後飛金晶，又曰抽鉛，使腎氣生肝氣也。</blockquote>
+        <blockquote>《道要》曰：日月並行復卦，子時蹲升數日開關，貪向楊州聚會，離卦交姤六宫火滿金田。</blockquote>
+        <blockquote>又曰：終南路上逢山，升身頻過三關，貪向楊州聚會，爭如少女燒天。</blockquote>
+        <blockquote>又曰：兖州行到徐州，起來走損車牛，為戀九州歡會，西南火入雍州。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>第一阶 100日：药力全，飞金晶入脑，三关一撞直入上宫泥丸（坎→艮）</li>
+          <li>第二阶 200日：圣胎坚（坎→震）</li>
+          <li>第三阶 300日：真气生胎仙圆，返老还童，不类常人（坤→乾）</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">
+        <ul>
+          <li>始觉梦寐多有惊悸</li>
+          <li>四肢六腑有疾不疗自愈</li>
+          <li>闭目暗室中圆光如盖，周匝围身</li>
+          <li>金关玉锁封固坚牢，绝梦泄遗漏</li>
+          <li>雷鸣一声，关节气通</li>
+          <li>梦寐若抱婴儿归，或若飞腾自在</li>
+          <li>八邪之气不能入，心境自除以绝欲</li>
+          <li>内观朗而不昧；昼则神采清秀，夜则丹田自暖</li>
+          <li>采药就胎仙完而真气生，形若弹圆，色同朱橘，永镇丹田，作陆地神仙</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>三关释义</strong>：下关＝尾闬穴（背后）；中关＝夹脊；上关＝脑下。脊骨二十四节，自下而上三节为内肾相对；自上而下三节名天柱；天柱之上名玉京；玉京之下、内肾相对、尾闬穴之上共十八节为中段，其中曰双关（上九下九）。</li>
+          <li>必于幽室静宅之中，远妇人女子，使鸡犬不闻声，臭秽不入鼻，五味不入口，以绝七情六欲。</li>
+          <li>虽寤寐之间而意恐损失，行功不勤难成于道。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>第100日</strong>：飞金晶 坎卦→艮卦；勒阳关 兑卦→乾卦</li>
+          <li><strong>第200日</strong>：飞金晶 坎卦→震卦；勒阳关 坤卦→乾卦</li>
+          <li><strong>第300日</strong>：飞金晶 坎卦→（更上）；勒阳关 坤卦→乾卦</li>
+          <li>坎卦＝正子时，非始非终；艮卦：肾气交肝气</li>
+          <li>自冬至后方曰行功（择月冬至、择日甲子、择时坎离乾三卦为始）</li>
+          <li>每日自丑行之，至寅终而止</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">三百日后：离卦罢采药，坤卦罢勒阳关，即行玉液还丹之道。三百日胎完气足，内丹就、真气生，方可进入第六法。</span>
+    </div>
+  </div>
+
+  <!-- ===== 第六法 玉液还丹 ===== -->
+  <div class="step-card" id="m6">
+    <h3>第六法 玉液还丹</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">中乘第二法。于飞金晶三百日后行之。玉液者，肾气上升到心合心气，二气相交过重楼，津满玉池咽之。还丹田曰"玉液还丹"，升之炼形曰"玉液炼形"。行持不过三年，灌溉丹田，沐浴胎仙，真气愈盛。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>（一）咽法（玉液还丹）</strong>：以舌搅上腭两颊之间；先咽恶浊之津；次退舌尖，以满玉池，津生不漱而咽；若津不生，以舌满上下闭玉池收两颊，虚咽气（气中自有水）。</p>
+        <p style="margin-bottom:8px;"><strong>（二）咂数进阶</strong>：第一年36～49次；次一年81次；又次一年180一次。</p>
+        <p style="margin-bottom:8px;"><strong>（三）勒阳关</strong>：兑卦下手，至乾方止（罢离卦采药，添入咽法炼形）。飞金晶自艮至巽而已。</p>
+        <blockquote>《真訣》曰：咽法者，以舌攪上齶兩頰之間，先咽了惡濁之津，次退舌尖，以滿玉池，津生不漱而咽……如牙齒玉池之間而津不生，但以舌滿上下而閉玉池收兩頰，以虛咽而為法止咽氣，氣中自有水也。咽氣如一年三十六次至四十九次。為數，又次一年八十一次又一百八十一次。為見驗，乃玉液還丹之法。行持不過三年，灌溉丹田，沐浴胎仙，而真氣愈盛。</blockquote>
+        <blockquote>《道要》曰：識取五行根蔕，方知春夏秋冬，時飲瓊漿數盞，醉歸月殿遨遊。</blockquote>
+        <blockquote>又曰：東望扶桑未曉，後升前偃無休，驟馬數遊宇宙，長男只到楊州。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>身体光泽，神气秀媚</li>
+          <li>渐畏腥秽以冲己腹</li>
+          <li>凡情凡爱心境自除</li>
+          <li>真气将足而常饱，食不多而饮酒无量</li>
+          <li>尘骨已更而变神识</li>
+          <li>步趋走马而行如飞</li>
+          <li>目如点漆，体若凝脂</li>
+          <li>绀发再生，皱脸重舒，老去永驻童颜</li>
+          <li>仰视百步而见秋毫</li>
+          <li>旧痕残靥自然消除；涕泪涎污亦不见</li>
+          <li>圣丹生味，灵液透香，口鼻之间常有真香奇味</li>
+          <li>漱成凝酥，可以疗人疾病，遍体皆成白膏</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">玉液炼形自震卦为始至离卦方止，遍满四肢（遨游宇宙）。咽多则如醉归月殿（丹田）。目如点漆、体若凝脂、绀发再生、皱脸重舒，皆玉液灌溉、尘骨更易之景。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">
+        <ul>
+          <li>咽法随四时改移有候，须识五行根蒂（相生相克而用卦时不同）。</li>
+          <li>罢离卦采药，添入咽法炼形；飞金晶减一卦，勒阳关如旧。</li>
+          <li>独于秋季，止用兑卦咽法，而罢艮卦之功。</li>
+          <li>若不行此玉液还丹之法，而于三百日养就内丹真气才生，当行金液还丹之法。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>春三月</strong>：肝旺脾弱，咽法用离卦；飞金晶 艮→巽</li>
+          <li><strong>夏三月</strong>：心旺肺弱，咽法用巽卦；飞金晶 艮→巽</li>
+          <li><strong>秋三月</strong>：肺旺肝弱，咽法用艮卦（独用兑卦罢艮）；飞金晶 艮→巽</li>
+          <li><strong>冬三月</strong>：肾旺心弱，咽法用震卦；飞金晶 艮→巽</li>
+          <li><strong>四季月末十八日</strong>：脾旺肾弱，咽法用兑卦（与前并）；养脾炼己真气</li>
+          <li>炼形自震卦为始，离卦为期</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">行持不过三年，灌溉丹田，沐浴胎仙，真气愈盛。验正后谨节用功，依法随时行后事（金液还丹）。</span>
+    </div>
+  </div>
+
+  <!-- ===== 第七法 金液还丹 ===== -->
+  <div class="step-card" id="m7">
+    <h3>第七法 金液还丹</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">中乘第三法，地仙之极，长生不死之诀。金液者，肾气合心气而不上升，薰蒸于肺，肺为华盖下罩二气，取肺液在下田自尾闬穴升之（飞金晶入脑补泥丸），补足自上复下降入下田，名曰金液还丹；还丹后复升遍满四体，名曰金液炼形。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>（一）金液还丹（后起）</strong>：于净室中切禁风日，遥焚香密启；肘后飞金晶一撞三关，其气才起，急须双手闭耳（耳为肾波之门，恐泄肾气于外而不入脑中）；觉气入脑中，点头曲项，退舌尖近拄上腭；上有清冷之水，味若甘香，上彻顶门，下通百脉；鼻中自闻一种真香，舌上亦有奇味，不漱而咽下还黄庭。</p>
+        <p style="margin-bottom:8px;"><strong>（二）金液炼形（前起）</strong>：还丹之后，复前起，自下而上遍满头面、四肢、手指，气盛方止；再起再升，至离卦为期。</p>
+        <p style="margin-bottom:8px;"><strong>（三）焚身（前后俱起）</strong>：金液还丹未到下元，而前后俱起，名曰火起焚身。午前烧乾（背后，飞金晶前起炼形），午后烧坤（肚腹，勒阳关兑→乾）。冬夏三日成、五日行既济之法，以防太过，使金丹有润。</p>
+        <blockquote>《真訣》曰：凡欲煉形飛金晶者，當在凈室中，切禁風、日，遙焚香密啟：三清上聖，臣所願長生在世，傳行大道，演化告人，當先自行煉形之法，欲得不畏寒暑，絕啗穀食，逃於陰陽之外。咒畢乃咽之。</blockquote>
+        <blockquote>又曰：自坎卦為始，後起一升入頂，以雙手微閉雙耳內觀，如法微咽於津。乃以舌抵定牙關，下閉玉池，以待上齶之津，下而方咽，咽畢復起，至艮卦為期。春冬兩起一咽，秋夏五起一咽。凡一咽數，秋夏不過五十數，春冬不過百數。自後咽罷升身前起，以滿頭面、四肢、手指氣盛方止。再起再升，至離卦為期。凡此後起咽津，乃曰金液還丹。還丹之後而復前起，乃曰金液煉形。</blockquote>
+        <blockquote>《道要》曰：起後終宵閉耳，隨時對飲金波，宴到青州方住，日西又聽陽歌。</blockquote>
+        <blockquote>又曰：飲罷終宵火起，前升後舉焚身，雖是不拘年月，日中自有乾坤。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>内志清高以合太虚</li>
+          <li>魂神不游以绝梦寐</li>
+          <li>阳精成体，神府坚固</li>
+          <li>四时不畏寒暑</li>
+          <li>神采自可变移容仪</li>
+          <li>常人对面虽彼富贵之徒，亦闻腥秽（盖凡骨俗体）</li>
+          <li>功行满足，密授三清真箓，阴阳变化、人事灾福神灵而皆能预知</li>
+          <li>触目尘冗，心绝万境</li>
+          <li>真气充满，以绝饮食</li>
+          <li>异气透出金色，仙肌可比玉蘂</li>
+          <li>去留之处，神祇自来相见，驱用招呼一如己意</li>
+          <li>真气纯阳，可乾外水</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">清冷之水味若甘香，上彻顶门下通百脉；鼻中自闻真香，舌上有奇味——乃金液将下之征。焚身时前后俱起、火起中咽，乃金液炼形既、焚身之景。异气透出金色、仙肌比玉蘂，乃真气纯阳之显。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">
+        <ul>
+          <li>当在净室中，切禁风、日，遥焚香密启三清上圣。</li>
+          <li>耳为肾波之门，飞金晶气起时急须双手闭耳，恐泄肾气于外而不入脑中。</li>
+          <li>咽数限制：秋夏不过五十数，春冬不过百数。</li>
+          <li>焚身冬夏三日成、五日须行既济之法，以防太过，使金丹有润。</li>
+          <li>须于玉液还丹炼形见验正当，方以谨节幽居、焚香而行此法。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>后起金晶（还丹）</strong>：坎→艮（春冬两起一咽）；坎→离（秋夏五起一咽）</li>
+          <li><strong>前起炼形</strong>：艮→离</li>
+          <li><strong>勒阳关</strong>：兑→乾</li>
+          <li><strong>焚身</strong>：午前烧乾（背后），午后烧坤（肚腹）</li>
+          <li>春夏秋冬不拘时候，但于肘后飞金晶入脑之后节次行此法，自艮至巽而已；晚间勒阳关自兑至乾而已</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">一年外方得焚身；不拘年月日时，以见验为度，谨节专一，幽居绝迹。此法胜及前方，可得成志意，止于炼形住世、长生不死，不能超脱。验正后行后事（朝元等大乘法）。</span>
+    </div>
+  </div>
+
+</section>
+
+<!-- =================== 第三编 大乘超凡入圣法 =================== -->
+<section class="stage-section">
+  <h2 class="stage-title">第三编 大乘超凡入圣法（天仙）</h2>
+  <p style="color:var(--text-light); margin-bottom:20px; padding:0 6px;">目标：聚阳神以入天神，炼之合道，入圣超凡。前提：须前功节节见验正当。若便为此道，恐徒劳终不见成，止于阴魄出壳而为鬼仙。</p>
+
+  <!-- ===== 第八法 朝元 ===== -->
+  <div class="step-card" id="m8">
+    <h3>第八法 朝元</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">大乘第一法。五脏之气随天度运，依四时炼五脏真气，各色自见升身入泥丸，五气朝元。阳神初聚，真气方凝，看待如婴儿。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <ul>
+          <li>依时入室，多入少出，息住为上，久闭次之，数至一千息为度。</li>
+          <li>内观如法，一意冥心闭目。</li>
+          <li>当色自见（青/赤/白/黑），渐渐升身，以入泥丸。</li>
+          <li>一千息以上尤佳；息急渐微，出息而息住，不须连成。</li>
+          <li>旺脏日不可下功（耗本气）；救脏日方下功炼所救之脏。</li>
+          <li>季月末十八日：不须依前行持，止于定息为法，终日静坐养脾炼己真气，可坎卦起火炼肾（恐耗真）。</li>
+        </ul>
+        <blockquote>《真訣》曰：凡春三月，肝氣旺……震卦時入室多入少出息住為上，久閉次之數至一千息為度，當時內觀如法，一意冥心閉目，青色自見，漸漸升身，以入泥丸，自寅至辰，以滿震卦。一千息以上尤佳，如息急漸微，出息而息住，不須連成。</blockquote>
+        <blockquote>又曰：凡定息之法，不在強留而緊閉，使綿綿若存，用之不勤，從無入有，使之自住。採藥法，含津握固，以壓心之真氣不散也。凡入室須閉戶孤幽靜館，以遠雞犬、女子一切厭觸之物……跪拜稽首，三禮既畢，靜坐忘機，以行此法。</blockquote>
+        <blockquote>《道要》曰：凡行此法，不限年月日。隨月一依前法，以至見驗方止，其氣自見。須是謹節不倦，棄絕外事，止於室中用志。測其時候，用二箇純陽小子。或結交門生，交翻反覆。供過千日，可了一氣。一以奪十，一百日可見功。五百日氣全，可行內觀炁後，聚陽神以入天神，煉之而合道，入聖超凡。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>身体极畅，常仰升腾</li>
+          <li>丹光透骨，异香满室</li>
+          <li>静中外观，紫霞满目</li>
+          <li>顶中下视，金光罩体</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">当色自见：春青气出（肝）、夏赤气出（心）、秋白气出（肺）、冬黑气出（肾），渐升身入泥丸。以至黄气成光，默观万道周匝围身——乃五气朝元之景。丹光透骨、紫霞满目、金光罩体，皆阳神初聚、真气方凝之征。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>五行五帝对应</strong>：青帝甲乙木→肝（九气）；赤帝丙丁火→心（三气）；白帝庚辛金→肺（七气）；黑帝壬癸水→肾（五气）；黄帝戊己土→脾（一气）。</li>
+          <li>定息法要：不在强留紧闭，使绵绵若存，用之不勤，从无入有，使之自住。</li>
+          <li>旺脏日不可下功（耗本气）；救脏日方下功炼所救之脏。</li>
+          <li>入室须闭户孤幽静馆，远鸡犬、女子一切厌触之物；微开小窍使明辨物，勿令风日透气、左右有声。</li>
+          <li>阳神初聚，真气方凝，看待如婴儿。隐于山林功行将半者地仙；寄于海隅洞府与天下立大功、与黎首除大害，潜迹者天仙。</li>
+          <li>仍须前法节节见验，若便为此道，恐徒劳终不见成，止于阴魄出壳而为鬼仙。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>春三月</strong>：肝（木）旺，救土（辰戌丑未时炼脾气）；行持震卦，寅至辰，气色青</li>
+          <li><strong>夏三月</strong>：心（火）旺，救金（兑卦炼肺气）；行持离卦，巳至未，气色赤</li>
+          <li><strong>秋三月</strong>：肺（金）旺，救木（震卦炼肝气）；行持兑卦，申至戌，气色白</li>
+          <li><strong>冬三月</strong>：肾（水）旺，救火（离卦炼心气）；行持坎卦，亥至丑，气色黑</li>
+          <li><strong>季月末十八日</strong>：脾（土）旺，养脾炼己真气，定息终日静坐，黄气成光</li>
+          <li>测其时候，用两个纯阳小子或结交门生，交翻反复供过千日，可了一气</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">一以夺十，一百日可见功，五百日气全。气全后可行内观，聚阳神以入天神，炼之合道，入圣超凡。</span>
+    </div>
+  </div>
+
+  <!-- ===== 第九法 内观 ===== -->
+  <div class="step-card" id="m9">
+    <h3>第九法 内观</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">大乘第二法。合道之法，有如存想之理，又如禅僧入定之时。此法以无心为心，以无物为物，渐入无为之道，以入希夷之域。真乐熙熙不知己之有身。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <ul>
+          <li>择福地置室，跪礼焚香。</li>
+          <li>正坐盘膝，散发披衣，握固存神，冥心闭目。</li>
+          <li>坐中或闻声莫听，见境勿认，物境自散。</li>
+          <li>若认物境，转加魔军不退：急以身体微敛，敛而伸腰，后以胸微偃，偃不伸腰；少待前后火起，高升其身勿动——名曰焚身。火起魔军自散于躯外，阴邪不入壳中。如此三两次已。</li>
+          <li>当想遍天地之间皆是炎炎之火，毕清凉，了无一物。</li>
+        </ul>
+        <blockquote>《真訣》曰：當擇福地置室，跪禮焚香，正坐盤膝，散髮披衣，握固存神，冥心閉目。午時前微以升身起火煉氣，午後微以斂身聚火燒丹。不拘晝夜，神清氣和，自然喜坐。坐中或聞聲莫聽，見境勿認，物境自散。若認物境，轉加魔軍不退，急急前以身微斂，斂而伸腰，後以胸微偃，偃不伸腰，少待前後火起，高升其身勿動，名曰焚身。火起魔軍自散於軀外，陰邪不入於殼中，如此三兩次已。當想遍天地之間皆是炎炎之火，畢清涼，了無一物。</blockquote>
+        <blockquote>《道要》曰：不無盡法，已滅省故也。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>内观朗而不昧</li>
+          <li>心源清澈，一照万破</li>
+          <li>气战刚强，万感一息</li>
+          <li>物物无物以还本来之象，法法无法乃全自得之真</li>
+          <li>真乐熙熙不知己之有身</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>内景境界</strong>（不可贪恋，皆魔军所化或顶中自己天宫之内境，非实到天宫）：</p>
+        <ul>
+          <li>见车马歌舞、轩盖绮罗、富贵繁华、人物欢娱</li>
+          <li>五色云升，如登天界</li>
+          <li>楼台耸翠、院宇徘徊、珠珍金玉满地不收、花果池亭</li>
+          <li>异香四起，妓乐嘈杂，宾朋满坐，水陆俱陈，共贺太平</li>
+        </ul>
+        <p style="margin-top:8px;"><strong>焚身验</strong>：前后火起、高升其身勿动，魔军自散于躯外。</p>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>关键警示</strong>：当此之际，虽不是阴鬼魔军，亦不得认为好事。修真之人弃绝外事，甘受寂寞，一旦遍见如此繁华，若贪恋认为实到天宫，不用超脱之法，止于阳神不出、胎仙不化，乃曰出昏衢之上，为陆地神仙而已，长生不死但不能脱质升仙。</li>
+          <li>心法：以无心为心，以无物为物。</li>
+          <li>魔军不退时，须急以焚身之法散之，阴邪不入壳中。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>午前</strong>：微以升身起火炼气</li>
+          <li><strong>午后</strong>：微以敛身聚火烧丹</li>
+          <li>不拘昼夜，神清气和，自然喜坐</li>
+          <li>朝元五百日气全后方可行此内观之法</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">内观认阳神，起火降魔，焚身聚气。真气升在天宫，壳中清净了无一物后，方可行超脱之法（第十法）。不可贪恋繁华境界，否则止为陆地神仙。</span>
+    </div>
+  </div>
+
+  <!-- ===== 第十法 超脱 ===== -->
+  <div class="step-card" id="m10">
+    <h3>第十法 超脱</h3>
+
+    <div class="field">
+      <span class="field-label">目的</span>
+      <span class="field-content">大乘第三法，天仙之极。超＝超出凡躯而入圣品；脱＝脱去俗胎而为仙子。神入气胎，气全真诀。古今少有成者，须前功见验正当方可行之。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">怎么操作</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>（一）前提准备</strong>：前功节节见验正当；居清静之室，入希夷之境；内观认阳神，起火降魔，焚身聚气；真气升在天宫，壳中清净了无一物；择幽居处，一依内观法，三礼既毕，平身不须高升正坐，不须敛伸，闭目冥心。</p>
+        <p style="margin-bottom:8px;"><strong>（二）朝元后出壳境界</strong>：静极朝元之后，身躯如在空中，神气飘然难制御；默然内观，明朗不昧：山川秀丽，楼阁依稀，紫气红光纷纭为阵，祥鸾彩凤音语如簧；五气出（东青→南赤→西白→北黑→中黄），结聚为彩云，金童玉女扶拥自身；跨火龙/乘玄鹤/跨彩鸾/骑猛虎，升腾空中。</p>
+        <p style="margin-bottom:8px;"><strong>（三）出壳之法（调出壳）</strong>：自下而上，如登七级宝塔，或如上三层红楼；始也一级一级，七级上尽以至顶中；辄不得下视（神惊而恋躯不出）；既至七级之上，闭目便好跳，如寐如寤；身外有身，形若婴儿，肌肤鲜洁，神采莹然；回观故躯，亦不见有所见者，乃如粪堆、如枯木，憎愧万端；辄不可顿弃而远游（神出未熟，圣气结而未成）。</p>
+        <p style="margin-bottom:8px;"><strong>（四）出入纯熟训练</strong>：须再入本躯，往来出入纯熟；一升而到天宫，一降而还旧处，上下绝无碍滞；遨游渐进：一步、二步→二里、三里→千里、万里；形神壮大，勇气坚固；寄凡骸于名山大川之中，从往来应世之外，不与俗类为伦。</p>
+        <p style="margin-bottom:8px;"><strong>（五）终极果位</strong>：行满受天书，骖鸾乘凤、跨虎骑龙，自东自西以入紫府；先见太微真君，次居下岛；欲升洞天，当传道、积行于人间。受天书而升洞天，以为天仙。</p>
+        <blockquote>《真訣》曰：超者，是超出凡軀而入聖品。脫者，是脫去俗胎而為仙子。是其神入氣胎，氣全真訣。須是前功節節見驗正當，方居清靜之室，以入希夷之境，內觀認陽神，次起火降魔，焚身聚氣。真氣升在天官，殼中清淨，了無一物，當擇幽居。一依內觀。三禮既畢，平身不須高升正坐，不須斂伸，閉目冥心。</blockquote>
+        <blockquote>又曰：乃自下而上，如登七級寶塔，或如上三層紅樓。始也一級而一級，七級上盡，以至頂中，輒不得下視，神驚而戀軀不出。既至七級之上，則閉目便好跳，如寐如寤，身外有身，形若嬰兒，肌膚鮮潔，神釆瑩然，回觀故軀，亦不見有所見之者，乃如糞堆。又如枯木，憎愧萬端，輒不可頓棄而遠遊。蓋其神出未熟，聖氣結而未成，須是再入本軀，往來出入純熟，一任遨遊，始乎一步、二步，次二里、三里，積日純熟，乃如壯士，展臂可千里、萬里，而形神壯大，勇氣堅固，然後寄凡骸於名山大川之中，從往來應世之外，不與俗類為倫。</blockquote>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">验证标准</span>
+      <span class="field-content">
+        <ul>
+          <li>身外有身，形若婴儿，肌肤鲜洁，神采莹然</li>
+          <li>回观故躯，如粪堆、如枯木</li>
+          <li>一升而到天宫，一降而还旧处，上下绝无碍滞</li>
+          <li>积日纯熟，如壮士展臂可千里、万里</li>
+          <li>形神壮大，勇气坚固</li>
+          <li>行满受天书，骖鸾乘凤、跨虎骑龙，自东自西以入紫府，先见太微真君，次居下岛</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">身体反应（景验）</span>
+      <span class="field-content">静极朝元后，身躯如在空中，神气飘然难制御；默然内观明朗不昧：山川秀丽、楼阁依稀、紫气红光纷纭为阵、祥鸾彩凤音语如簧。五气结聚为彩云，金童玉女扶拥自身，跨火龙/玄鹤/彩鸾/猛虎升腾空中。出壳后身外有身、形若婴儿，回观故躯如粪堆枯木。</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">注意事项</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>三大风险警示</strong>：</p>
+        <ul>
+          <li><strong>鬼仙</strong>：功不备而欲行之速；阴灵不散出而为人不见形，往来去住终无所归，止于投胎就舍夺人躯壳。鬼仙→复得为人仙。</li>
+          <li><strong>尸解</strong>：出入不熟、往来无法，一去一来无由再入本躯，神魂不知所在——释子坐化、道流尸解。</li>
+          <li><strong>陆地神仙</strong>：内观见繁华境界贪恋认为实到天宫，不用超脱之法——阳神不出胎仙不化。</li>
+        </ul>
+        <p style="margin-top:8px;"><strong>关键禁忌</strong>：</p>
+        <ul>
+          <li>七级之上辄不得下视——神惊而恋躯不出。</li>
+          <li>辄不可顿弃而远游——神出未熟，圣气结而未成，须再入本躯往来出入纯熟。</li>
+          <li>择地筑室，远一切腥秽之物、臭恶之气、往来之声、女子之色——不止触其真气，而神亦厌之。</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">练习时机</span>
+      <span class="field-content">
+        <ul>
+          <li><strong>前提</strong>：静极朝元之后（前功节节见验正当，内观认阳神、起火降魔、焚身聚气、真气升在天宫、壳中清净了无一物后）</li>
+          <li><strong>调出壳</strong>：自下而上如登七级宝塔，一级一级上尽顶中</li>
+          <li><strong>遨游渐进</strong>：一步二步→二里三里→千里万里，积日纯熟</li>
+          <li>不拘年月日时，以出入纯熟、见验为度</li>
+          <li>（推断）须择静极朝元之机，一依内观法时辰而行</li>
+        </ul>
+      </span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">进阶标准</span>
+      <span class="field-content">
+        <p style="margin-bottom:8px;"><strong>终极大成</strong>：</p>
+        <ul>
+          <li><strong>既出而复入，入而不出</strong>——形神俱妙，与天地齐年而浩劫不死。</li>
+          <li><strong>既入而复出，出而不入</strong>——如蝉脱蛻，迁神入圣，超凡脱俗，以为真人仙子，寄居三岛之洲。</li>
+        </ul>
+        <p style="margin-top:8px;">欲升洞天，当传道、积行于人间。受天书而升洞天，以为天仙。此乃大乘之极果。</p>
+      </span>
+    </div>
+  </div>
+
+</section>
+
+<div class="footer" id="footer">
+  <p>《灵宝毕法》修炼实操手册</p>
+  <p>基于《正统道藏·太清部》本整理 · 仅供学术研究参考</p>
+  <p style="margin-top:10px; font-style:italic;">实修须有明师指点，不可盲修瞎炼。书中所载时辰卦象、火候加减，皆须依师承口诀而行的实证实修，非仅文字可得。</p>
+</div>
+
+</div>
+</body>
+</html>

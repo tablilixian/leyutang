@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《道门语要》修炼实操手册</title>
+<style>
+:root {
+  --bg: #f8f5f0;
+  --card-bg: #fff;
+  --text: #333;
+  --text-light: #666;
+  --accent: #8b4513;
+  --accent-light: #a0522d;
+  --border: #e0d5c8;
+  --stage-bg: #f0e6d8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 16px;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 30px;
+}
+header h1 { font-size: 2.2em; color: var(--accent); margin-bottom: 10px; font-weight: 600; }
+header p { color: var(--text-light); font-size: 0.95em; }
+.nav-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 20px; background: #fff; border-radius: 8px;
+  margin-bottom: 25px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-link { color: var(--accent); text-decoration: none; font-weight: 500; padding: 6px 14px; border-radius: 6px; transition: background 0.2s; }
+.nav-link:hover { background: var(--bg); }
+.stage-section { margin: 40px 0 30px; }
+.stage-title {
+  font-size: 1.6em; color: var(--accent); margin-bottom: 20px;
+  padding: 12px 18px; background: var(--stage-bg);
+  border-left: 5px solid var(--accent); border-radius: 4px;
+}
+.step-card {
+  background: var(--card-bg); border-radius: 12px; padding: 25px 30px;
+  margin-bottom: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+.step-card h3 {
+  font-size: 1.25em; color: var(--accent); margin-bottom: 18px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.field { margin-bottom: 16px; }
+.field-label {
+  display: inline-block; min-width: 110px;
+  font-weight: 600; color: var(--accent-light);
+  padding: 2px 10px; background: var(--stage-bg);
+  border-radius: 4px; font-size: 0.9em; margin-right: 8px;
+}
+.field-content { display: inline; }
+.field-content blockquote {
+  border-left: 4px solid var(--accent); padding: 10px 16px;
+  margin: 10px 0; color: var(--text-light); font-style: italic;
+  background: #faf8f4; border-radius: 4px;
+  white-space: pre-wrap;
+}
+.field-content ul { margin: 6px 0 6px 22px; }
+.field-content li { margin-bottom: 4px; }
+.footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--text-light); font-size: 0.85em;
+  border-top: 1px solid var(--border); margin-top: 40px;
+}
+.toc { background: #fff; padding: 20px 25px; border-radius: 8px; margin-bottom: 30px; border: 1px solid var(--border); }
+.toc h2 { font-size: 1.2em; color: var(--accent); margin-bottom: 12px; }
+.toc ol { margin-left: 22px; }
+.toc li { margin-bottom: 6px; }
+.toc a { color: var(--accent-light); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  header h1 { font-size: 1.6em; }
+  .step-card { padding: 18px; }
+  .field-label { display: block; margin-bottom: 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="nav-bar">
+    <a href="index.html" class="nav-link">← 返回总目录</a>
+    <a href="#footer" class="nav-link">↓ 底部</a>
+  </div>
+
+  <header>
+    <h1>《道门语要》修炼实操手册</h1>
+    <p>清·黄元吉 著 · 中派丹法实修纲领</p>
+    <p style="margin-top:14px; max-width:680px; margin-left:auto; margin-right:auto;">
+      本书为清代黄元吉所撰中派丹法实修纲领。黄元吉承中派正宗，以"守中"一字为彻始彻终之工夫特色，主张性命双修、三教合一。全书从探性命之原起，至炼虚合道终，次第分明。本手册按丹道六阶——炼己、筑基、炼精化炁、炼炁化神、炼神还虚、炼虚合道——重组步骤，以利实修者按图索骥，循序而进。引证段落悉依原书繁体原文，以存真貌。
+    </p>
+  </header>
+
+  <div class="toc">
+    <h2>目录</h2>
+    <ol>
+      <li><a href="#stage1">一、炼己：修心明理积德</a></li>
+      <li><a href="#stage2">二、筑基：保精裕气补亏固本</a></li>
+      <li><a href="#stage3">三、炼精化炁：守中采取小周天</a></li>
+      <li><a href="#stage4">四、炼炁化神：大周天温养圣胎</a></li>
+      <li><a href="#stage5">五、炼神还虚：面壁还虚</a></li>
+      <li><a href="#stage6">六、炼虚合道：最上一乘</a></li>
+    </ol>
+  </div>
+
+  <!-- ============ 一、炼己 ============ -->
+  <section class="stage-section" id="stage1">
+    <h2 class="stage-title">一、炼己：修心明理积德</h2>
+
+    <div class="step-card">
+      <h3>步骤 1.1　明性命本原与炼己定位</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">明了性命本原，确立"性命双修不可偏废"之正见，为丹道全程奠定心地基石。炼己贯穿始终，是丹道之根。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>先参透性、命二字之原：性为太极，命为两仪；性无形无相，命微有迹；二者"可合而不可分"。</li>
+            <li>体认性命本原——自父母媾精之始，先天元性化为离之阴汞，先天元命化为坎之阳铅。</li>
+          </ul>
+          <blockquote>夫人自父母媾精之始，一點靈光藏於胞胎之內，先天元性化為離之陰汞，先天元命化為坎之陽鉛，是謂元炁。自此一水一火一升一降，神炁交而心腎具，溫養久而胎嬰成，由是脫離母腹，獨辟乾坤，雖有形質之拘，不如先天一炁，然而不識不知、無作無為，其去天地也不遠，所以形體日長，智慧日開，有不知其然而然者。迨至二八期完，一斤數足，不知返還之術，致令習俗之移，往往欲心生而貪戀夫聲色，侈心起而馳騁夫榮華。志一至焉，氣則隨之，氣一動焉，而神則因之。於是內縈外擾，神馳炁散，而性命不保矣。</blockquote>
+          <blockquote>學者欲還先天性命，非複後天神氣不可；欲固後天神氣，非複先天性命不能。試觀古今來成真證聖、跨鶴登仙者，無非修性以立命而已，斷未有修性不煉命、煉命不修性、各執一偏而能有成者。蓋性為命根，命為性蒂，二者雖有先後之不同，而其功斷不容以偏廢也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">能"的的確確尋出一點真際"——于心内实实见得真性湛寂光明不昧；不落偏修，于动静中皆能保任。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">此步以明理为主，身体反应尚微。原书未详具体景验，惟言"性中原包天地、亙古今、統人物"为见性之量。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>切忌偏修一端：单修性不修命，或单修命不修性，皆"各執一偏而能有成者"——黄元吉力斥此弊。</li>
+            <li>莫只孤修寂炼：必敦伦纪、修阴騭，性命与功德并重。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">炼己贯穿丹道全程，"始終離不得煉心一步工夫"，无时不可行。初学入道即当首明此理。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">心地渐明、游思渐少，"覺天下萬古無一事一物不在懷抱之中"，方可语筑基守中之功。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 1.2　去游思扫尘缘（涤虑洗心）</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">扫却一切恩爱牵缠、尘缘妄想，使神有所归、炁有所聚，为息归根、时入定之前提。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>打坐时将一切为身为家恩爱牵缠念头一齐扫却。</li>
+            <li>忘情绝念、惩忿窒欲、去邪存诚。</li>
+            <li>立起志向，整顿精神——常思"年华已老""岁不我与"，自劝自勉猛省起修。</li>
+          </ul>
+          <blockquote>學者必先于打坐時，凝神調息，調息凝神，將一切為身為家恩愛牽纏念頭一齊掃卻，務必立起志向，整頓精神：我如今年華已老，到底想為個甚麼人？今日應做些甚麼事？于此桑榆晚景還不知猛修急煉，快快回頭，吾恐日月逝矣，歲不我與，到頭追悔無及，嗟何如哉！能如此自勸自勉，以離火下照于丹田，或數息，或不數息，總要百無存想，萬慮潛消，順呼吸之來往，聽炁息之自然，不可過長過短，致令大藥不生。</blockquote>
+          <blockquote>如守中一節，雖說既散之炁約而歸之丹田以煉先天一陽，若非去遊思、除妄想、掃卻一切塵緣，亦安能息息歸根、時時入定哉？又如真陽發生，采此坎中之真鉛，以煉離中之陰汞，行子午升降之功，運沐浴溫養之法，以煉己而築基，若非滌慮洗心、忘情絕念、懲忿窒欲、去邪存誠，又焉能水火停勻、陰陽交會以成黍米玄珠而長胎育嬰也哉？</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">游思渐少、心地渐明；动静一致，能"合內外、平物我、等動靜、泯人己而一之"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">心神开泰，炁息渐调。原书于此步未详具体身相，主要在心地质验。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>忌"靜處有而動處無"——静中能定，动中即散，此是未真。</li>
+            <li>忌"一念起而一念滅"——旋得旋失，未能深造。</li>
+            <li>忌拘于偏静或逐于偏动，皆"一偏之學"。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">打坐时专行，动用中亦须察之。"靜而存之，動而察之"，行住坐卧皆可行。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">能于造次颠沛不违，"心與理融，理與心浹，打成一片，了無內外人己之分"，方可入筑基守中。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 1.3　寡欲保精养神（立命之要）</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">由后天精气神以默会先天元炁，固本培元，使命功有立脚处。黄元吉明言"性是命之根，命是性之蒂"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>寡欲以养精——节制淫欲，保精不泄。</li>
+            <li>寡言以养炁——少言语，安默守静。</li>
+            <li>少思以养神——不胡思乱想，息心止念。</li>
+            <li>迨至还精补脑，则精自不泄；心息相依，忘言守中，则炁自不散；形神俱妙，与道合真，则神自不扰。</li>
+          </ul>
+          <blockquote>無搖爾精，無勞爾形，無俾爾思慮營營，乃可長生。又曰：心不動名曰煉精，煉精則虎嘯風生；身不動名曰煉炁，煉炁則龍吟雲起；念不動名曰煉神，煉神則元精溶溶、元炁浩浩、元神躍躍矣。若猶未也，必先寡欲以養精，寡言以養炁，少思以養神，迨至還精補腦，則精自不泄矣；心息相依，忘言守中，則炁自不散矣；形神俱妙，與道合真，則神自不擾矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">三不动则三验现——心不动则虎啸风生，身不动则龙吟云起，念不动则元精溶溶、元炁浩浩、元神跃跃。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">元精溶溶、元炁浩浩、元神跃跃——此三句即景验。"後天呼吸起微風，引起真人造化功"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>必由后天精气神默会先天，"若非由後天之精氣神以默會乎先天之元炁，未有不墮於一偏之學者"。</li>
+            <li>不可徒养后天血气之命而不知先天虚无之命，否则纵长生亦不过守尸之鬼。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">日常行持，无时不节。"法在以眼默鼻，以鼻對丹田，將神收攝于祖竅之中"——随时可守。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">精盈炁足、神完不扰，方有真阳发生之机，可入采取小周天。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 1.4　敦伦积德与中派守中之旨</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">明中派"守中"一字为彻始彻终之学，并以敦伦纪、修阴騭充实性功，避魔障、立仙基。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>守身中之中（丹田土釜）——始也守有形之中。</li>
+            <li>守虚无一窍之中——终而守无形之中。</li>
+            <li>世间尽伦理、积阴功，不孤修寂炼。</li>
+          </ul>
+          <blockquote>若論吾道，始終只是一中，始也守有形之中以煉精而化炁，終而守無形之中以煉虛而合道。此時覺得蘇軟如綿，美快無比，有如春日融和熟睡方醒，又如新沐者之體泰，新浴者之身安，飄飄然如鳥之沖舉、似魚之游翔，任天下萬事萬物，無一不愜於其心、不稱於其意，實有何天何地無人無我之慨，覺一身之內外無處非中、無時非中，斯可以語金丹大成之候焉！</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"覺一身之內外無處非中、無時非中"——此即守中之成验。一念之仁充塞天地，一事之善积至亘古。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">苏软如绵、美快无比；如春日融和熟睡方醒，如新沐者之体泰。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>三教合一不可非：道家性功通佛家明心见性，亦通儒家存心养性，"视三教圣人设法各有不同，要皆归于一道"。</li>
+            <li>"勿視守中之法為粗功，亦勿以數息之法為難事"——守中非粗功，数息非难事。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">守中贯穿全程，"修道人終身由之而不能盡"。敦伦积德则于世间日用中行之。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">觉"无处非中、无时非中"，方可语金丹大成之候；具体到命功，则可入筑基补亏。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 二、筑基 ============ -->
+  <section class="stage-section" id="stage2">
+    <h2 class="stage-title">二、筑基：保精裕气补亏固本</h2>
+
+    <div class="step-card">
+      <h3>步骤 2.1　筑基功法定位</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">专为破体之人补亏损、固精神，使神炁消散之躯重新精生药产。素体强壮如童体者可跳过此步。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>明辨自身体质：若四十五十、应酬世故已久、生男育女已多——必用守中工夫。</li>
+            <li>识上药三品："上藥三品，神與炁精"。</li>
+            <li>炼元精而不损后天交感之精，炼元炁而不伤后天呼吸之气，炼元神而不灭后天思虑之神——"必由用而复体"。</li>
+          </ul>
+          <blockquote>煉丹之道，在身體素壯、精神無虧之人，則不須守中一切工夫。若在四十五十，應酬世故已久，生男育女已多，此工斷不可少。夫以破體不完、精神尪羸，不用守中工夫，則破漏之軀神炁消散，欲得精生藥產難矣！法在以眼默鼻，以鼻對丹田，將神收攝于祖竅之中，久之真炁沖足，其內也心神開泰，其外也炁息悠揚；或夜臥，或晝眠，不論何時何地，忽然陽物大舉，此即精生藥產之明效也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"忽然阳物大举"——即精生药产之明效。引《道德经》"未知牝牡之合而朘作，精之大至"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">真炁冲足，内则心神开泰，外则炁息悠扬；阳物勃举（无欲念计较者方真）。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>凡精不可弃：必"有此凡精，而後真精有賴"，无凡精则炁息奄奄。</li>
+            <li>必先打破尘缘方能炼真药——视身为幻化之躯，不甚经意。</li>
+          </ul>
+          <blockquote>精無真凡，必要有此凡精，而後真精有賴，苟無凡精，則炁息奄奄，朝不慮夕，雖以應酬事故亦且不能，而況成仙證聖乎？</blockquote>
+          <blockquote>苟能打破塵緣，看空孽網，不但身外之物視為非我固有，即身內之身亦等作幻化之軀，不甚經意，由此而煉精必成元精，由此而煉炁必成元炁，由此而煉神必成元神，以先天之大藥，成先天之大丹，不誠易易事哉！</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">破体之人入道即当筑基。或夜卧、或昼眠，不论何时何地皆可凝神守中。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">精生药产、阳物勃举（无欲念），方可行采取小周天。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 2.2　下手兴功法（垂帘塞兑观照丹田）</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">收摄身心，神光下照，逼出坎水中之金，为精生药产奠基。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>垂帘塞兑：微闭双目，闭口扣齿，舌抵上腭。</li>
+            <li>以眼对鼻，以鼻对丹田，神收祖窍。</li>
+            <li>默默观照脐下丹田一寸三分之间。</li>
+            <li>或数息，或不数息；顺呼吸之来往，听炁息之自然。</li>
+            <li>神光下照丹田——以离火下照，逼出水中之金。</li>
+          </ul>
+          <blockquote>然而下手興功，必先垂簾塞兌默默觀照臍下丹田一寸三分之間，繼而精生藥產，始用河車搬運，將丹田所積之精運而至於周身，灌溉久之，精盡成炁，充周一身，此煉精化炁之功也。</blockquote>
+          <blockquote>其法惟以神光下照，則先天一點乾金，自乾坤交媾之後沈於水底伏而不起，神火一逼則水蒸金沸，自然出現于祖竅之中。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">炁息归土釜，精生药产；"其炁油然潝然，自许精生药产，流通于一身之中"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">外阳自动、丹田自暖——此坎中之阳火出来行事之候。久之遍体苏软如绵、爽快无比。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>不可全闭目，免昏沉。</li>
+            <li>呼吸不可过长（水寒之患）、不可过短（火热之弊）——"二者皆為身之累也"。</li>
+            <li>数息为初学之功，"學者切勿視守中之法為粗功，亦勿以數息之法為難事"。</li>
+            <li>坎中之阳火躁急，须早为收摄，否则一转瞬即化为后天淫欲。</li>
+          </ul>
+          <blockquote>學者切勿視守中之法為粗功，亦勿以數息之法為難事。要之，心無所系、神無所依，勢必泛泛然如野鳥之無歸，故必以數息為初學之功，然較釋氏之數牟尼，若為有所歸宿焉。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">每日打坐专行，盘腿端坐。"必先于打坐时，凝神调息，调息凝神"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">丹田温暖之炁冲冲直上，自脐至眉目之间一路白光晃发，至再至三，方可运行河车。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 2.3　补亏三诀（心身念三不动）</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">以三不动补亏损，使元精溶溶、元炁浩浩、元神跃跃，为还精补脑、药产丹成之本。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>心不动——名曰炼精，则虎啸风生。</li>
+            <li>身不动——名曰炼炁，则龙吟云起。</li>
+            <li>念不动——名曰炼神，则三宝跃然。</li>
+          </ul>
+          <blockquote>心不動名曰煉精，煉精則虎嘯風生；身不動名曰煉炁，煉炁則龍吟雲起；念不動名曰煉神，煉神則元精溶溶、元炁浩浩、元神躍躍矣。</blockquote>
+          <blockquote>無搖爾精，無勞爾形，無俾爾思慮營營，乃可長生。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">三验齐现——虎啸风生、龙吟云起、三宝跃然。还精补脑则精自不泄；心息相依则炁自不散；形神俱妙则神自不扰。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">元精溶溶、元炁浩浩、元神跃跃——此三句即三宝充实之景。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>必由后天以默会先天——"後天呼吸起微風，引起真人造化功"。</li>
+            <li>勿执后天而不知先天，亦勿舍后天而求先天。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">随时可行——心身念三事于日常动静中皆当持守。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">"萬籟風初起，千山月乍圓；急須行政令，便可運周天"——三宝充实，便可运周天。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 2.4　睡法与升降之机（避失度之患）</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">睡中不失觉照，调升降之机不失其度，避火热水寒、火逼走泄之患。此为筑基期日常守护之要。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>睡炁不睡心：至人睡体不睡神，炁息不粗，心神常觉。</li>
+            <li>一呼一吸有升降：始以意降入丹田，继以意由尾闾上至泥丸，再由泥丸降至土釜。</li>
+            <li>金沉水府不得起时，用武火逼之；既升则轻轻举、微微运，若有意，若无意——即"勿忘勿助"。</li>
+            <li>升久必降，降极必升；升已须降藏——藏心于渊，合炁于漠。</li>
+          </ul>
+          <blockquote>始而以意降入丹田，繼而以意由尾閭上至泥丸，再由泥丸而降至土釜之中，此一呼一吸之升降。然而三百六十周天，運用河車之法，亦無不准諸此。始也金沉水府，陷而不起，不得不用武火以逼之；至逼之升，又不可太為用意，其必輕輕舉，微微運，若有意，若無意，即孟子所謂"勿忘勿助"是也。</blockquote>
+          <blockquote>睡炁不睡心，方能不昏沉放縱，孔子所謂"寢不屍"者是，世人每解孔子"寢不屍"，但以為捐足縮首，不似死屍之象，其實非也。世人一睡如死，每喚不醒；至人睡體不睡神，其炁息不粗，其心神常覺，如無聲響則已，一有聲響，無不昭昭靈靈，此即吾道之睡法。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">睡中常觉，一触便悟——"睡體不睡神之法"。升降不失度则无火热水寒之患。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">炁息不粗，心神常觉，无声则已，一有声响无不昭昭灵灵。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>升之太上：神炁多散。</li>
+            <li>降之太下：昏沉欲睡。</li>
+            <li>升久不降：火起病生。</li>
+            <li>降极不升：火逼走泄。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">每日睡时与打坐时皆可行。一息有升降，一周天亦有升降——善学者自审定其中消息。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">升降不失毫厘，"斯無火熱水寒之患矣"，可入守中温养、采取真阳。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 三、炼精化炁 ============ -->
+  <section class="stage-section" id="stage3">
+    <h2 class="stage-title">三、炼精化炁：守中采取小周天</h2>
+
+    <div class="step-card">
+      <h3>步骤 3.1　守中温养</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">以守中之候调养丹田，使精生药产、神完炁足，为行抽添之数、进阳火退阴符做准备。此为钝根漏体之初功。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>姿势：盘腿端坐。</li>
+            <li>观照：以眼对鼻，以鼻对丹田，神收祖窍。</li>
+            <li>火候：以有意无意行之，微微观照。</li>
+            <li>神凝炁穴，息住规中，会三姓于一堂，合五行而归一。</li>
+          </ul>
+          <blockquote>學人必[用]守中之候以調養乎丹田，久之精生藥產，神完炁足，由此而行八百抽添之數，三百六十之爻，進陽火，退陰符，于中用卯酉沐浴之法，則丹鉛現象，有六種效驗，然後行五龍捧聖、七日過關之功，庶可還玉液之丹而成不死之身矣。</blockquote>
+          <blockquote>吾道所以言守中之一候，只是教人神凝炁穴，息住規中，會三姓於一堂，合五行而歸一，無非將外之五根、內之五靈、從前為氣質所拘、物欲所蔽、放而營之於外、有以耗吾之精血者，從此而斂之於內，滿副精神，純純乎祖竅之中，久之自有真陽發現，以運用河車之功，行進退之法。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">苏软如绵、美快无比——"有如春日融和熟睡方醒，又如新沐者之体泰"。觉"一身之内外无处非中、无时非中"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">飘飘然如鸟之冲举、似鱼之游翔；任天下万事万物，无一不惬于心、不称于意。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"學者切勿視守中之法為粗功"——守中非粗功，不可轻忽。</li>
+            <li>真阳刚壮，开关展窍不须多用气力引之。</li>
+            <li>守中只可温养，未可遽转河车——微阳初动非真阳。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">每日打坐时专行。守中贯穿炼精化炁全程，"始終只是一中"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">精生药产、神完炁足，丹田有温暖之炁冲冲直上，自脐至眉目之间一路白光晃发——可入采取。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 3.2　采取真阳</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">于真阳生时收摄外阳外囊，引归炉鼎，使精归于鼎，不致化成后天之精走泄。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>辨别水源清浊：阳物勃举无欲念为水源之清——可采；杂欲念为水源之浊——不可采，用存理遏欲窒塞。</li>
+            <li>阳未举妄用升提——药微无可采，切忌。</li>
+            <li>阳已举不用提掇——药老不可用，切忌。</li>
+            <li>采取法：以目上视，以意上提，稍稍用意；久之外阳缩尽、外囊收尽，然后温温铅鼎，以有意无意行之，微微观照。</li>
+            <li>时辰：多在夜间酣眠时忽然阳物大举——须一觉便起，一起即坐，用一点真意微微升提。</li>
+          </ul>
+          <blockquote>學者審此陽物之勃舉果系無欲念計較，於是乃用收攝之法上升于丹田土釜之中，以目上視，以意上提，稍稍用意，久之外陽縮盡，外囊收盡，然後溫溫鉛鼎，須以有意無意行之，微微觀照而已。然此多在夜間酣眠之時，切不可貪眠不起，致使陽動而生淫心、起淫事以傷損乎真精焉可矣。</blockquote>
+          <blockquote>此采一回有一回功，古仙云：積得一分精，便得一分力，積得十分炁，便得十分力。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">外阳外囊收缩尽净，"身如壁立，意如寒灰，有恍恍惚惚、杳杳冥冥景況"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">精归于鼎时——身如壁立，意如寒灰，恍恍惚惚，杳杳冥冥。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>不可贪眠不起，致使阳动生淫心、起淫事。</li>
+            <li>不清之水源不可妄用升举——必用存理遏欲之功窒塞。</li>
+            <li>不用收摄则"勢必浸淫積累仍化後天之精"。</li>
+            <li>真阳之生"自然而至，不由计较"。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">夜间酣眠时阳动即起而采——"一覺便起，一起即坐"。不可失时。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">外阳缩尽、外囊收尽，丹田温暖之炁冲冲直上，自脐至眉目之间白光晃发至再至三——可运行河车。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 3.3　小周天河车（进阳火退阴符卯酉沐浴）</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">运真阳之炁由尾闾上泥丸、由印堂下绛宫归丹田，进阳火退阴符，于中行卯酉沐浴，结成不老之丹。即"百日筑基以成不老之丹"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>进阳火：自审真阳发现，由规中少著一点意思，将真阳之炁从内肾偷过下桥，由尾闾、夹脊双关上玉枕直至泥丸之宫。子至巳六阳时，每时数三十六度，合二百十六数。</li>
+            <li>退阴符：引至印堂，下至重楼绛宫，送归丹田，温之养之。午至亥六阴时，每时数二十四度。</li>
+            <li>卯沐浴：寅位已将一百数时，阳炁勃勃不可已，须以有意无意行之。</li>
+            <li>酉沐浴：午前午后阳不盛，至酉位阳归还极，纯任自然以运之。</li>
+            <li>除却卯酉二时不数，还得周天三百之数。</li>
+            <li>火生于寅，火墓于戌。</li>
+          </ul>
+          <blockquote>自審真陽發現，果系無他，由規中少著一點意思，將此真陽之炁從內腎偷過下橋，由尾閭、夾脊雙關上玉枕直至泥丸之宮，引至印堂，下至重樓絳宮，然後送歸丹田，溫之養之，烹之煉之，丹自結矣。</blockquote>
+          <blockquote>雖然，周天之數亦豈漫無度哉！又豈死死執著乎度哉！總之，一日之間，一年之內，皆有十二時辰，自子至巳為六陽時，必于每時數至三十六度，合得二百十六數，自午至亥為六陰時，亦必于每時數至二十四度，然卯酉二時是沐浴之時，除卻二時不數，還得周天三百之數，所以謂之小周天河車者此也。</blockquote>
+          <blockquote>始也一夜或行一二周天，久之或行三五周天，再久之或行十五周天，如此大藥將產、河車將停之候也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">六种效验齐现方可停火：1.目有金光 2.鼻有抽搐 3.耳有风生 4.脑后有鹫鸣 5.丹田有火珠之耀 6.腹中有震雷之声。外阳收缩尽净，精窍已闭——"若有一分精未化，必其阳不收、其窍不闭"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">六种效验如上。化炁验证——外阳缩尽、精窍已闭、炁团聚不散。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>微阳初动时"不可遽转河车"——精血未充，遽运必烧灼一身精血。</li>
+            <li>"無水行火，水愈灼枯而火愈炎烈"——邪火焚身之患。</li>
+            <li>失度致病：在背生背疽、在头生脑痈、在肺生肺痈肠痈、在肾则滑遗精血。</li>
+            <li>周天数不可死执——"在智者神而明之，以行乎自然之度得矣"。</li>
+            <li>真阳之炁至刚至壮，丹田炁突始能开关展窍，"不須多用氣力引之上升而下降"。</li>
+          </ul>
+          <blockquote>若但外陽勃舉，則是微陽初動，非真陽也，只可以目引之而上升，以意引之而歸壺，不可遽轉河車，若轉河車，則一身骨節之間精血未充，遂以意運炁，勢必燒灼一身精血，為害不小；而況心意未靜，不能不有凝滯。</blockquote>
+          <blockquote>無水行火，水愈灼枯而火愈炎烈，其勢有不能遏者，此邪火焚身之患，學者所當戒也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">一日十二时但有阳生皆可行。始也一夜或行一二周天，久之或行三五周天，再久之十五周天——即大药将产、河车将停之候。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">六种效验齐现、外阳缩尽、精窍已闭，"如此方可停火，而行七日过关大周天之工夫"。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 四、炼炁化神 ============ -->
+  <section class="stage-section" id="stage4">
+    <h2 class="stage-title">四、炼炁化神：大周天温养圣胎</h2>
+
+    <div class="step-card">
+      <h3>步骤 4.1　五龙捧圣·七日过关服食</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">行大周天，使精尽化铅，以铅炼汞，铅汞打成一片，久之阳神出现。又名"七日过关服食"、"五龙捧圣"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>前提：百日筑基、炼精化炁已成，外阳收尽、精窍已闭、六种效验齐现。</li>
+            <li>心境：外无所著，内无所染，身如槁木，意若寒灰，万缘顿息，五蕴皆空。</li>
+            <li>用五龙捧圣之真诀：轻轻然举，默默然运，微以意而动炁，运造化之枢机，自然水见火化为一炁。</li>
+            <li>务使神冲炁，炁冲形，薰蒸百体；火炼铅，铅炼汞，会合三家。</li>
+          </ul>
+          <blockquote>此時精已盡化成鉛，由是以鉛煉汞，周圍包裹堅固不泄，鉛汞打成一片，融會一團，久之有陽神出現，由絳宮而上至泥丸，突然神光晃發，直沖霄漢，霎時間遊行五湖四海九州萬國，有莫知其所以妙。</blockquote>
+          <blockquote>用五龍捧聖之真訣，時在[至]神知，妙用現前，陽光發動，大藥呈形，於是輕輕然舉，默默然運，微以意而動炁，運造化之樞機，自然水見火化為一火化為一炁。訣云：依法度追魂攝魄，憑匠手捉霧拿雲。務使神務使神沖炁，炁沖形，薰蒸百體；火煉鉛，鉛煉汞，會合三家。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">大药呈形、阳光发动，水火化为一炁；神冲炁、炁冲形，薰蒸百体。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">"炁绝如死"——过关服食时炁绝若死，百脉将停。须具足心性方可免魔劫。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>必先多培心田、广积善因——"若非多培心田廣積善因，亦多有為魔劫去而沒者"。</li>
+            <li>须审得自家心性毫无一点渣滓，然后行此大功。</li>
+            <li>非有存想有作为——"自然而然，有莫知其所以然也"。</li>
+          </ul>
+          <blockquote>但前過關服食之時，炁絕如死，若非多培心田廣積善因，亦多有為魔劫去而沒者。此須審得自家心性毫無一點渣滓，然後行此大功以還玉液之丹，此自古仙家多有不肯洩露者，恐為奸邪竊效。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">行持须择时——"時在至神知，妙用現前"。须心性工夫纯熟时方可入此。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">阳神出现，"由絳宮而上至泥丸，突然神光晃發，直沖霄漢"——可入温养圣胎。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 4.2　温养圣胎·大周天火候</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">如龙养珠、如鸡抱卵，念念在兹，使先天一炁混合离宫阴精，化成一体，结成圣胎。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>身前观照，听其炁息之左旋。</li>
+            <li>火候：始似不著有有无，久则定归于大定。</li>
+            <li>使汞性之好飞者不飞，炼成一块紫金霜之色，浑无动荡。</li>
+            <li>肘后飞金精入泥丸，抽铅添汞而成大丹。</li>
+            <li>不即不离，勿忘勿助，以绵绵密密之神行不二不息之功，一日一夜无有间断。</li>
+          </ul>
+          <blockquote>功到此時，如龍養珠，如雞抱卵，念念在茲，日夜不忘，自然見先天一炁，混合離宮之陰精，化成一體，有不知神之為炁、炁之為神者。然要非有存想有作為，自然而然，有莫知其所以然也。古云：夜來混沌顛落地，萬象森羅總不知。此其候矣。</blockquote>
+          <blockquote>小周天之火候，有文有武，有爻象錙兩可計，而大周天之火候，固非著有，亦非頑無，始似不著於有無，久則定歸於大定，使汞性之好飛者不飛，煉成一塊紫金霜之色，渾無動盪，所謂"肘後飛金精入泥丸，抽鉛添汞而成大丹"，此大周天之法象也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">铅性干、汞性足，神与炁交融和畅——此即炼汞化神之征。百脉自停、胎息自住。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">百脉自停，胎息自住，可以长生不死而成人仙。腹如孕妇之状（下田已满）。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>大周天非著有非顽无——不可著有亦不可顽无。</li>
+            <li>"非有存想有作為，自然而然"——切忌存想有为。</li>
+            <li>抽铅添汞实乃抽坎中之阳填离中之阴——久久阴尽阳纯。</li>
+          </ul>
+          <blockquote>此即抽鉛添汞，鉛盡汞幹而大丹成，實乃抽坎中之陽填離中之陰，久久陰盡陽純，化為非陰非陽、即陰即陽之太極，而命立矣，是為無中之真有。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">一日一夜无有间断。大周天与小周天有别——小周一日十二时但有阳生皆可行，大周一日一夜无有间断。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">阳神成象、十月胎圆，"可以長生不死而成人仙"——方可入炼神还虚之功。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 4.3　累神之戒与一灵独运</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">避七种累神之举，使一灵内蕴、眼光内观、鼻息内藏、舌华内蓄、四肢运动有常、一心返照清净——还丹不难。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>戒饱食（闷神）、饥餐（伤神）、久睡（昏神）、好动（乱神）、多言（损神）、多思（挠神）、多欲（耗神）。</li>
+            <li>心中存一灵独运：一灵内蕴，眼光内观，鼻息内藏，舌华内蓄，四肢运动而有常，一心返照而清净。</li>
+            <li>始焉勉强支持，久之自然而运度；动而不动，静而不静，至无而含至有，至虚而浑至实。</li>
+          </ul>
+          <blockquote>欲還玉液之丹，必須明累神之事，如飽食悶神，饑餐傷神，久睡昏神，好動亂神，多言損神，多思撓神，多欲耗神，種種害神之舉動言語飲食，早宜切戒，惟有此心中存一靈獨運耳。一靈內蘊，眼光內觀，鼻息內藏，舌華內蓄，四肢運動而有常，一心返照而清淨，始焉勉強以支持，久之自然而運度，動而不動，靜而不靜，至無而含至有，至虛而渾至實，斯還丹不難矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">一灵独运、神清炁壮；动而不动、静而不静，至无含至有、至虚浑至实。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">神清炁壮，自无火热水寒之患。原书未详具体身相，惟言"還丹不難"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>七种累神之举早宜切戒，任犯其一皆损神。</li>
+            <li>不可但修命宝不修性学——"縱不受魔纏鬼侵，亦於塵情未空"。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">日常饮食起居、言动思虑中皆当持戒，无时或停。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">还丹已成、阳神成象——"斯還丹不難矣"，可入面壁还虚。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 五、炼神还虚 ============ -->
+  <section class="stage-section" id="stage5">
+    <h2 class="stage-title">五、炼神还虚：面壁还虚</h2>
+
+    <div class="step-card">
+      <h3>步骤 5.1　性功先修·明心地源头</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">必先将心地源头十分透彻，体认吾人未生之初性地本是圆明、清空原无一物，方可温养阳神而不为魔魅所夺。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>高着眼孔，独辟心胸——不但视物为外物，即身亦视为幻身。</li>
+            <li>认得中间一点真常湛寂，乃不生不灭万古长存之身。</li>
+            <li>外不染一尘，内不杂一念；常觉清净了灵、虚无妙觉之性真与天地同其终始。</li>
+          </ul>
+          <blockquote>然必其人未修命時，先將心地源頭十分透徹，覺得吾人未生之初，性地本是圓明，清空原無一物，及至身生人世，皆是一念之為，所以結成形質，況身外之物，有如嬌妻美妾良玉精金、與夫一切紛華美麗，都是緣之外起，縱或有之，亦是夢幻泡影，不能長存，如此高著眼孔，獨辟心胸，不但視物為外物，即身亦視為幻身，惟有中間一點真常湛寂，乃是我之不生不滅萬古長存之身。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"果外不染一塵，內不雜一念，常覺我清淨了靈、虛無妙覺之性真與天地同其終始"——已造纯熟之域。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">高明广大之炁浩然充塞于古今。原书于此步以心地质验为主，未详具体身相。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>未具性功者不可轻放阳神——一出必速速收回。</li>
+            <li>"一念之差，遂为魔魅夺其魂魄而不复返"。</li>
+            <li>"因念而生，被魔而劫，其为害非浅鲜也"。</li>
+          </ul>
+          <blockquote>若從前本無性功，單從命宮修起而煉成陽神者，此時一出則必速速收回，蓋以性地未明，塵情未斷，一見可欲必喜歡，一見可懼必心怖，七情六欲無不可以動其心，不速收回，吾恐一念之差，遂為魔魅奪其魂魄而不復返，即使不遭其害，須知一念之起，墮入于馬腹牛胎，轉生人世，亦未可知。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">未修命时先修此性功，命功成后再安炉立鼎温养时亦当念念不失。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">心地纯熟、性真与天地同终始——"到此十月胎圆，一点阳神发现，上出于天壤之间，方可任其游行自如，逍遥物外"。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 5.2　再安神炉·还虚要诀</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">将已成之阳神送归泥丸八景之宫，时时温养，以炼还虚一著；将元神化为乌有，使神虚合一。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>再安神炉，复立神鼎。</li>
+            <li>将已成之阳神送归泥丸八景之宫。</li>
+            <li>时时温养，若有若无，以炼还虚一著。</li>
+            <li>将所炼元神化为乌有——浑不知神之为虚、虚之为神。</li>
+            <li>神与虚合而为一，如庄周梦蝶，不知蝶为周、周为蝶，是二是一。</li>
+          </ul>
+          <blockquote>至此再安神爐，複立神鼎，直將已成之陽神送歸於泥丸八景之宮，時時溫養，若有若無，以煉還虛一著；尤必將先所煉之元神化為烏有，渾不知神之為虛，虛之為神，莊子所謂蝶化周、周化蝶，不知蝶為周、周為蝶。是二是一，渾渾淪淪無可以破其際者，此方是還虛之說。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">神虚合一——"吾神即太虛之虛，太虛之虛亦即吾神之虛"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">神光晃发，直冲霄汉；霎时间游行五湖四海九州万国。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>未达神虚合一前不可轻于放出阳神。</li>
+            <li>"若猶未知吾神即太虛之虛，太虛之虛亦即吾神之虛，神與虛尚不能合而為一，則不可輕於放出也"。</li>
+            <li>虚中包罗万象——万物皆有象惟虚无象，万物皆有名惟虚无名，而实天地之大四海之遥无一不包罗于虚中。</li>
+          </ul>
+          <blockquote>若猶未知吾神即太虛之虛，太虛之虛亦即吾神之虛，神與虛尚不能合而為一，則不可輕於放出也。雖然，萬物皆有象，惟虛無象，萬物皆有名，惟虛無名，而實天地之大四海之遙，無一民一物一草一木之不包羅於虛中，此其所以不可思議也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">阳神已成、性功已纯熟时方可入此。"學者修煉到此，即可與大覺如來同登法座矣"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">"遷神出舍，換形脫殼，而用金液大還之功，亦不受魔纏鬼侵焉"——还虚功熟，可入最上一乘。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 5.3　不避世务·敦伦广性</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">破除"枯坐孤修"之偏，以敦伦纪、修阴騭、民同胞物同与充性中之量，参天地赞化育建性中之功——方可配天地而立极。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>不可每日间静坐全不理人间事务——"則亦未能充其本然之性"。</li>
+            <li>敦伦纪、修阴騭以广性中之事。</li>
+            <li>民同胞而物同与以充性中之量。</li>
+            <li>参天地、赞化育以建性中之功。</li>
+          </ul>
+          <blockquote>雖然，但每日間靜坐，全不理人間事務，不管世上憂勞，則亦未能充其本然之性，以至於廣大無邊之境，而況無功無德，漫道不成仙子，即或有成亦參不得大覺仙，上不得大羅天，以其人孤修寂煉，忍心害理，天上神仙無有此種人材，又安肯許之同列而為仙也耶？</blockquote>
+          <blockquote>學道者務必敦倫紀、修陰騭以廣性中之事，民同胞而物同與以充性中之量，參天地、贊化育以建性中之功，如此庶可以配天地而立極，又何患仙之不成也哉！</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"如此庶可以配天地而立極，又何患仙之不成也哉"——性量充周、与天地配。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">此步重在性量充实，原书未详具体身相。惟言"高明廣大之炁浩然充塞於古今"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>忌孤修寂炼、忍心害理——"天上神仙無有此種人材"。</li>
+            <li>忌无功无德——纵有成亦参不得大觉仙、上不得大罗天。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">日常世间行持——于敦伦纪、修阴騭中行之，与静坐并重。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">性量充周、配天地立极——还虚功熟，方入最上一乘炼虚合道。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 六、炼虚合道 ============ -->
+  <section class="stage-section" id="stage6">
+    <h2 class="stage-title">六、炼虚合道：最上一乘</h2>
+
+    <div class="step-card">
+      <h3>步骤 6.1　纯任自然之总原则</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">达"大丈夫功成道立之候"——凡心死而道心生、凡机息而真机见。此乃无为之极，纯任自然而已。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>总原则：纯任自然——"其實皆以清空之一陽而配合陰陽之一陰，及其大成，只是天然自有之元炁，究之何有何無！吾再申其說曰：純任自然而已矣"。</li>
+            <li>非有存想有作为——"自然而然，有莫知其所以然也"。</li>
+            <li>"這回大死今方活" / "若要人不死，除非死过人"——凡心死而道心生。</li>
+          </ul>
+          <blockquote>到此境也，方算得大丈夫功成道立之候。古云：這回大死今方活。又云：若要人不死，除非死過人。由此思之，無非凡心死而道心生，凡機息而真機見也。</blockquote>
+          <blockquote>其實皆以清空之一陽而配合陰陽之一陰，及其大成，只是天然自有之元炁，究之何有何無！吾再申其說曰：純任自然而已矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">凡心死、道心生；凡机息、真机见。三花聚顶、五炁朝元、和合五行、攒簇四象。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">归藏时候有三花聚顶、五炁朝元、和合五行、攒簇四象之景。上出天壤之间，游行自如，逍遥物外。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>不可著一躁暴之性——躁暴则元炁为所伤。</li>
+            <li>不可著一惰慢之气——惰慢则元炁无以团聚。</li>
+            <li>"惟精惟一，允執厥中"——中道不可偏。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">前五阶功成方可入此。此阶无时不可行——纯任自然即无定式。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">可参天地、赞化育、配天地而立极；与大觉如来同登法座。此为丹道终极。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 6.2　三田返复与火候三层次</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">明三田返复之次第——始下田炼精化炁、继中田炼炁化神（离宫修定）、终上田炼神还虚（泥丸养神）；明火候三层次——呼吸之火、元炁之火、元神之火。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>三田返复：始由下田而炼，继则中田而修，终由上田而养。</li>
+            <li>呼吸之火：化谷精之气而生元炁——始而用火，只是调其呼吸之息，待呼吸一调，元炁自见。</li>
+            <li>元炁之火：化呼吸之息而生元神。</li>
+            <li>元神之火：化元炁之火而成大丹。</li>
+            <li>内外火候总归一致——"不過綿綿密密絪縕之炁而已"。</li>
+          </ul>
+          <blockquote>始由下田而煉，繼則中田而修，終由上田而養，所謂"三田返複真生涯"者是。此修養之路，學道人不可不照其理以為修養之基也。</blockquote>
+          <blockquote>至於用火，有呼吸之火，有元炁之火，有元神之火。呼吸之火能化穀精之氣而生元炁，元炁之火能化呼吸之息而生元神，元神之火能化元炁之火而成大丹。始而用火，只是調其呼吸之息，待呼吸一調，元炁自見。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">呼吸一调，元炁自见；元炁见则元神生；元神成则大丹成——三层次递进。"外呼吸一呼而出，则内之元炁自吸而降；外呼吸一吸而入，则内之元炁自呼而升"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">炁浑浩流转、遍体苏软如绵、爽快无比；"滔滔汩汩，絪絪縕縕，油然而上升，薰然而下降，一開一闔，一往一來，適如天運之不差其度"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>外呼吸虽见为有必归于无，内元息虽似于无不可著有——"若強無著有，不惟內之元息無以見，即外之呼吸亦不調矣"。</li>
+            <li>火候虽有两般而总归一致——不可割裂内外。</li>
+            <li>外药内药皆固有之物——"實皆陽中求陰，陰中求陽，陰陽配合而成者也"。</li>
+          </ul>
+          <blockquote>外呼吸者，雖見為有，必歸於無；內元息者，雖似於無，不可著有。要之，火候雖有兩般，而其總歸一致，不過綿綿密密絪縕之炁而已。《入藥鏡》云：天應星，地應潮。紫陽云：自有天然真火候，不須柴炭及吸噓。</blockquote>
+          <blockquote>外藥是坎離交媾而產者，內藥是陰陽交會而育者，實皆陽中求陰，陰中求陽，陰陽配合而成者也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">三田返复按次第而行，不可躐等；火候三层次随功程递进。前功未成不可越次。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">"始於有作，終於無為，迨至無為而無不為，斯道得矣"——达无为而无不为，方算大成。</span>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>步骤 6.3　用火无火与药就还丹</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">达"用火无火"之火候总诀——不著一用之之象；以神火下照炼出坎中之金，以金水同归降服离中之火，使外药内药皆就还丹。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">
+          <ul>
+            <li>用火总诀："第一要用火無火，不著一用之之象，斯為得之"。</li>
+            <li>始以神火下照而炼出坎中之金。</li>
+            <li>继以金水同归，降服离中之火。</li>
+            <li>以外息调停，静观内里消息——外呼吸一呼则内元炁自吸而降，一吸则内元炁自呼而升。</li>
+            <li>真阳之火能化多年顽残宿疾——阳者刚健，其性至动，身中疾病多阳弱阴强积成沉疴。</li>
+          </ul>
+          <blockquote>總之，火有文武、有沐浴溫養，第一要用火無火，不著一用之之象，斯為得之。學者尤要以外息之調停，靜觀內裏之消息，方可得藥還丹。然又何必觀內之真息哉！外之呼吸一呼而出，則內之元炁自吸而降，外之呼吸一吸而入，則內之元炁自呼而升，個中消息，非明師不能知，非有道之士不能悟得此中玄妙也。</blockquote>
+          <blockquote>始也以神火下照而煉出坎中之金，繼而以金水同歸，降服離中之火。故外藥是坎離交媾而產者，內藥是陰陽交會而育者，實皆陽中求陰，陰中求陽，陰陽配合而成者也。至此而人仙之事備矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"個中消息，非明師不能知，非有道之士不能悟得此中玄妙也"——内外呼吸消息相应，丹药自成。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">真阳之火逼身，多年顽残宿疾自然化为汗液从遍身毛窍而出；火力尚微则不能化。犹冬雪坚冰见春日而消。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>此为修士第一诀窍，闻者勿轻视。</li>
+            <li>过急过缓皆不能逼出水中之金。</li>
+            <li>勿但执后天精气不知先天神化——"其究也，必成兀坐枯禪"。</li>
+            <li>勿但言先天神化不修后天精气——"其卒也，必至踏空頑無"。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">"始終離不得煉心一步工夫，亦始終離不得積功一段因緣"——贯穿全程，无时不宜。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">"如此庶可以配天地而立極，又何患仙之不成也哉"——三花聚顶、五炁朝元、逍遥物外，达丹道终极。</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer" id="footer">
+    <p>《道门语要》修炼实操手册</p>
+    <p>基于清·黄元吉原文整理 · 仅供学术研究参考</p>
+    <p style="margin-top:8px;">本手册据《道门语要》原文整理，旨在为实修者提供次第清晰的修持参考。具体行持仍须明师口授，循序渐进，慎勿躐等妄作。</p>
+  </div>
+
+</div>
+</body>
+</html>

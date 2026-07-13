@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《伍柳仙宗》修炼实操手册</title>
+<style>
+:root {
+  --bg: #f8f5f0;
+  --card-bg: #fff;
+  --text: #333;
+  --text-light: #666;
+  --accent: #8b4513;
+  --accent-light: #a0522d;
+  --border: #e0d5c8;
+  --stage-bg: #f0e6d8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 16px;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 30px;
+}
+header h1 { font-size: 2.2em; color: var(--accent); margin-bottom: 10px; font-weight: 600; }
+header p { color: var(--text-light); font-size: 0.95em; }
+.nav-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 20px; background: #fff; border-radius: 8px;
+  margin-bottom: 25px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-link { color: var(--accent); text-decoration: none; font-weight: 500; padding: 6px 14px; border-radius: 6px; transition: background 0.2s; }
+.nav-link:hover { background: var(--bg); }
+.stage-section { margin: 40px 0 30px; }
+.stage-title {
+  font-size: 1.6em; color: var(--accent); margin-bottom: 20px;
+  padding: 12px 18px; background: var(--stage-bg);
+  border-left: 5px solid var(--accent); border-radius: 4px;
+}
+.step-card {
+  background: var(--card-bg); border-radius: 12px; padding: 25px 30px;
+  margin-bottom: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+.step-card h3 {
+  font-size: 1.25em; color: var(--accent); margin-bottom: 18px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.field { margin-bottom: 16px; }
+.field-label {
+  display: inline-block; min-width: 110px;
+  font-weight: 600; color: var(--accent-light);
+  padding: 2px 10px; background: var(--stage-bg);
+  border-radius: 4px; font-size: 0.9em; margin-right: 8px;
+}
+.field-content { display: inline; }
+.field-content blockquote {
+  border-left: 4px solid var(--accent); padding: 10px 16px;
+  margin: 10px 0; color: var(--text-light); font-style: italic;
+  background: #faf8f4; border-radius: 4px;
+  white-space: pre-wrap;
+}
+.field-content ul { margin: 6px 0 6px 22px; }
+.field-content li { margin-bottom: 4px; }
+.footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--text-light); font-size: 0.85em;
+  border-top: 1px solid var(--border); margin-top: 40px;
+}
+.toc { background: #fff; padding: 20px 25px; border-radius: 8px; margin-bottom: 30px; border: 1px solid var(--border); }
+.toc h2 { font-size: 1.2em; color: var(--accent); margin-bottom: 12px; }
+.toc ol { margin-left: 22px; }
+.toc li { margin-bottom: 6px; }
+.toc a { color: var(--accent-light); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  header h1 { font-size: 1.6em; }
+  .step-card { padding: 18px; }
+  .field-label { display: block; margin-bottom: 4px; }
+}
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a href="index.html" class="nav-link">← 返回总目录</a>
+  <a href="#footer" class="nav-link">↓ 底部</a>
+</div>
+<div class="container">
+
+<header>
+  <h1>《伍柳仙宗》修炼实操手册</h1>
+  <p>明·伍守阳 清·柳华阳 合著 · 伍柳派清净丹法</p>
+</header>
+
+<div class="toc">
+  <h2>目录</h2>
+  <ol>
+    <li><a href="#stage1">一、炼己：修心炼性</a></li>
+    <li><a href="#stage2">二、筑基：百日补精不漏</a></li>
+    <li><a href="#stage3">三、炼精化气（小周天/初关）</a></li>
+    <li><a href="#stage4">四、炼气化神（大周天/中关）</a></li>
+    <li><a href="#stage5">五、炼神还虚（上关）</a></li>
+    <li><a href="#stage6">六、炼虚合道</a></li>
+  </ol>
+</div>
+
+<div class="field" style="background:#fff;padding:18px 22px;border-radius:8px;border:1px solid var(--border);margin-bottom:30px;">
+  <p style="margin-bottom:10px;"><strong style="color:var(--accent);">本书定位：</strong>伍柳丹法为公认最直白、最系统的丹道实修传承，本手册按丹道实修次第逐层梳理，以供实修者参证。</p>
+  <p style="margin-bottom:10px;"><strong style="color:var(--accent);">伍柳派三大铁律：</strong></p>
+  <ul style="margin-left:22px;">
+    <li><strong>意通周天为伪，气通周天为真</strong>——周天运转必须真气充足、自然通关，非以意念导引行气。</li>
+    <li><strong>水源清浊辨真幻</strong>——水源清者（无欲念时真气发动）所采为真丹；水源浊者（有欲念时精气发动）所采为幻丹。</li>
+    <li><strong>严禁意念导气冲三关</strong>——三关（尾闾、夹脊、玉枕）必待气足自开，若以意强冲，轻则气逆致病，重则走火入魔。</li>
+  </ul>
+</div>
+
+<section class="stage-section" id="stage1">
+<h2 class="stage-title">一、炼己：修心炼性</h2>
+<p style="margin-bottom:20px;color:var(--text-light);">炼己为丹道之初基，贯穿修持全程，乃下手前的心性准备。所谓「己」即己土，即真意；炼己即炼去后天识神之妄，返归先天真意之纯。炼己非独立一关，乃贯穿初、中、上三关之始终。</p>
+
+<div class="step-card">
+<h3>步骤一·对境忘情，收心入内</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">炼去后天识神之妄，返归先天真意之纯，为丹道下手奠定心性基础。己者即我静中之真性、动中之真意，为元神之别名。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">姿势静坐蒲团；呼吸绵绵若存；意念收心入内，止于脐堂之后、命门之前虚无圈子，心照空中与气相守。于色声香味触法六尘境界中不取不舍、不随不拒。
+<blockquote>冲虚子曰：「诸圣真皆言，最要先炼己。谓炼者，即古所谓苦行其当行之事，曰炼……己者，即我静中之真性，动中之真意，为元神之别名也。」</blockquote>
+<blockquote>「以吾心之真性，本以主宰乎精炁者，宰之顺以生人，由此性，宰之逆以成圣，亦由此性。若不先为勤炼，熟境难忘。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>旧习不起（昔日所作所为今日不现）</li><li>八风不动（眼耳鼻舌意不随境转）</li><li>见物内醒而不迷，闻声内定而不入</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">心如止水，对境坦然；欲心自除，不用强制；静中虚明，灵光常照。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>炼己贯穿三关始终，非一次性功夫</li><li>炼己不熟则大药不出，虽出亦走失</li><li>水源不清不可采药——必先炼己纯熟</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">随时可行，日常六尘境界中时时行持，贯穿全程。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">己念伏降，性真纯静；采药而药即得，筑基而基即成，方可进入筑基。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤二·寂照常觉，去妄存真</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">回光返照，寂而常照，照而常寂，不落昏沉散乱，使己性纯静。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">耳不逐声、目不逐色、神不逐感；妄想一生即觉即断，游思忽起即止即灭。以文火温养为主，绵绵若存，用之不勤。
+<blockquote>「能炼之者，因耳逐声而用听，则炼之于不闻；目逐色而用观，则炼之于不见；神逐感而用交，则炼之于不思。此三者，皆真实炼法。」</blockquote>
+<blockquote>「平常日用，必须如是先炼，则己念伏降，而性真纯静。及至炼炁炼神，则不被境物颠倒所诱。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>妄想一生即觉即断</li><li>游思忽起即止即灭</li><li>神不外驰，常觉常悟</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">神清气爽，心力凝聚，不昏沉不散乱。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>防昏沉：炼己未纯、心力不足所致，须提挈真意，常觉常悟</li><li>防散乱：游思妄想未断所致，须止观并用，觉之即断</li><li>禁绝不当为之事（思虑、驰外）——亦曰炼</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">每日行持，行住坐卧皆当密密行之。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">欲其炁之清真，己不纯必不得其清真；欲其神之静定，己未炼必不得其静定。炼己纯熟方能采药。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤三·不执不随，降伏魔境</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">于一切境界（包括禅定中美异之景）不认不取，魔来不惧，佛来不喜，保扶心君为上。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">遇可喜可惧可疑可信之境，皆不随之；内外魔障一生即灭，灭之至于无可灭。以神炁俱入定中，任多种魔来，绝不能与我相遇。
+<blockquote>「或遇可喜而即喜，或遇可惧而即惧，或遇可疑而即疑，或遇可信而即信，皆未炼己之纯也。此四者，皆外来之天魔也。遇而信之，则着其所魔矣。」</blockquote>
+<blockquote>「昔丘祖坐于崖下，崖石坠，压折肋，知是天魔，祖不为之动。如是当过五番，不动一念，直证阳神出现。」</blockquote>
+<blockquote>「我本性在定，得到定力足，而后有可出定之景到……若非我念所出，而有见者，便是外来之天魔、邪魔。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>遇魔不惊，遇景不认</li><li>生而即灭，灭而至于无可灭</li><li>神炁俱入定中，魔不能相遇</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">原书未详具体身体反应，唯言定力坚固、心君不动。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>著魔即废前功——一切不认，唯守正念</li><li>不宜出而妄出（未到大定而出）则入魔道</li><li>道高一尺魔高一丈，识神变现使然</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">禅定中出现异景时当即炼；平日亦当预为炼己。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">一切境界不能动摇心君，可进入筑基采药。</span></div>
+</div>
+</section>
+
+<section class="stage-section" id="stage2">
+<h2 class="stage-title">二、筑基：百日补精不漏</h2>
+<p style="margin-bottom:20px;color:var(--text-light);">筑基即补足已漏之躯，使精气神复归壮旺，为小周天行功奠定基础。凡已破体之人（年过十五六岁、精已漏泄者），必先筑基。</p>
+
+<div class="step-card">
+<h3>步骤一·收心寻气，凝神气穴</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">补足已漏之躯，使精气神复归壮旺，为采药提供充足之物质基础。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">收心入内，以灵光为用，回光返照北海（下丹田）；神凝气穴之中，神光下照阴脉，不期而会。
+<blockquote>冲虚子曰：「修仙而始曰筑基。筑者，渐渐积累增益之义。基者，修炼阳神之本根，安神定息之处所也……欲得元神长住而长灵觉，亦必精炁长住而长为有基也。自基未筑之先，元神逐境外驰。」</blockquote>
+<blockquote>「神原属阴，精炁原属阳。依真阳精炁，则为阳神，成就纯阳；不依精炁，则不能成阳神，止为阴神而已。精炁旺，则神亦旺，而法力大；精炁耗，则神亦耗而弱。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>丹田温暖，元气渐动</li><li>神清气爽，精力充沛</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">丹田温暖，元气渐动；筑基中期神清气爽精力充沛。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>已破体之人必先筑基，不可躐等</li><li>勿枯坐死守——必候肾之动机，移入动处合并而炼</li><li>世有以淫媾败基者，反诳人曰采补筑基，欺骗愚夫——须戒之</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">行持百日，每日行持不辍。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">元精充足，外肾时举，生机自动，可见阳光一现之景。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤二·风火并用，展窍开关</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">元气渐足，冲开阴脉，展窍开关，为采药归炉铺设通道。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">以意入气穴，以呼吸逆吹之（风火同用）；意气双熔，似炉中火种，绵绵不息；勿助（不加强火）勿忘（不令火冷）。
+<blockquote>「风者，乃炼丹之妙法，即升降之消息。古人喻曰巽风，或喻以橐龠，是即往来之呼吸也。火者，炼丹之主，化精化炁之具。风火有同用之机，大丹有修炼之法。」</blockquote>
+<blockquote>广成子云：「息者，风也。」白玉蟾云：「火者，神也。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>丹田温暖，气机活动</li><li>展窍开关之象渐显</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">元气冲开阴脉，展窍开关感。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>勿助勿忘，绵绵若存，不令间断</li><li>火间断而工不常，虽药将成而复坏</li><li>风火同用乃上天秘诀，不可执著身体摸索</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">筑基期间每日行持。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">风火调匀，气机通畅，可进入抽添积累。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤三·采元精补漏，抽添积累</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">取坎填离，积精实腹；以精炁神三宝合炼，精补其精，炁补其炁，神补其神，筑而成基。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">寻气之活动处，以静合之，神气交而真种化生；行凭子午，逐日抽添。
+<blockquote>「古人皆言以精炼精，以炁炼炁，以神炼神者，正欲为此用也。是以必用精炁神三宝合炼，精补其精，炁补其炁，神补其神，筑而成基。唯能合一，则成基；不能合一，则精炁神不能长旺，而基即不可成。及基筑成，精则固矣，炁则还矣，永为坚固不坏之基，而长生不死。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>元精充足，外肾时举</li><li>生机自动</li><li>阳光一现之景</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">阳光一现：两眉间号曰明堂，恍如掣电，虚室生白。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>防走泄——精气初聚未固，外缘引动；时刻于走泄处用火锻炼，使精化气上升</li><li>防欲念妄动——精气初动引动欲心；须严辨水源清浊</li><li>防枯坐无验——不识动机空守死寂</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">百日补精不漏期间。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">阳光一现，火候未全，淫根未缩，一遇阳生即当采炼运一周天——可进入小周天。</span></div>
+</div>
+</section>
+
+<section class="stage-section" id="stage3">
+<h2 class="stage-title">三、炼精化气（小周天·初关）</h2>
+<p style="margin-bottom:20px;color:var(--text-light);">小周天又称初关、百日关，是炼精化气的核心功夫。功法为采外药、转法轮（任督周天运转）、至止火候景而止。行持百日期间，将元精化为元气，凝结为舍利（丹母）。成败关键：水源清浊、药嫩药老、气通周天非意通、火候分明。</p>
+
+<div class="step-card">
+<h3>步骤一·辨水源清浊（采药前决断）</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">辨别真丹幻丹之源，确保采得真药。此为伍柳派第一要义。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">于静定中辨水源之清浊：心无欲虑而气动者为清水源；心有欲念而气动者为浊水源。
+<blockquote>伍子曰：「先后清浊，即水源之辨。真丹、幻丹之所由别也……凡有念虑存想，知见睹闻，皆属后天，所谓浊源也。阳精从此浊源中生，因而采封炼止，纵合玄妙天机，终成幻丹，以其水源不清也。若夫无念无虑，不识不知，虚极静笃时，即属先天，所谓清源也。阳精从此清源中生，于焉采封炼止，兼合玄妙天机，遂成真丹，以其水源不浊也。凡阳精从清源中生，即须采而炼之；倘阳精从浊源中生，弃之不可采也。」</blockquote>
+<blockquote>「静定中神炁合一，由是静亦神炁一，动亦神炁一，时至神知，即神炁同动是也。动而外驰逐妄则为二，动而不驰外犹然合一，非清净真而何？元神一驰，精炁一驰，元神一散，精炁一散，非浊而何？」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>清水源：心无欲念，元气自然发动，无念而生——采得真丹</li><li>浊水源：心有欲念，因欲而动，见色而起——采得幻丹</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">本步为辨机，无明显身体反应，重在心源之清浊。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>水源之清浊不在气之清浊，而在<strong>心之有无欲念</strong>（伍柳派铁律）</li><li>世人错辨圣言，只于清浊字劳心，谓无形之精为清有形之精为浊——此地狱种子之说</li><li>最初还虚功纯，则采炼阳精悉就真丹</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">每次采药前必辨，为采药之先决。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">确认清水源，方可进入候药老嫩。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤二·候药老嫩，静候动机</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">把握采药时机，不老不嫩，得药之真。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">口诀「静时而候，动时而取」。静极而动机发，即用意采取；动机未至，唯静以候之。不惧不惊，待而后起，阳未融盛不可急于采取。
+<blockquote>冲虚子曰：「须辨药之老嫩。采之嫩则炁微而不灵，不结丹也……采之老则炁散而不灵，亦不结丹也。得药之真。不老不嫩，如九二利见者，曰药真。非初九之勿用，亦非上九之有悔。」</blockquote>
+<blockquote>「老者，只是过于当采之时。当采而未采，则气以久而虚散，皆由心生怠惰而致此。气既散，则力亦微，配合不均，不能成丹，故亦曰不灵。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>药嫩：元气初动，微而未盛——不可采</li><li>药壮：元气盛满，外肾全举，热气熏蒸——正当采取</li><li>药老：元气已散，化为有形之精欲漏——不可采</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">静极而动，丹田气发，外肾时举。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>采嫩则气微不结，采老则气散无成</li><li>乍见动机不可惊讶——心动则神散，欲望成丹不亦远矣</li><li>冲虚谓之「动而觉」「复觉」——动者气也，觉者神也</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">静极而动之时，即活子时。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">药壮（元气盛满、外肾全举、热气熏蒸）即可采药归炉。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤三·采药归炉，风火并用</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">收摄元气不令顺出（顺出为漏尽，逆回为采取），以风火化元精为元气，结成真种。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">回光返照，凝意入于北海；以意收摄元气，不令顺出；以呼吸逆吹，风火化物。
+<blockquote>「精生外驰，以神入精中，则呼吸之气，随神之号令，摄回中宫，混合神炁。中宫即丹田。混合即绵绵息息归根之意。神则为火，而炁为炉。」</blockquote>
+<blockquote>「此时即药炁之辨机，不令其顺而逆之。顺是出炉，逆是归炉。斯谓之采药。守阳真人谓之归炉。」</blockquote>
+<blockquote>「鼎中既有药炁，则有周天之火候。周天三百六十五度有零，薰炼金丹亦似此理。起刻漏之息火以烹炼之。刻漏，即是呼吸。炼金丹法，全在呼吸之气以定爻数。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>元气归根，绵绵若存</li><li>和合熔化，结成真种</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">欲不用除而自除，心不用静而自静；丹田融暖，口中如蜜。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>顺出为漏尽，逆回为采取——须逆而采之</li><li>药未归炉而先行火，则药竟外耗而非为我有</li><li>药已归炉而未即行火，则真炁断而不续，亦不成大药</li><li>肫肫然加意于火则偏着执于火而药消耗；悠悠然不知有火则迷散</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">药壮之时即刻采，不可迟疑。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">真种化生，可转法轮行周天。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤四·转法轮周天运转（武火·文火·沐浴）</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">运行任督周天，将元精炼化为舍利。后升前降，谓之法轮。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">运转路径：后升（丹田→尾闾→夹脊→玉枕→泥丸，督脉上行），前降（泥丸→印堂→鹊桥舌抵上腭→重楼→绛宫→丹田，任脉下行）。
+<ul><li><strong>子时进阳火</strong>：自尾闾至泥丸，升三十六度，武火进火</li><li><strong>午时退阴符</strong>：自泥丸至丹田，降二十四度，文火退符</li><li><strong>卯酉沐浴</strong>：气至夹脊、绛宫时，停息不运，文火温养</li></ul>
+<blockquote>「升谓之进，降谓之退……起刻漏之息火以烹炼之。刻漏，即是呼吸。炼金丹法，全在呼吸之气以定爻数。」</blockquote>
+<blockquote>「阴魔现时，即当以武火锻炼，免其奔驰漏尽之危险。盖阴魔者，即身中之阴气也。阴气之变现，或梦寐所见阴人，或是身体发障……必当风火猛烹极炼，烧得里头鬼哭神嚎，将阴魔炼尽，而后则无危险之患矣。净静太平，常自柔和而温养，以为护持宝珠之坚固。」</blockquote>
+<blockquote>冲虚子曰：「小周天三百六十度，合周天之数。卯酉为沐浴，子午为进火。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>气通周天自然通关（非意通）——意命必须依乎任督而行</li><li>意行而命不行，或命行而意不行，则不成舍利</li><li>徐徐者不前不后，相依而同行</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">真气自然运转，舍利渐结；舍利初结则丹田融暖、口中如蜜。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li><strong>严禁意念导气冲三关</strong>（伍柳派铁律）——三关（尾闾、夹脊、玉枕）必待气足自开</li><li>以意念导引行气谓之<strong>导引旁门</strong>；以存想行气谓之<strong>存想外道</strong></li><li>前则谓之导引旁门，后则谓之存想外道，故必相依而同行</li><li>火间断而工不常，虽药将成而复坏</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">行持百日，每日周天运转。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">舍利已成：龟缩不举（马阴藏相），阳光三现。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤五·阳光三现止火</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">防止火盛伤丹，以待大药。止火之候，以阳光三现为度。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">观察阳光发现之景（两眉间明堂），依三现次第行止火之法。
+<ul><li><strong>阳光一现</strong>：筑基将成，元精初满，丹田有光初现——继续行功，不可止火</li><li><strong>阳光二现</strong>：舍利将成，光明再现较前更明——当备止火之机，入定培养真阳</li><li><strong>阳光三现</strong>：舍利已成，光明三现，龟缩不举——<strong>即当止火</strong>，不再运转周天</li></ul>
+<blockquote>伍子曰：「阳光三现之时，纯阳真炁已凝聚于鼎中，但隐而不出耳。必用七日采工，始见鼎中火珠呈象，只内动内生，不复外驰……要之止火当自阳光二现为始，至三现为终。故二现三现，皆名止火之景、止火之候。独是阳光三现，方兼名采大药之景，采大药之候也。」</blockquote>
+<blockquote>「若行火至于四现，则大药之可定者，必随火之不定者，而溢出于外，化为后天有形之精矣。可不戒哉？佛宗云：如来善护宝珠，自然放光有节。合此宗也。」</blockquote>
+<blockquote>冲虚子曰：「舍利成时，止武带文之薰聚。若不知止，再用武火，所成之舍利，又被武火逼散。此处当知危除，至要至要者也。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>龟缩不举（马阴藏相）</li><li>阳关已闭，无窍可通，淫根绝无举动</li><li>阳光三现，真阳团聚，大药纯乾</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">光明三现于眉间明堂；淫根绝无举动；所积阳炁尽伏炁根。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>阳光二现即当备止火之机，三现即止</li><li>四现则大药溢出化为后天有形之精，前工废矣</li><li>不止则火盛伤丹，火冷则丹不结</li><li>此时动炁虽不妄驰肾窍，生机却内动于炁根，觉其二动以为可采辄行采炼者有之——是以有倾危之害</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">舍利已成时，行火至阳光三现。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">止火后，大药可采，可进入大周天七日采大药。</span></div>
+</div>
+</section>
+
+<section class="stage-section" id="stage4">
+<h2 class="stage-title">四、炼气化神（大周天·中关）</h2>
+<p style="margin-bottom:20px;color:var(--text-light);">大周天又称中关、十月关，是炼气化神的核心功夫。包括七日采大药、大药过关服食、守中、胎息诸阶段。小周天止火后舍利已成，继而七日采大药，大药过关服食入中宫，结为道胎。十月温养，气化为神，胎圆性定。</p>
+
+<div class="step-card">
+<h3>步骤一·七日采大药（候六种震动）</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">采大药金丹，归入中宫。阳光三现后止火候至，大药将产。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">入静室，不近闲人；专意温养，以文火薰聚；不令大药走失。日间用双眸之光专视中田，夜间用双眸之光守留不怠。
+<blockquote>伍子曰：「阳光三现之时，纯阳真炁已凝聚于鼎中，但隐而不出耳。必用七日采工，始见鼎中火珠呈象，只内动内生，不复外驰。故名真铅内药，又名金液还丹，又名金丹大药。异名虽多，只一真阳，即七日来复之义也。」</blockquote>
+<blockquote>「以初采言之，其呼吸之火，自能内运，任火自运，绝不着意于火，亦不驰意于火，方合玄妙机之火也。此时用火，尤当入定，而单用眸光之功，是以日间用双眸之光，专视中田，夜间用双眸之光，守留不怠，如是以采之，大药自生。《阴符经》所谓机在目者，此也。」</blockquote>
+<blockquote>「须知大药生时，六根先自震动，丹田火炽，两肾汤煎，眼吐金光，耳后风生，脑后鹫鸣，身涌鼻搐之类，皆得药之景也。大率采药至于三四日间，真息将定未定之时，得药六景，即次第而现。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>六种震动次第现：丹田火炽、两肾汤煎、眼吐金光、耳后风生、脑后鹫鸣、身涌鼻搐</li><li>鼎中火珠呈象，内动内生不复外驰</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">大药生时六根震动；采至五六日间真息一定而大药已生。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>七日之期亦大概之言——采至三四日得药六景次第而现，五六日真息一定而大药生</li><li>防大药走失——专意温养，防上下驰散</li><li>呼吸之火自能内运，绝不着意于火，亦不驰意于火</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">阳光三现止火后，入静室行七日之功。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">大药已成（火珠呈象），可过关服食。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤二·五龙捧圣，大药过关服食</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">大药过三关三田归入中宫。此为大周天过关，非运转周天，而是大药自然过关。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">以静而照，以柔而用；待动而引，柔护而行；以文火而薰，以二气而养；以寂照而并修，以双忘而定静。六根不漏（木座抵谷道、木夹封鼻窍、含眼光、凝耳韵、舌抵上腭、一念不生）。
+<blockquote>伍子曰：「五乃土数，真意属土，龙乃元神，元神乃真意之体，真意乃元神之用，体用原不相离，故云五龙。圣即大药之喻。用真意引大药过关，故曰五龙捧圣也。」</blockquote>
+<blockquote>「才见其遇阻不动，即一意不生，凝神不动，动而后引，不可引而使动也。忽又自动冲关，即随其动机，而有两相知之微意，轻轻引上，自然度过尾闾，而至夹脊关矣……忽又自动冲关，即随其动机而有两相知之微意，轻轻引上，自然度过夹脊而至玉枕关矣……自然度过玉枕，直贯顶门。向前引下，至于印堂……自然度过印堂，降下十二重楼，犹如服食，而入于中丹田神室之中，点化阴神，为乾坤交媾。」</blockquote>
+<blockquote>丘祖偈云：「金丹冲上斡天罡，何患阻桥又阻关。一意不生神不动，六根不漏引循环。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>大药自然上行过三关至泥丸</li><li>降下十二重楼入中丹田神室</li><li>点化阴神为乾坤交媾</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">大药过关时身涌；过关后归入中宫，神室充盈。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>蹊路险危：下鹊桥（谷道易开大药泄去）、上鹊桥（鼻下便道虚窍）</li><li>预用木座抵住谷道，木夹牢封鼻窍——六根不漏</li><li>不可用真意导引——失唱随之机，纵导引频频终难过关</li><li>动而后引，不可引而使动——待其自动冲关</li><li>即丘、曹二真人走丹之处，前工废矣</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">大药产生后即刻行过关之功。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">大药入中宫神室，可守中结道胎。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤三·守中十月怀胎</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">神气相抱结为道胎，气化为神。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">神气相抱于中宫（心下肾上之间）；不偏不倚，不即不离；勿助勿忘，常寂常照；意在珠中，犹如磁石吸铁。元神寂照二田成一虚空之大境。
+<blockquote>伍子曰：「中也者，非中间之谓中，乃虚空之谓中也。守也者，非拘守之谓守，乃致虚之谓守也。守中也者，不着意于二田，亦不纵意于二田，即所谓元神寂照二田，成一虚空是也。故能保中之体者，一念不生，寂然不动，直守到食脉两绝，昏睡全无，亦须臾不离于寂照也。能尽中之用者，灵光不昧，超脱尘根，直守到二炁俱无，念无生灭，亦须臾不离于照也。从来体用不分，寂照同用，所以全十月养胎之要务者，盖如此。」</blockquote>
+<blockquote>「大药得火炁，相运于神室。既能点化神中之阴，阴神赖以降伏，而念虑不起。又能培补神中之阳，阳神愈益阳明，而昏睡全无，不谓之炼炁化神不可也。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>初入定守三月：二炁动机甚微，微动于脐轮虚境</li><li>四五月经：二炁因元神寂照服食已尽而归定灭，食性已绝</li><li>六七月：昏睡全无</li><li>八九月：寂照已久，百脉俱住</li><li>十月：候足纯阳，神归大定，定能生慧，六通之验</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">道胎初结：周身如云腾似雨施，百脉冲和，畅于四肢；守中既久：发白再黑，齿落重生，智慧广大。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>勿助勿忘，常寂常照——不着意二田亦不纵意二田</li><li>若拘守于一田则神有滞碍，失大圆镜之智用</li><li>慧而不可用——神境一通乃识神用事，若不能保扶心君即为识神所转</li><li>防魔境侵挠——一切不认，唯守正念</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">大药入中宫后十月怀胎。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">十月候足纯阳，神归大定，六通之验；胎圆则雪花飘空（天花乱坠）。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤四·胎息圆成</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">气化为神，胎圆性定。胎息成则气化为神矣。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">守中既久胎息自成。初结道胎：后天之息似有而不著有，勿助勿忘；道胎既结：意在其中，寂然不动，常寂常照；八九月间二气渐微；胎圆时二气全定，只知有神不知有气。
+<blockquote>冲虚子曰：「古《胎息经》云：胎从伏气中结，炁从有胎中息。斯言为过去未来诸神仙天仙之要法也。」</blockquote>
+<blockquote>「十月之关，有元神之寂照，以为二炁之主持，故云胎。有二炁之运行，以为元神之助养，故云胎息。忘二炁运行助养之迹，而胎神终归大定，故云真胎息也。」</blockquote>
+<blockquote>柳华阳曰：「牟尼之宝珠，既归中央。柔守而定照之……常以温养。禅定之中，融融无为之乐也。一团太和之天理，似醉如薰。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>鼻无出气，六脉俱宁，浑然大定</li><li>二气全定，只知有神不知有气</li><li>胎圆：雪花飘空（天花乱坠）</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">胎圆施尽，天花乱坠——有天花坠则知胎足，无天花坠则胎不足。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>著于断见：胎息时空而顽然乎空——空而又若不空，寂而常照</li><li>著于常见：胎息时不空而执不空——不空而又若空，照而常寂</li><li>慧而误用：智慧开发贪用胜心——慧而不可用，守定不贪</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">守中既久胎息自成，非强求可得。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">胎圆，雪花飘空，出定景到，可进入出神乳哺。</span></div>
+</div>
+</section>
+
+<section class="stage-section" id="stage5">
+<h2 class="stage-title">五、炼神还虚（上关·出神乳哺）</h2>
+<p style="margin-bottom:20px;color:var(--text-light);">炼神还虚又称上关，包括出神、乳哺两阶段。胎圆后阳神已成，须出胎（出定），再经乳哺（温养），使阳神老成，变化自在。</p>
+
+<div class="step-card">
+<h3>步骤一·出定出神</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">阳神出顶门超出三界，神还虚。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">见出定之景即当出定；从顶门而出（超出三界）；离凡身三五尺，慎勿惊恐；初出时见佛祖菩萨美异之景切不可认；候一金光如车轮大，以念入于光中收摄性中。
+<blockquote>「存养功纯，自有出神之景焉。出神景现，神可出矣。当出而不出，则不超不脱，难入圣阶。故出神之景，在所当知也。当其存养功纯，忽于定中，见空中六出纷纷，即出神之景也。斯时也，即当调神出壳，一出天门，而旋即收焉。出则以太虚为超脱之境，收则以上丹田为存养之所。」</blockquote>
+<blockquote>柳华阳曰：「雪花飘空，出定景到，移念于须弥外。未到大定，无出定之景到，妄出则入魔道。有景到而不出，谓之守尸鬼，亦无神通之智慧，又是一愚夫耳。」</blockquote>
+<blockquote>寂无禅师曰：「胎圆节至雪花飞，念动飘空上顶机。莫谓如来枯寂道，法身出寂又归依。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>雪花飘空，天花乱坠</li><li>白光或金光现（如来白毫相光）</li><li>从顶门而出</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">出定之时白光或金光现，从顶门出；阳神离体。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>妄出入魔——未到大定无出定景而妄出则入魔道</li><li>守尸不出——有景到而不出谓之守尸鬼</li><li>认魔为佛——初出见佛祖菩萨美异之景乃魔之变化，切不可认</li><li>惊恐神散——出定惊恐则阳神散失，离身三五尺慎勿惊恐</li><li>迷失自躯——认魔被诱迷失本体，速归泥丸不离本体</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">胎圆出定景到方可出，不可躐等。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">出定后可乳哺温养。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤二·乳哺温养</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">使阳神老成，变化自在。出定后须乳哺温养。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">出定后速归泥丸（顶门）养纯一七再出；渐次延长出定时间：一七→二七→三七→七七；出宜暂不宜久，宜近不宜远；始出一步而旋收，渐至百里千里，以渐次而至不可躐等。
+<blockquote>「出则以太虚为超脱之境，收则以上丹田为存养之所。须知出收之时少，而存养之时居多。又出宜暂而不宜久，宜近而不宜远。始则出一步而旋收焉，或出多步而旋收焉。久之或出一里而旋收焉，或出多里而旋收焉，乃至百里千里，皆以渐次而至，不可躐等而至也。」</blockquote>
+<blockquote>柳华阳曰：「初出定时，养至一七再出，又至二七再出，至三七再出，至七七一出……朝夕之乳养，在泥垣。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>一七再出，渐次延长</li><li>出收谨慎，保全虚空全体</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">身外有身；阳神渐壮。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>婴儿幼小，迷失难归——出入谨慎方能保全</li><li>天魔来试，乱我心君——保扶心君为上</li><li>道高一尺魔高一丈——识神变现使然</li><li>若最初还虚功纯，则灵台湛寂不染一尘，魔自何来</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">出定后三年乳哺。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">阳神老成，身外有身，千百亿化身，可还虚合道。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤三·化身千百亿</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">化化无穷，千百亿身，光周法界。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">乳哺既久，一而化二，二而化三，化化无穷；不饮不食，养培智广变化。
+<blockquote>柳华阳曰：「初出定时，养至一七再出，又至二七再出，至三七再出，至七七一出……朝夕之乳养，在泥垣。」</blockquote>
+<blockquote>世尊曰：「初成正觉，乃入龙宫入定七日。观菩萨树王，入定七日，至二七三七，于乳汁林，入定七七四十九日不食。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>身外有身，千百亿化身</li><li>聚则成形，散则无踪</li><li>出有入无，光周法界</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">阳神老成，变化百千，隐则无踪。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>慧而不可用——慧光发明贪用胜心则着魔境</li><li>守定不贪——若不守定，被识神所害，废损前功</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">乳哺既久，阳神壮健。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">出有入无，聚则成形散则无踪，光周法界，可还虚合道。</span></div>
+</div>
+</section>
+
+<section class="stage-section" id="stage6">
+<h2 class="stage-title">六、炼虚合道</h2>
+<p style="margin-bottom:20px;color:var(--text-light);">炼虚合道为丹道终极功夫，又称面壁还虚、末后还虚。阳神出定、乳哺既久后，须还虚合道，使凡躯亦化为气，神形俱妙。</p>
+
+<div class="step-card">
+<h3>步骤一·面壁还虚</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">炼形化气，神还虚，形亦虚；复归无极，体证虚空。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">隐于深谷绝迹无人往来之所；兀然端坐，常定之心；炼形化气，神还虚，形亦虚；空而又空，虚而又虚；寂灭如虚空，不著虚空相。或一定三载，或一定九年。
+<blockquote>伍子曰：「炼神也者，无神可凝之谓也。缘守中乳哺时，尚有寂照之神。此后神不自神，复归无极，体证虚空。虽历亿劫，只以完其恒性，岂特九年面壁而已哉！九年之中，不见有大道之可修也，亦不见有仙佛之可证也。于焉心与俱化，法与俱忘，寂之无所寂也，照之无所照也，又何神之可云乎？」</blockquote>
+<blockquote>柳华阳曰：「功满隐入深山古洞，无人往来之所，兀然端坐，炼形化乎气，神亦还乎虚，形亦虚矣。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>一点金光真火收藏于内</li><li>日久月深，凡躯亦化为气</li><li>神既妙而形亦妙</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">神形俱妙，隐则无踪，变化百千。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>著虚空相——执有虚空在，为虚空所碍，则不为虚空</li><li>贪住寂灭——住于寂灭而不进修，虽证寂灭勤修习不已</li><li>退堕——功未圆而自满，必修至九地十地等觉</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">阳神出定乳哺既久后。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">寂灭如虚空，不著虚空相，可进入虚空粉碎。</span></div>
+</div>
+
+<div class="step-card">
+<h3>步骤二·虚空粉碎，与道合真</h3>
+<div class="field"><span class="field-label">目的</span><span class="field-content">连虚空亦不立，与道合真，天地劫坏这个不坏。</span></div>
+<div class="field"><span class="field-label">怎么操作</span><span class="field-content">空而又空，虚而又虚；不著虚空相，连空亦不立；无为至极，自然合道。
+<blockquote>《华严经》曰：「恒住涅槃如虚空。性如虚空不著虚空相，故曰虚空。若著虚空相，即有个虚空在，而为虚空所碍，则不为虚空矣。」</blockquote>
+<blockquote>《华严经》曰：「虽证寂灭勤修习，能超如空不动地。佛劝令从寂灭起，广修种种诸智业……虚空界尽，我此修行，终无有尽。」</blockquote>
+<blockquote>柳华阳曰：「且到此时节，雪花飘空，出定景到……故世尊云八万劫一定是也。」</blockquote>
+</span></div>
+<div class="field"><span class="field-label">验证标准</span><span class="field-content"><ul><li>无昼无夜，一性太虚</li><li>天地劫坏，这个不坏</li><li>与道合真</li></ul></span></div>
+<div class="field"><span class="field-label">身体反应（景验）</span><span class="field-content">神形俱妙，与道合真，超天地劫运。（推断）至此已无形躯之累。</span></div>
+<div class="field"><span class="field-label">注意事项</span><span class="field-content"><ul><li>著虚空相即为虚空所碍——须连空亦不立</li><li>虽证寂灭，勤修习不已——佛劝令从寂灭起</li><li>不可退堕——虚空界尽，我此修行终无有尽</li></ul></span></div>
+<div class="field"><span class="field-label">练习时机</span><span class="field-content">面壁九年后，或百年千年万年一劫百千万劫皆可入为一定。</span></div>
+<div class="field"><span class="field-label">进阶标准</span><span class="field-content">与道合真，形神俱妙，总炼成一个不坏清虚圣身——丹道终极。</span></div>
+</div>
+</section>
+
+<div class="footer" id="footer">
+  <p>《伍柳仙宗》修炼实操手册</p>
+  <p>基于明·伍守阳、清·柳华阳原文整理 · 仅供学术研究参考</p>
+</div>
+
+</div>
+</body>
+</html>

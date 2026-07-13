@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《大成捷要》修炼实操手册</title>
+<style>
+:root {
+  --bg: #f8f5f0;
+  --card-bg: #fff;
+  --text: #333;
+  --text-light: #666;
+  --accent: #8b4513;
+  --accent-light: #a0522d;
+  --border: #e0d5c8;
+  --stage-bg: #f0e6d8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 16px;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 30px;
+}
+header h1 { font-size: 2.2em; color: var(--accent); margin-bottom: 10px; font-weight: 600; }
+header p { color: var(--text-light); font-size: 0.95em; }
+.nav-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 20px; background: #fff; border-radius: 8px;
+  margin-bottom: 25px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-link { color: var(--accent); text-decoration: none; font-weight: 500; padding: 6px 14px; border-radius: 6px; transition: background 0.2s; }
+.nav-link:hover { background: var(--bg); }
+.stage-section { margin: 40px 0 30px; }
+.stage-title {
+  font-size: 1.6em; color: var(--accent); margin-bottom: 20px;
+  padding: 12px 18px; background: var(--stage-bg);
+  border-left: 5px solid var(--accent); border-radius: 4px;
+}
+.step-card {
+  background: var(--card-bg); border-radius: 12px; padding: 25px 30px;
+  margin-bottom: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+.step-card h3 {
+  font-size: 1.25em; color: var(--accent); margin-bottom: 18px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.field { margin-bottom: 16px; }
+.field-label {
+  display: inline-block; min-width: 110px;
+  font-weight: 600; color: var(--accent-light);
+  padding: 2px 10px; background: var(--stage-bg);
+  border-radius: 4px; font-size: 0.9em; margin-right: 8px;
+}
+.field-content { display: inline; }
+.field-content blockquote {
+  border-left: 4px solid var(--accent); padding: 10px 16px;
+  margin: 10px 0; color: var(--text-light); font-style: italic;
+  background: #faf8f4; border-radius: 4px;
+  white-space: pre-wrap;
+}
+.field-content ul { margin: 6px 0 6px 22px; }
+.field-content li { margin-bottom: 4px; }
+.footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--text-light); font-size: 0.85em;
+  border-top: 1px solid var(--border); margin-top: 40px;
+}
+.toc { background: #fff; padding: 20px 25px; border-radius: 8px; margin-bottom: 30px; border: 1px solid var(--border); }
+.toc h2 { font-size: 1.2em; color: var(--accent); margin-bottom: 12px; }
+.toc ol { margin-left: 22px; }
+.toc li { margin-bottom: 6px; }
+.toc a { color: var(--accent-light); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  header h1 { font-size: 1.6em; }
+  .step-card { padding: 18px; }
+  .field-label { display: block; margin-bottom: 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="nav-bar">
+    <a href="index.html" class="nav-link">← 返回总目录</a>
+    <a href="#footer" class="nav-link">↓ 底部</a>
+  </div>
+
+  <header>
+    <h1>《大成捷要》修炼实操手册</h1>
+    <p>清代丹经要语汇编 · 天元大丹清净丹法</p>
+    <p style="margin-top:12px; max-width:720px; margin-left:auto; margin-right:auto;">
+      本书辑录历代仙佛祖师丹经要语，依天元大丹二十四节口诀之次第，贯通"百日筑基→采大药→七日混沌→十月养胎→调神出壳→三年乳哺→九年面壁"之完整程途。原文云："此册二十四节真诀，三十六层危险口口叮传，心心相印，句句可考。"为修炼天元清净丹法之实修参照。
+    </p>
+  </header>
+
+  <div class="toc">
+    <h2>目录</h2>
+    <ol>
+      <li><a href="#stage1">一、关窍基础（下手前必明）</a> — 关窍明辨</li>
+      <li><a href="#stage2">二、百日筑基（炼精化气）</a> — 第1～5节</li>
+      <li><a href="#stage3">三、采大药·七日混沌（过渡阶段）</a> — 第6～8节</li>
+      <li><a href="#stage4">四、十月养胎（炼气化神）</a> — 第9～17节</li>
+      <li><a href="#stage5">五、调神出壳与三年乳哺（炼神还虚）</a> — 第18～23节</li>
+      <li><a href="#stage6">六、九年面壁（炼虚合道）</a> — 第24节</li>
+    </ol>
+  </div>
+
+  <!-- ============ 阶段一 ============ -->
+  <section class="stage-section" id="stage1">
+    <div class="stage-title">一、关窍基础（下手前必明）</div>
+
+    <div class="step-card">
+      <h3>关窍明辨 · 下手前必知</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">明了一身关窍位置与作用，方知凝神何处、采药何所、过关何路。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">背熟关窍位置，配合返观内照，了然于胸中。
+          <blockquote>夫人身后有三关。尾闾、夹脊、玉枕是也。尾闾在夹脊尽头之处，其关通内肾之窍。上行乃是一条髓路。名曰潜溪，又曰黄河。此阳气上升之路。直上至第七节，与内暖两相对处，谓之夹脊关。又上至脑后，谓之玉枕关。此身后三关也。人身前有三田。泥丸、土釜、华池也。泥丸为上丹田，方园一寸二分，虚间一穴，乃藏神之所。其穴在眉心，入内一寸为明堂宫，再入内一寸为洞房宫，再入内一寸为泥丸宫，即上丹田。眉心之下，向口中有二窍。即口内上腭，谓之鼻梁金桥，又日上雀桥。舌下亦有二窍，下通气管喉咙。盖领下硬骨为喉，乃内外气出入之处也。领下软骨为咽，乃进饮食，通肠胃之所也。其气管有十二节，名日重楼。直下接肺窍以至于心。心下有一窍，名曰绎宫，乃龙虎交会之处也。直下三寸六分，名曰土釜黄庭宫，为中丹田……乃藏气之所，炼丹之鼎……脐之后，肾之前，中间一穴，名曰堰月炉，又曰气海。稍下一寸二分，名曰华池，乃下丹田藏精之所，采药之处……中间名曰:玄关。乃无中生有之处。炼精炼到精满气足，自然产出真一之气，玄关自开。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">静坐中能准确返观到各关窍位置，意守不致错位。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">原书未详；唯见"命门旺，十二经皆旺。命门生，则人生。命门绝，则人死矣。"</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>玄关非解剖之窍，乃"无中生有之处"，不可误守某处皮肉。</li>
+            <li>"此窍非凡窍，乾坤共合成，名为神气穴，内有坎离精。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">尚未行功之前，先须明辨；功中时时返照印证。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">关窍了然，方可入室下功行还虚蛰藏之功。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 阶段二 ============ -->
+  <section class="stage-section" id="stage2">
+    <div class="stage-title">二、百日筑基（炼精化气）</div>
+
+    <p style="margin-bottom:20px; color:var(--text-light);">阶段定位：初成小成筑基功夫，返还到本体未破、乾坤交泰之地，名曰<strong>人仙</strong>。总纲：调药补精，炼精化气。收心还虚，固精养气。三百周天数足，阳光三现，转入采大药。</p>
+
+    <!-- 第1节 -->
+    <div class="step-card">
+      <h3>第1节 还虚蛰藏气穴</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">下手第一着，收神归命门气穴，返虚入寂，以开真阳初生之机。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">静室端坐，返观内照，凝神入命门气穴；知而不守，先存后亡，以三炷香为度。
+          <blockquote>入室下功，而求返还之道。必须静室端坐，返观内照，凝神入于命门之地。知不守，先存后亡，虚心凝神，不着色相，不落空亡。虚灵不昧，存养寂照，以三灶香为度。但觉呼吸和缓，空洞畅快，即是真正存神达化之功。行不过七七日，水火交而真阳产矣。凝照三月，方可近内渐凝渐住而结丹。凝照百日，方能透关过窍。心止于脐下，曰凝神。气蛰脐下，曰胎息。心息俱伏藏于脐下，守其清静自然，曰勿忘。其顺清静自然，曰勿助。总以虚空为藏心之所，以昏默为息神之乡，三番两次，澄之又澄，沉之又沉，渐渐心息相依，神气融合，不觉恍然阳生，而人如醉矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">呼吸和缓，空洞畅快；行不过七七日，水火交而真阳产。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">恍然阳生，人如醉；凝照三月渐结丹，凝照百日透关过窍。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>先绝食腥荤香辣；过饱伤神，过饥伤气；动静失宜则阴阳偏盛。</li>
+            <li>"动极当静，不静则阳盛而伤神。静极当动，不动则阴盛而伤气。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">每日静室端坐，以三炷香为度；行不过七七日即见真阳。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">真阳既产，玄关将开，方接调药风火之功。</span>
+      </div>
+    </div>
+
+    <!-- 第2节 -->
+    <div class="step-card">
+      <h3>第2节 调药风火妙用</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">于一阳来复时调外药，以风火炼精化气，归炉本宫。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">半夜子时后，外肾兴起时行功。文火调药两头，武火元精正旺时鼓巽风炼之。
+          <blockquote>入手功夫，每当半夜子时以后，虚极静笃，天然醒觉，一阳来复，外肾兴起之时，元精吐露，外药发生之际，即当行调药之功，运动风吹火炼之玄机。夫风者，呼吸之气。火者，虚灵之神。文者，无为之风火。武者，有为之风火。盖无为之文风文火，用在调外药前后两头。而有为之武风武火，用在调外药元精正旺之时。盖真气动时，最易下流顺出，必用真意眸光，凝入命宫气穴之中主照经慑，真气即下行，而化为元精。非呼吸之息，以风助火，以火销金，而元精必不能复化为元气，归宿坤炉本宫之中矣。然用呼吸之息，在丹田之中一出一入，必须提起精神，目光窥定，一意不散，万缘皆空，鼓动巽风，扇开炉焰，使息息皈根，方合猛熟急烹炼之神功。而炉中之意，切莫着于呼吸，只专意于元气，不过借呼吸之机，以为采取烹炼之旨也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"直至机回气转，外肾消缩净尽。然后再烹再炼，元精尽化为元气，自有一阵天朗气清之景。"</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">丹田气机扇开，炉焰腾腾，光耀烈烈；炼毕有"天朗气清之景"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>武火太轻：呼吸浮不能归根，阴精累积走失。</li>
+            <li>武火太重：呼吸粗不能调畅，肚腹疼痛、大便溏泻。</li>
+            <li>不可着意口鼻，不可猛烈短促。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">半夜子时后，一阳来复、外肾兴起时行之。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">外药归炉，元气充盈，方接产药玄窍真种之候。</span>
+      </div>
+    </div>
+
+    <!-- 第3节 -->
+    <div class="step-card">
+      <h3>第3节 产药玄窍真种</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">候真种产出，辨不老不嫩之真时，以为采药之准。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">收心炼己，回光返照，知而不守，神潜太虚，一念不起，万缘皆空。
+          <blockquote>先天真种，本来无相。因神气交感，混合已极。知不觉，忽然丹田融融洽洽，周身稣快乐，痒生毫窍，身心无主。丹田温暖，气机渐渐流动，阳物勃然兴起，顶门有冷气吹入。而气穴之中，忽然一吼呼吸顿断，离于口鼻，倒回元海。只觉得下田之中冬冬有声，惊战移时，忽又停住不动。只觉得气息浮起，或透出鼻息，或未透出鼻息，或至喉而返。忽又吼的一声，呼吸顿然倒回气穴，不出不入，冬冬有声，惊战移时。一连三次五次，或六七次而后已……又云:当收心炼己，炼精化气，真种产出，即回光返照，精气于下田。然不可着相，于处而用照，亦不可着内而用照。盖内着相，皆落空亡。惟知而不守，神潜太虚，方能默符化机。一念不起，万缘皆空，一灵真性，寂然不动，巍然独存，谓之收回来，须放下是也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"何谓老？玉洞双吹已过，阳物兴起已衰是也。何谓嫩？一吼气住，呼吸倒回元海之际是也。"——不老不嫩即真时。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">丹田融融，周身稣快乐，痒生毫窍；阳物勃起，顶门冷气吹入；气穴中忽然一吼，呼吸顿断倒回元海；下田冬冬有声一连三五次至六七次。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>太早则药嫩气微不灵；太迟则药老气散不聚。</li>
+            <li>"接命之时，便是伤命之处。少焉，痒生毫窍，肢体如绵……护道之侣谨谨看守，千万莫惊入定之士。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">气机动时不离寂照；"夜夜勤行，日日寂照，少年不过月余，中年不过百日，衰老不过期年，自然而然……玄关窍开，真种产出之时。"</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">真种既产、不老不嫩，速用吸舐撮闭四字采药归炉，接行周天火符。</span>
+      </div>
+    </div>
+
+    <!-- 第4节 -->
+    <div class="step-card">
+      <h3>第4节 炼药周天火符</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">行小周天火候，炼精化气为元，结成大药之基。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">用吸舐撮闭四字采药皈炉，封固后行子进阳火、午退阴符、卯酉沐浴之周天。
+          <blockquote>真种，小药以皈炉。有吸舐撮闭之妙焉。吸者鼻中吸气，以接先天也；舐者舌舐上腭，以迎甘露也；撮者紧撮谷道，内中上提也；闭者塞兑垂廉，回光返照，紧闭六门。下不闭住，则火不聚，而金不升。上不闭住三关，则神外驰，而药不凝，除去撮字，余皆并行。而撮字用在气机将回之时，神返身中，除却杂念，气自回矣。</blockquote>
+          <blockquote>进阳火，退阳符，是后天之呼吸，引动先天之气机。封固以毕，第一吸进阳火，子升三十六吸，为一时……六阳时，共二百一十六吸。古人曰：乾用九，四策四揲之数……午降二十四呼，为一时……六阴时，共一百四十四呼。古人曰：坤用六……周天合度三百六十数，乃乾九坤六，乾旋无差误者，仙道乃成。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"周天合度三百六十数"；"久久马阴藏相，火足药灵，龟头缩回，周天数足，而阳光三现。"</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">小周天数足：马阴藏相、龟头缩回；阳光三现，眉间掣电。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>念起则火炎；意散则火冷；外视伤魂，外听伤魄；呼吸骤则散漫，呼吸停则断续。</li>
+            <li>气荡则流窜经络，气滞则拥塞濡滞。"吕祖还丹，三次未成。邱祖还丹四次皆败。火候细微"。</li>
+            <li>"差之毫发，失之千里。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">玄关窍开一次即行周天火符一次；一日三五周天至十余周天，渐彻昼夜无休。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">三百周天数足、马阴藏相、阳光二现，方止火转入采大药。</span>
+      </div>
+    </div>
+
+    <!-- 第5节 -->
+    <div class="step-card">
+      <h3>第5节 止火马阴藏相</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">小周天火足，于阳光二现时止火，以待大药将产之候。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">龟缩不举、阳光二现时止火；常温养，刻刻凝照。二现止火，三现采药。
+          <blockquote>不知止火之候，亦不知采大药之景。故曰：万无一成。吾今怜悯后学，传出止火之候。正在龟缩不举，阳光二现之时。传出采大药之诀，正在月华明净，阳光三现之际，不误景初至，而即止火，以夫之速。亦不待景四至，而后止火，以失之迟。不速不迟之间，二现止火，三现采药，断无有不得，龙虎大丹者也。此万古不泄之天机，有缘得遇者，可不珍之秘之哉。</blockquote>
+          <blockquote>静定之中，忽觉坤田之内丹光上涌，外达于目而生辉，直将二目催开，光耀闪灼，一连二三次而后已展品丹光涌出，明如金钱，赤如火珠，从大眼角流乱累累成珠，一连二三颗，滚滚下滴，落在身上似觉有声，到此阳光二现之时。只要龟缩不举，纵有生机，亦不外驰于肾管……万不可复行周天之火，速宜入定，含光静养，凝神默守，只等阳光三现。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">三事并至：火候无差恰运满三百周天之数；马阴藏相龟身缩入腹里；阳光二现掣电两眉之间。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">阳光二现：坤田丹光上涌达目，明如金钱、赤如火珠，从大眼角流下成珠；龟缩不举。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>火未足而止火，则大药不生。</li>
+            <li>火已过而止火，则真气不聚，必倾危也。</li>
+            <li>"阳光四现则大药走失，而前功废矣。"须二现止火、三现速采，不速不迟。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">三百周天数足、龟缩不举、阳光二现之际止火；隔一日或对时而阳光三现，即采大药。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">阳光三现、月华明净，即速入定行采大药之功。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 阶段三 ============ -->
+  <section class="stage-section" id="stage3">
+    <div class="stage-title">三、采大药·七日混沌（过渡阶段）</div>
+
+    <p style="margin-bottom:20px; color:var(--text-light);">阶段定位：炼精化气转入炼气化神之过渡，大药产生，过关服食，入七日大蛰混沌之功。</p>
+
+    <!-- 第6节 -->
+    <div class="step-card">
+      <h3>第6节 采大药斩断六根</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">大药将产之际，紧闭六根以聚生机，凝成金丹大药。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">真意眸光凝聚丹田玄关窍开处，轻轻寂照，绵绵看守。前三日若存若亡；后三四日瞬息不离，如猫捕鼠，似龙养珠。紧闭六根。
+          <blockquote>行采大药之功，初采以真意昨光，凝聚丹田，玄关窍开之处。轻轻寂照，绵绵看守，过三日方可加意采取。心力要提足，目光要窥定。其呼吸之气，任呼吸自运，不可着意于呼吸。单候呼吸一住，而大药即产。呼吸不住，则大药不生。除一日二日三日之前，守之速而不能得丹。于五六日之间，守之迟，亦不能得丹。前三日晃有不无，若存若亡，轻轻寂照。后三四日，瞬息不离，如猫捕鼠，似龙养珠，一念不起，一意不散，而六根震动之景：而呈现也。所谓六根者，耳、目、鼻、舌、身、意也。必须先将六根斩断，然后方得震动之景。真意昨光，专视谨守下田气穴之上。必须紧闭六根，使六根不漏，以聚大药之生机也。</blockquote>
+          <blockquote>下用木座抵住谷道，所以身根不漏。上用鼻夹牢封鼻窍，所以鼻根不漏。凝耳韵切莫外听，所以耳根不漏。唇齿相合，舌舐上腭，所以舌根不漏。塞兑垂廉，回光返照，寂然不动，目不外视，所以眼根不漏。一念不生，一意不散，六欲不起，六尘不染，所以意根不漏。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"真息住则大药产"；六根震动之景次第呈现。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">"丹田如火热，两肾如汤煎，眼内吐金光，耳后若风生，脑中鹫鸣，以及身涌肢战，鼻搐之类，皆是震动之景呈现。"</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"守之速而不能得丹"；"守之迟，亦不能得丹"——前三日若存若亡，后三四日瞬息不离。</li>
+            <li>"呼吸不住，则大药不生"——任其自运，不可着意。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">阳光三现即入定行此功；一连七日不分昼夜守定气穴。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">真息住而大药产，大药已成弹子火珠状，待动过三次即引之过关。</span>
+      </div>
+    </div>
+
+    <!-- 第7节 -->
+    <div class="step-card">
+      <h3>第7节 过关五龙捧圣</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">引大药透三关、过九窍，上泥丸补髓海，降黄庭服食结胎。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">大药动三次后，真意引圣胎自尾闾上升，如蛆行、似火熏；想夹脊有红黑二气分拥，水龙火龙青龙白龙黄龙拥丹上行；至玉枕仰面掩闭待热极气壮忽开关上入脑宫。
+          <blockquote>当大药过关之际，金丹在气穴，复动三次，当用真意引圣胎，自尾闾穴上升，如蛆行，似火熏。又似热气盘旋，自腰而起，拥上夹脊，此时要想夹脊，有红黑二气，分拥丹走。自然火龙护右，水龙护左。慎勿开关，竖起脊骨，默守圣胎，直待热甚气壮，渐次开夹脊，放气过关。一意想就，水龙护左，火龙护右，青龙、白龙、黄龙拥丹上行。以意引过，直抵玉枕，乃仰面脑后，掩闭玉枕上关。默守玄珠，慎勿开关，待热极气壮，忽然开关，以意组织上人脑宫，以补泥丸髓海，以意守之。名曰三花聚顶。略停一息之倾，只觉口中甘露下降，状如雀卵，颗颗降下，似糖密累累下滴。鼻窍关，须要谨慎，随觉随咽。过重楼，一意送入黄庭。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">大药过三关升至泥丸，"三花聚顶"；甘露下降状如雀卵、似糖蜜下滴；过重楼入黄庭。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">"其头有颠驾之壮，其身似麻酥之样。如凭虚御风，快乐无边，满面如蛛走蚁行，痒痒欲搔"；口中津液冲满咽纳不尽。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>气穴下尾闾有四通歧路（心位、谷道、阳关、尾闾），上下鹊桥皆可走泄真气。</li>
+            <li>"下用木座，上用鼻夹，一意不散，万缘皆空。"</li>
+            <li>"只等大药动而后引。不可引而后动。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">大药动三次后引之过关；气壮者一撞三关即过，气弱者须三次方到顶门。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">大药降完入黄庭，接行卯酉周天一遍，再入七日大蛰。</span>
+      </div>
+    </div>
+
+    <!-- 第8节 -->
+    <div class="step-card">
+      <h3>第8节 收大药卯酉周天</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">团聚大药，固胎元；收尽真阳，战退九阴。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">金液玉露自上田落黄庭，急行卯酉周天以收之。真意眸光从坤脐至乾顶左升右降，四九三十六而定；再右升左降，四六二十四而定。
+          <blockquote>一点金液玉露，自上田落于黄庭，急行卯酉周天以收之。须用真意眸光，从坤脐至乾顶，左升右降，四九三十六而定。再右升左降，四六二十四而定。此卯酉周天之度数。日月之升降，收尽真阳，战退九阴，名曰：收内药以固胎园。大周天火符数足，日月停轮，自然现出一粒玄珠而超脱也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"收尽真阳，战退九阴"；"丹放毫光，化出真景"，现日月合璧之景。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">丹光洋溢流注，扬辉散彩；息住脉停，现日月合璧真景。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">每回金液玉露降讫，皆须行一遍卯酉周天以收之；收讫即凝神入定。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">大药降入黄庭后即行；十月养胎期间每回玉液降完皆行一遍。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">大药团聚，胎元已固，方入七日大蛰之功。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 阶段四 ============ -->
+  <section class="stage-section" id="stage4">
+    <div class="stage-title">四、十月养胎（炼气化神）</div>
+
+    <p style="margin-bottom:20px; color:var(--text-light);">阶段定位：中成养胎功夫，名曰<strong>地仙</strong>。总纲：安元神于祖窍黄庭，文火温养，守中抱一，七返九还，金液玉液还丹，五气朝元，神俱六通。</p>
+
+    <!-- 第9节 -->
+    <div class="step-card">
+      <h3>第9节 结胎大蛰七日</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">大药服食后结胎之始，深入寂灭大休歇，待来复之机。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">先行卯酉周天一遍团聚大药；主静立极，行七日大蛰之功，深入寂灭，忘形无我。
+          <blockquote>五龙捧圣，大药过关，甘露下降。服食以后，当行七日大蜇之动。外想不入，内想不出，于正念中只知有元神轻轻寂照，绝不知有呼吸绵绵往来，方合不有不无之文火温养也。养胎之机，非元神常常主照，则元气不能日日归生，若真能神蜇气藏，深入混沈，大蜇七日，如气绝身死一般。七日之外，方有来复之机，玉液依旧复生。名曰:七返九还。七日之外，仍然不醒，可以用钟盘在耳边击鸣，再用手掌缓缓揉拍其背，呼其名字，或从阴跷穴点之，自然还阳。此时不可出静，恐火冷丹力迟也。阴跷穴，即命门，气穴是也。七日之外，若不唏醒，恐元神静中出舍，坠于六道轮回。世人以为坐化尸解，岂不知非也，而前功尽废矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"七日之外，方有来复之机，玉液依旧复生"；如气绝身死一般，七日后方苏。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">大蛰七日如气绝身死，息住脉停；七日后玉液复生，如睡醒初觉。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"七日之外，若不唏醒，恐元神静中出舍，坠于六道轮回"——须侣伴以钟盘击耳、揉拍背、呼名、点阴跷穴唤之。</li>
+            <li>"接命之时，便是伤命之处。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">大药服食后即行之；须有侣伴护持调水火，不可独修。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">七日苏醒、玉液复生，接行七返玉液还丹。</span>
+      </div>
+    </div>
+
+    <!-- 第10节 -->
+    <div class="step-card">
+      <h3>第10节 七返玉液还丹</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">小坎离交媾，引坎中热气上泥丸化金液，降下重楼入炉鼎。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">静定日久，坎中热气冲心，真意引过尾闾由夹脊透玉枕入泥丸；金液颗颗下降口中，以意迎之徐徐咽下重楼，以目送入炉鼎；一连九日咽纳不绝。每回运卯酉周天收之。
+          <blockquote>养胎以入定为主。若静定日久，自然觉得坎中一点热气，冲心位。当用真意引过尾闾，由夹脊透玉枕。入泥丸，如有物触脑。自上腭颗颗下降口中，状如雀卵，味似阳酥，化为金液，沥沥如淋水之状，香似醍醐，味似甘露。速当以意迎之，徐徐咽下重楼，以目送之，于炉鼎之内，畅于四肢，美在其中矣。一连九日咽纳不绝。如此一回即行卯酉周天以收之。收取净尽，速以凝静入定，静养寂灭，此是小坎离交媾之妙也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"金液玉露还丹之景，皆从静极，无心中而动"——金液降完即凝神入定守中抱一。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">坎中热气冲心；金液沥沥如淋水，香似醍醐，味似甘露；畅于四肢，美在其中。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">"千万不可当面错过"——景到即收，金液降完即凝神入定。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">静定日久、坎中热气冲心时行之；一连九日咽纳不绝。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">玉液降完、凝神入定，方入九还金液还丹之候。</span>
+      </div>
+    </div>
+
+    <!-- 第11节 -->
+    <div class="step-card">
+      <h3>第11节 九还金液还丹</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">大坎离交媾，入大定至杳冥混沌之极，引真气上泥丸化玉液。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">入大定至杳冥混沌之极，天机自动；坤宫如雷震、腹中如裂帛，真气上冲飞上泥丸；月窟生风，眉涌圆光，化为玉液降口中，随觉随咽，真意送入中宫。如此七日咽纳不尽。
+          <blockquote>自此以后，渐渐又入于大定。有时日月停轮，璇玑不行。每到杳冥混沌之极，天机自动。坤宫忽然如雷震之声，腹中如裂帛之状，真气上冲，周流六虚，飞上泥丸，月窟生风，眉涌园光，化为玉液，降在口中。如冰片之香，似薄荷之凉。随觉随咽，沥沥降下重楼，当用真意，送入中宫。如此七日，咽纳不尽。如此每回皆运卯酉周天以收之。待玉液降完，即凝神入定，守中抱一。金液玉露还丹之景，皆从静极，无心中而动，千万不可当面错过。此大坎离交媾之妙也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">坤宫雷震、腹中裂帛；月窟生风，眉涌圆光；玉液降下七日咽纳不尽。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">真气周流六虚飞上泥丸；月窟生风，眉涌圆光；玉液如冰片之香、似薄荷之凉。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">每回皆运卯酉周天以收之；玉液降完即凝神入定守中抱一。不可当面错过。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">入大定至杳冥混沌之极时行之；七日咽纳不绝。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">金液玉露还丹毕，息住脉停，方现日月合璧之景。</span>
+      </div>
+    </div>
+
+    <!-- 第12节 -->
+    <div class="step-card">
+      <h3>第12节 日月合璧</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">胎息凝抱中景，真铅化为月、真汞化为日，日月交光合发金花。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">皈入中宫温养圣胎；静定之极不醒人事、气息全无、六脉皆住；凝神入定金木交合。见月光缭绕真意留待之；三五息间日光来合，日月交光合发金花二朵；念头牢把伴归一处悬于印堂，运动真意收敛蛰藏，鼻吸入丹田虚危穴，后升前降皈入中宫与仙胎混而为一。
+          <blockquote>还丹以后，皈入中宫温养圣胎。久久熏蒸，若坐至静定之极，不醒人事，气息全无，六脉皆住。大定之中，只觉得有风从天降下，灌入泥丸，两目之中，径透通身，百节齐开，骨节如断，心冷如冰，丹田似火，切忽恐怖。只用凝神入定，此时金木交合之际。三宫气满，二气俱足，神气大定，恍如醉梦。万火万水，千颗电鸣，万道霞光，只死心凝神入定。久之定极，真铅之气，化为一轮明月之象。真汞之气，化为一轮红色日之形……静定之中，忽见一轮明月，缭绕不定现于目前，须用真意留而待之。静定不久，不过三五息之间，又觉有日光出现，来与月光相合。日月交光之中，合发金花二朵，状如仙丹，金红赤色，五瓣分明，此乃是三花结成胎息。名日：玉蕊金花。得见此景，当着实牢把念头，此日光与月光，伴归一处，悬于印堂之上。即当运动真意，凝聚收敛而蜇藏，即以鼻吸入丹田虚危穴，自然后升前降，皈入中宫。与仙胎混而为一，急行卯酉周天，左升右降，右升左降用采取之功以收之。仍须静定，深入寂灭，还于太虚，使丹光在印堂，昼夜常明。名曰：圣日坚硬月，照耀金庭者是也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"丹光在印堂昼夜常明，名曰'圣日坚月照耀金庭'"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">静定之极不醒人事、气息全无、六脉皆住；金木交合之际，心冷如冰、丹田似火；日月交光合发金花二朵，金红赤色五瓣分明。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">"切忽恐怖"——只死心凝神入定。见金花后须运卯酉周天以收之，仍深入寂灭还于太虚。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">还丹后皈入中宫温养圣胎，静定之极时现此景。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">丹光在印堂昼夜常明，方入得大丹珠落黄庭之候。</span>
+      </div>
+    </div>
+
+    <!-- 第13节 -->
+    <div class="step-card">
+      <h3>第13节 得大丹珠落黄庭</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">明心见性之真功实验，得黍米玄珠降下黄庭，结胎息凝抱之始。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">铅尽汞干，乾顶金精贯顶银流冲天；聚火载金猛烹急炼，龙虎交战，金炉火散，黄芽遍地，自然出现黍米玄珠。存养久之渐大，色如丹桔；借内外真火催落黄庭。行卯酉周天以收之，凝神入定为胎息凝抱之始。
+          <blockquote>金液玉露还丹以后，日月停轮，璇玑不行，铅尽汞干。而乾顶之中金精贯顶，银流冲天，聚火载金，猛烹急炼。霎时间龙虎交战，金炉火散，黄芽遍地，自然出现一粒黍米玄珠。存养久之，渐渐长大，色如丹桔，必须借内外真火，催落黄庭，降下土釜之中。动机由此而定，幻化布此而安。百干万亿浩劫，皆有此一粒元始宝珠，而能超脱也……此时乾鼎之中玄珠成现，矿去金存。外借太阳神火，内聚三昧真火，内外夹攻，而一点金液，复落黄庭处。见此实效，当行卯酉周天以收之。收讫，即凝神入定，而为胎息凝抱之始也……此玄珠似乎在外，闭目却分明。似乎在内，开目极清自。真有不内不外者存，通乎幽宾，贯乎阴阳，而为万化之祖也。珠落黄庭，乃是明心见性之真功实验也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">玄珠"不内不外"——闭目却分明，开目极清白。通幽明，贯阴阳，为万化之祖。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">龙虎交战、金炉火散、黄芽遍地；黍米玄珠现前渐大，色如丹桔。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>玄珠须借内外真火催落黄庭，降下土釜。</li>
+            <li>收讫即凝神入定，否则"胎息无主而不灵"。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">日月停轮、璇玑不行、铅尽汞干之际；玄珠现后即行卯酉周天收之。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">玄珠落黄庭凝神入定为胎息凝抱之始，方入十月温养之正功。</span>
+      </div>
+    </div>
+
+    <!-- 第14节 -->
+    <div class="step-card">
+      <h3>第14节 火焚禅位除热</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">胎圆时心动神摇引三昧真火遍身火光之险，速存想黑球灭火以保身命。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">速用真意目光存心结想：面前太虚空中有一团黑气大如车轮，其冷如冰，凉气逼人；以真意吸入腹中，镇静不动深皈寂灭。想此黑球不拘三五次，总以邪火退尽为止。
+          <blockquote>盖养胎以死心为主，深皈大定为宗。若胎圆之时，心动神摇，引起丹田三昧真火，七窍吐焰，遍身火光烈烈。若不及早禁止，霎时间，有火焚禅坐之倾危也。其法即当速用真意目光，存心结想，面前太虚空中有一团黑气，大如车轮，其冷如冰，凉气逼人。想就此景，即用真意吸入腹中。镇静不动深皈寂灭，顷刻之间，天朗气清，仍皈大定，而寂灭之。想此黑球，不拘三次五次，总以邪火退尽为止。方无焚身之患矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"顷刻之间，天朗气清"；邪火退尽方无焚身之患。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">胎圆时心动神摇；七窍吐焰、遍身火光烈烈；存黑球后似甘露滴心，清凉自在。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"若不早禁，霎时间有火焚禅坐之倾危"——胎圆大险。</li>
+            <li>养胎须调和得中："失之于燥，则有火焚禅坐之危险"；"有念则火爆，无觉则火寒"。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">胎圆之际、心热烦躁或炎焰焚身时即用之；不拘次数，至热退尽为止。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">邪火退尽，天朗气清，仍归大定，方续行温养。</span>
+      </div>
+    </div>
+
+    <!-- 第15节 -->
+    <div class="step-card">
+      <h3>第15节 璇玑停轮丹光常明</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">真火炼形、真空炼形；现纯阳之躯，开顶门以入超凡入圣。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">日月合璧后涌泉穴内冰冷疼痛穿腿过膝至两肾（芒芽穿膝）；痛极透过玄窍过夹脊至泥丸，将印堂红日吸入中宫降下丹田，以意送至疼痛处，目光一绕则红光一结似火珠，自尾闾倒转上升；再发三昧真火以攻之。
+          <blockquote>日月合壁以后，有一大难。大定之中，忽觉右脚底下，涌泉穴内，如冰冷之疼痛上来穿腿过膝，痛至两肾中间，过三日方止。名曰：芒芽穿膝。直待痛极，透过玄窍过夹脊至泥丸，即将印堂一轮红日，吸入中宫，降下丹田，以意送至疼痛之处，用目光一绕，则红光一结，似火珠之形，直尾闾穴倒转上升，或再发三昧真火以攻之。此时浑身骨节，如炒豆之声，爆开响炸不绝，骨肉火热刀割相似。十分好汉，到此无一分主张。再发再攻，三攻以后，三百六十骨节之神气，一直冲上泥丸，头中霹雳一声，顶门开也……忽然甘露下降，即用一点神火，攒簇于交感之中宫，乃是金液玉液，结成黍米玄珠。降下黄庭之际，到此内观五脏六腑，历历如烛照，只觉烧得通天彻地，都显红光。充塞流注，而变为纯阳之躯矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"内观五脏六腑历历如烛照，烧得通天彻地显红光，变为纯阳之躯"；顶门霹雳一声开。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">涌泉穴冰冷疼痛穿腿过膝至两肾（芒芽穿膝）；浑身骨节如炒豆爆开，骨肉火热刀割相似；三百六十骨节神气冲上泥丸，顶门霹雳一声开；甘露下降。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"十分好汉，到此无一分主张"——必须死心不动，深入大定。</li>
+            <li>"阴神不肯受真阳降伏，化为诸色境界害我向道之心。只有死心不动，万魔自退。"</li>
+            <li>见诸色境界时，存想眉间黑球一吼大如拳，冷气逼人，吸入中宫。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">日月合璧后即有大难，须预先知晓；芒芽穿膝过三日方止。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">变为纯阳之躯、丹光常明，方入超凡入圣绝谷定慧之候。</span>
+      </div>
+    </div>
+
+    <!-- 第16节 -->
+    <div class="step-card">
+      <h3>第16节 超凡入圣食绝睡无</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">绝谷定慧，五气朝元；心肝脾肺肾阴气将尽，真气化为五色云霞朝于昆仑。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">窥破世味斩断尘缘，绝谷不思食；心不牵世味，凝神深皈寂灭。五气静极自然上朝，死心入定不看。
+          <blockquote>变为纯阳，如果心牵世味，而食不绝，则阳不纯，即有阴魔来扰之患。盖有一分食在，即有一分阴来。如欲阴尽阳纯，必须窥破世味，斩断尘缘，方能顿足生慧，而绝谷不思食矣……直待金液降完，璇玑停轮，当加净肚除梦之功，直至世味永绝，昏睡全无，息脉搏俱断，则胎圆而神全矣。</blockquote>
+          <blockquote>盖养胎入定，心不牵世味，凝神深皈寂灭……此时心中阴气将尽，世有可乐之事，则心不动摇。而心经真气自然吐露，化为红色云霞，朝与昆仑之前。肝中阴气将尽，世有可怒之事，则肝不动，肝经真气吐露，化为青色云霞，朝于昆仑之左。脾经阴气将尽，世有可欲之事，则脾不动，脾经真气吐露，化为黄色云霞，朝于昆仑之顶。肺中阴气将尽，世有可悲之事，则肺不动，肺经真气吐露，化为白色云霞，朝于昆仑之右。肾中阴气将尽，世有可恐惧之事，则肾不动，肾经真气吐露，化为黑色云霞，朝于昆仑之后，名曰五气。所谓朝元者，不须用法依对其气，静极自然上朝……千万不可看他，死心入定。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"息脉俱寂，昼夜不昧"；"夜间隔墙观物，予知前事及未来吉凶"；顶上红霞缭绕，眉间涌出圆光。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">五气朝元：心红、肝青、脾黄、肺白、肾黑五色云霞朝于昆仑；笙簧嘹亮、旌节车舆；息脉俱寂，昼夜不昧。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"五谷不绝则阳气难消，犹是凡夫"——必须绝食方得阴尽阳纯。</li>
+            <li>"慧光稍开须有前知，不可妄用其慧——慧而不用慧乃愈生，妄用其慧定招外魔。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">金液降完、璇玑停轮后，加净肚除梦之功；昼夜凝神，深入大定。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">世味永绝、昏睡全无、息脉俱断，胎圆神全，方入胎圆止火神俱六通。</span>
+      </div>
+    </div>
+
+    <!-- 第17节 -->
+    <div class="step-card">
+      <h3>第17节 胎圆止火神俱六通</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">十月养胎圆满，六通现前；天花乱坠即止火，迁阳神入上田。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">深入大定，心窍豁然开通；六通现前。天花乱坠时即止火以化神，不再用寂照之功，一味还虚。
+          <blockquote>前有六根震动之景，日月合壁以后，有神俱六通之验。深入大定，混沌无知，心窍豁然开通。上观天堂，下视地狱，三界十方，一览无余，此是天眼通也。能闻十方之间，如在耳边，天上地下，闻神人言语，是天耳通也。渐入大定，灵觉透露，能知十方众生，他心内隐微之事，此乃他心通也。又能知我生前死后之因，无数劫来，是宿命通也。再静再定，复寂复灭，陡然心花开放，予知吉凶，又能隔壁见物，及风云雷雨之所，此是神境通也。合前炼精不漏，到马阴藏相，是漏尽通也。名曰：六通。</blockquote>
+          <blockquote>胎圆以后，灭尽定极之余，露出性光。静中外视，紫霞祥烟满目，顶中下视，一团金光罩体，不可着他。死心入定，自有金莲从地起，白雪满天飞。金莲从地涌出，上透九霄，自然化为雪片，从天飞来，缤纷而下。以意留之，仍皈身中，育我仙婴，乃十月胎圆止火之候。一旦天花乱坠，不知止火，婴儿又有火焚禅坐之危险。天花乱坠，是出定中宫，迁入上田之景到也。必须止火以化神，不须再用寂照之功。只用一味还虚心住于无，俱入于虚无，而火主得止。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">六通现前；"天花乱坠，金莲从地涌出上透九霄化为雪片从天飞来缤纷而下"——即出定中宫迁入上田之候。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">六通：天眼通、天耳通、他心通、宿命通、神境通、漏尽通；天花乱坠、金莲白雪缤纷。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"一旦天花乱坠，不知止火，婴儿又有火焚禅坐之危险"——必须止火以化神。</li>
+            <li>"出定在止火前则神必迷荡而远矣；出定在止火后则神又顽钝而不灵矣"——出定时机须准。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">胎圆灭尽定极之余、六通现、天花乱坠之际即止火出定。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">止火化神、迁入上田，方入脱胎超神内院调神出壳之功。十月养胎功成，名曰<strong>地仙</strong>。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 阶段五 ============ -->
+  <section class="stage-section" id="stage5">
+    <div class="stage-title">五、调神出壳与三年乳哺（炼神还虚）</div>
+
+    <p style="margin-bottom:20px; color:var(--text-light);">阶段定位：上成乳哺功夫，名曰<strong>神仙</strong>。总纲：阳神调出旋入，学习纯熟，圣体老练。在内者多，在外者少。</p>
+
+    <!-- 第18节 -->
+    <div class="step-card">
+      <h3>第18节 脱胎超神内院</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">阳神由中宫迁上田，过重楼入天谷内院。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">默然端坐，若有知无知、若用力不用力，但存一息千里、千里一息之念，倏忽过重楼。寂照于上田泥丸，存想三田化成一个虚空大界。阳神迁到囟门后千万不可下视。
+          <blockquote>当阳神由中宫迁上田，必须从十二重楼经过。重楼一关，诚其重矣。惟是默然端坐，若有知无知，若用力不用力，但存一息千里，干里一息之念，才是倏忽过重楼功夫。功夫至此其细如丝，神亦难传，自领自悟耳。真人过重楼超内苑，此时天门将开未开之际，心若昏沉，阳神将杳然而飘荡。惟灵真不寐，昏默中有所把握，将阳神迁出中田，寂照于上田泥丸这中。速引入灭尽，定而寂灭之。即凝神于泥丸，不着意于上田，以阳神寂照于上田，存想三田，化成一个虚空大界，无边无际，无内无外，空空洞洞，明明朗朗，阳神迁到囟门之后，千万不可下视，恐神惊怖，恋壳而不敢出，此是第一层色身。虚空大界打不破，难出昏衢。自待内真外应，二火交光，天门自开矣。</blockquote>
+          <blockquote>圣胎初脱，由中宫超入上田。上田乃是天宫内院。若无正觉主宰，不知不觉，当五色五音，唇楼海市，宇内之奇观，杂投猝至。繁华内院，一切境界，仙佛诸神，干万不可交谈片语……必须心定性定，死心不动，万股景象，闻如不闻，见如不见，真人方保无失矣。昔刘祖插花真人，当神超内院，迷人繁华之境，而不能出昏衢皮登彼岸，所以有花街炼性一节。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"内真外应，二火交光，天门自开"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">阳神过重楼超内苑；五色五音蜃楼海市杂投猝至。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>阳神迁到囟门后千万不可下视，恐神惊怖恋壳不敢出。</li>
+            <li>仙佛诸神千万不可交谈片语——刘祖插花真人即迷繁华之境而不能出昏衢。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">胎圆止火后即超脱；天门将开未开之际。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">内真外应、二火交光、天门自开，方入开顶门之候。</span>
+      </div>
+    </div>
+
+    <!-- 第19节 -->
+    <div class="step-card">
+      <h3>第19节 入定上田轰开顶门</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">开天门，轰开紫府内院，为阳神出壳之始。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">顶中三昧真火与顶上太阳神光上下交攻：上火下射，下火上炎，内外夹攻以烹以炼。两火交攻雷声震震轰开紫府内院，迅雷辟房响震一声顶门开也。
+          <blockquote>阳神迁于顶门，此时静中内观。顶中有三昧真火，静中外视。顶上有太阳神光，须用真意寂照凝聚。使上火下射，下火上炎，内外夹攻，以烹以炼。百会乾顶，如一池银浪，满顶金针，两火交攻，雷声震震，轰开紫府内院。一宴时间，觉得红光遍界，紫焰弥空。迅雷辟房响震一声，顶门开也。如生小儿一般，呼吸动静，细门未合，其大如钱，其薄如绵。头骨似崩，盖骨烧化。顶门初开，大斧壁脑，疼痛难忍。切勿惊骇，疼过三日自然全愈矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"迅雷辟房响震一声，顶门开也"；如生小儿一般，其大如钱、其薄如绵。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">百会乾顶如一池银浪、满顶金针；两火交攻雷声震震；红光遍界、紫焰弥空；头骨似崩、盖骨烧化、大斧劈脑疼痛难忍。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"头骨似崩盖骨烧化，大斧劈脑疼痛难忍，切勿惊骇"——疼过三日自然全愈。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">阳神迁于顶门后，静中内观行真意寂照凝聚之功。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">顶门开、身外有身，方入出神收金光之候。</span>
+      </div>
+    </div>
+
+    <!-- 第20节 -->
+    <div class="step-card">
+      <h3>第20节 出神天花乱坠</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">身外有身初现，收金光为化形之妙药。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">顶门开后，闭目往下轻轻一跳，如梦初醒而身外有身。阳神初出居色身之旁三四尺许。凡身外一切万不可起视听之心；无论何境皆置之度外，死心不动一味入定。
+          <blockquote>神既迁到顶门之上，顶门如同天门，脑宫即是天宫。切勿惊怖，只管放心大胆，一志凝神，存思法身。一念思出天门之外，随即闭目往下轻轻一跳，如梦初醒，而身外有身矣。阳神初出之时，居于色身之旁三四尺许，凡身外所有一切，万不可起视听之心。无论三亲六故，祖父妻子，诸仙佛来参。天出下诏，王母来请，或真或幻，一切境界，皆当置之度外。一切莫认，一切莫染，切不可着他。只死心不动，绝虑忘情，一味入定，不睹不闻，静以待之。顷刻之间，而自己身中即透出一道金光或白光，大如车轮现于面前。即用真意，将法身移到光前，凝聚留恋。真意一定，存想金光渐渐收敛，金光即缩小如寸许，状似金钱。即将此光用意一吸，收入法身之中。而法身即入于丹躯、性海之内，收回本官。仍依灭尽定，而寂灭之，深入大定。古人云：金光为化形之妙药，千万不可错过，过此时如金光散去，未收再无有矣。终有留形之说，不能化为无形者也。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"顷刻之间，而自己身中即透出一道金光或白光，大如车轮现于面前"。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">闭目往下轻轻一跳如梦初醒，身外有身；阳神居色身之旁三四尺许；身中透出金光或白光大如车轮。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"金光为化形之妙药，千万不可错过"——若散去未收，再无有矣。</li>
+            <li>一切境界皆置之度外，死心不动一味入定。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">顶门开后即行之；出神后立即收金光入法身。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">金光收敛为金钱、收入法身，方入调神出壳旋出旋入之正功。</span>
+      </div>
+    </div>
+
+    <!-- 第21节 -->
+    <div class="step-card">
+      <h3>第21节 调神出壳打破色身</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">调演阳神出入之始，依阳光之收放准调神之出入。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">用真意将法身移到光前凝聚留恋，真意一定存想金光渐缩如寸许状似金钱；将此光用意一吸收入法身之中，法身即入丹躯性海之内，仍依灭尽定而寂灭之。
+          <blockquote>阳神由中田迁上田，混合静定，待静极之际，忽然霹霹一声，轰开顶门。即当闭目冥心，凝神入定于天谷内院，觉得身体如在虚空，神气飘然，明朗不昧，道遥自在，而色身之五官百骸，自不见有，冥然不知有尘世之累，只觉真我在虚空大界之中。到此际，五气自然结为彩云，拥护法身，此时演调神出壳之功。或见音乐嘈杂，喜气盈盈，金童玉女，左拥右护……如此升降，不厌其数，积习纯熟，一升而至天宫，一降复归旧处。上下往来，绝无滞碍……红光遍界。紫焰弥空，二火交光，响震一声，顶门大开，一念思出天门之外，迁出凡躯。而身外有身矣。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">阳神能依阳光收放而旋出旋入；积习纯熟后一升而至天宫、一降复归旧处，上下往来绝无滞碍。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">身体如在虚空，神气飘然明朗不昧；五气结为彩云拥护法身；或见音乐嘈杂、金童玉女左右护侍。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>魔境不可着他："楼阁观宇，人间帝王，一切魔境，不可着他。必须见如不见，闻如不闻。"</li>
+            <li>金光千万不可错过：错过此时金光散去未收则再无有矣。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">阳神既出之后，依阳光收放调神；初次出神只在身边运动。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">金光能收能敛，阳神能旋出旋入，方入聚金光布五芽灵气之候。</span>
+      </div>
+    </div>
+
+    <!-- 第22节 -->
+    <div class="step-card">
+      <h3>第22节 收摄金光形神俱妙</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">演调阳神出入，布五芽灵气化为金光，死心不动退魔境。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">阳神初出形仅三寸，立即收入上田神室寂灭静养。九九次方布本身五芽灵气。照耀空中化为五色祥云，将本性灵光射入祥云化为一团金光大如车轮。一意守定金光死心不动，待魔境退尽金光缩小，真意照定一吸，连法身收回性海本宫混而为一。
+          <blockquote>阳神初出凡身，形仅三寸。盘肇左右，回顾禅坐，立即收入上田神室，寂灭静养。九九次，方布本身，五芽灵气。此五芽之气即静极之后，五气朝元之为也。照耀空中，化为五色祥云，然后再将本性灵光，运动真意，射入祥云之内，化为一团金光，大如车轮。而阳神端居金光之内，其丹光余气，悉化为天魔外道，百般景象，引诱旨神。差稍着声色于闻见，阳神既一去而不返，入于魔境。转生六道轮回，世人以为坐化小成之果，非也。而前功尽废矣，真可悲哉。此皆因炼已未绝，心无真死之过也。必须一意守定金光，死心不动，一切魔境，不着自退，待魔境退尽，金光缩小，须用真意，照定金光一吸，连法身收回性海本宫。混而为一，静定之，久之以后而复出之。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">五芽灵气化为五色祥云；本性灵光射入祥云化为金光大如车轮；魔境退尽，金光收回性海本宫混而为一。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">阳神形仅三寸；五色祥云现前；金光大如车轮阳神端居其中；丹光余气化为天魔外道百般景象引诱。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"稍着声色于闻见，阳神一去不返，入于魔道转生六道轮回。世人以为坐化小成之果，实非也——前功尽废。"</li>
+            <li>"皆因炼己未纯，心无真死之过"——必须一意守定金光死心不动。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">阳神初出九九次寂灭静养之后方布五芽灵气；魔境退尽即收金光。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">阴魔化为真神现于面前与色身一样，方入身外有身三年乳哺之正功。</span>
+      </div>
+    </div>
+
+    <!-- 第23节 -->
+    <div class="step-card">
+      <h3>第23节 身外有身三年乳哺</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">三年乳哺正功；依阳光之收放准调神之出入，由近及远，性体老练。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">出神之始：一七、二七、三七放一步、二步、三步而旋入；五七、六七、七七放一里、二里、三里而旋入；一年、二年、三年放百里、千里、万里而旋入。三月前一日出神三次夜不可出；半载后一日五次；年后一日七次只在身边运动；二年后不拘日夜次数；三年后一里至万里一时可到。择黄道良辰、天朗气清方调神出壳。
+          <blockquote>阳神调出旋入，若风吹则颠，日侵则燥，在内在外，俱以不见风日为安。调至三月以后，知觉稍开，宜防惊恐。或出或入，俱按常期，收纵往来，不可任意。故三月前，一日出神三次，夜必不可出神。半载以后，一日出神五次，年后一日出神七次，只在身边运动。二年以后，不拘日夜次数，沿内沿外，可以暂离色身。三年以后，则一里、十里、百里、千里、万里，一时可到也。</blockquote>
+          <blockquote>其调神之始，一七、二七、三七而放此一步、二步、三步而旋入，或五七、六七、七七而放出，一里、二里、三里而旋入。一年、二年、三年而放出，百里、千里、万里而旋入。调养三年之久，不可久留在外，还且入定九年之功。又云：调神出入，待天朗气清，无风云雷电，方可演神出壳。三年以后，性体老练，以太虚为宅舍，天地山何，尽是这之床枕。举步千里，遍游万国，出有无入，通天达地。入金石无碍，分形散影，百千万亿化身，遍满三千恒河沙界，乳哺功成。名曰：神仙者是也。</blockquote>
+          <blockquote>阳神一出而不返，皆因炼己未纯之过耳。阳神出动去，必须一意守定金宛，死心不动，其魔不着自退。阳神不可轻出轻放，应速去速回。又恐见自己色身形壳，如一堆粪土相似。而阳神不肯复入，必须从旧路出入，不可回视，恐阳神见而生惧。俗曰：回头不认尸，总要演习纯熟。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"三年以后性体老练，以太虚为宅舍，举步千里遍游万国，百千万亿化身遍满三千恒河沙界"——乳哺功成名曰神仙。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">阳神出入由近及远，分形散影；金光从毛窍间发出；进泥丸时色身便如火热。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"大雾莫出门，大雨莫行路"——必择黄道良辰、天朗气清、无风云雷电方可出神。</li>
+            <li>"必须从旧路出入不可回视，恐阳神见色身而生惧"——俗云"回头不认尸"。</li>
+            <li>一见可惧则怖生，一见可欲则爱生，流连往返坠入魔道。</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">三月前一日三次夜不可出；半载后五次；年后七次；二年后不拘日夜；三年后一里至万里一时可到。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">乳哺三年功成名曰神仙；性体老练，方入大定九年还虚之功。三年乳哺之功总以"在内者多，在外者少"为宗。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 阶段六 ============ -->
+  <section class="stage-section" id="stage6">
+    <div class="stage-title">六、九年面壁（炼虚合道）</div>
+
+    <p style="margin-bottom:20px; color:var(--text-light);">阶段定位：末后一着，最上大成，名曰<strong>代肉大觉金仙</strong>（天仙）。</p>
+
+    <!-- 第24节 -->
+    <div class="step-card">
+      <h3>第24节 炼虚合道九年面壁</h3>
+
+      <div class="field">
+        <span class="field-label">目的</span>
+        <span class="field-content">炼虚合道，粉碎虚空；将从前百千万亿化身收入无生国里，依灭尽定而寂灭之。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">怎么操作</span>
+        <span class="field-content">妙在忘形。无人无我，混沌中有一点真气。身热如火，心冷如冰，气行如泉，神静如狱。将从前所修所证百千万亿化身一齐收入无生国里，依灭尽定而寂灭之；必须大死一场，谨谨护持，毋容阳神再出。
+          <blockquote>炼虚功夫妙在忘形。无人无我混沌中有一点真气，身热如火，心冷如冰，气行如泉，神静如狱。虚其身心，去其作用，而听诸大道，自然之运行。是我非我，是虚非虚，造化运旋，人能达到忘形地位，阳神与太虚同体，谓之炼心。阳神无像，故曰炼虚。而九年之功，炼虚之妙，变化无穷，可以踏霞驾云，粉碎虚空。浑身飞去，谓之大罗金仙矣。然此一着最不容易，千万人中，难得一二人也。</blockquote>
+          <blockquote>还虚一着，是将从前千魔百炼，分形散影，通天达地之阳神，复归于旧躯，收入性海，天谷内院。将色身炼化，浑入法身之中。又是性命合炼，复将阳神送入性海，退藏祖窍太虚无极之位……沉之又沉，静之又静，从前所修所证，百千万亿化身，乘龙跨鹤，步日玩月，千变万化，一齐收入无生国里，依灭尽定，而寂灭之。必须大死一场，谨谨护持，毋容阳神再出。盖阳神百炼而愈灵，千炼而愈静。炼之而复炼之，炼炼不已，则阳神之慧光神火，收之愈密，斯放之愈普。隐之无可隐，斯显之无可显也。将阳神哲藏祖窍之中，定极灭尽之余，或百日，或十月，而一炉神光，兀兀腾腾，满鼎真火，炎炎烈烈。自内窍透出外窍，由大窍贯入小窍。无内无外，无大无小，透顶彻底，光光相烛，窍窍相映。而人也物也，莫不照耀于神光中矣。是则是矣，犹非其至也。</blockquote>
+          <blockquote>再炼神韬光，销归心下肾上，金鼎黄庭祖窍之中……寂灭即久，或一年，或三年……直至空定衡极，灭尽无余之际，而神光又自渐渐发露，如云电烟霞……光明沿彻，照耀十方，上彻天界，下彻地界，中彻人界……犹非其至也。再敛神辐光，销归秘密玄窍之中……寂灭日久，直至一年九载，空定衡极，灭尽无余之际，神光充足，法相圆满，色空俱氓，形神俱妙……将见无极神光，化为太阳红光，恰似赫赫日轮，从太虚无极窍内，一涌而出。崩开分散，灿烂弥满，无边无量，为万道毫光彩夺目，透彻于九天之上，贯通于九地之下，若千万某日，放大光明，普照三千大千世界……而犹未尽其妙也。再敛神韬光，依灭尽定，而寂灭之。或百年、干年，一劫、万劫，直至虚空粉碎，与道合真，将见复放，无量宝光。直充塞于四大，得与贤圣诸仙佛相会，自无始分离，今日方得会面，彼此交光，吻合一体，广无边际。</blockquote>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">验证标准</span>
+        <span class="field-content">"打破虚空消亿劫，既登彼岸舍丹楫"；待功圆满，天书下诏，九祖升天，上朝金阙封以真诰授以天爵，名曰天仙。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">身体反应（景验）</span>
+        <span class="field-content">身热如火，心冷如冰，气行如泉，神静如狱。四层递进：①神光自内窍透出外窍，人也是物也照耀神光中（犹未至）；②神光如云电烟霞贯上下大小窍，照耀十方三界（犹未至）；③神光化为太阳红光恰似赫赫日轮，普照三千大千世界（犹未至）；④虚空粉碎与道合真，复放无量宝光充塞四大，与贤圣诸仙佛相会——名曰天仙。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">注意事项</span>
+        <span class="field-content">
+          <ul>
+            <li>"此一着最不容易，千万人中难得一二人。"</li>
+            <li>"不充塞天地未满东鲁圣人之分量；不遍入尘沙法界未满西天圣人之分量；不照耀四大部州及三十六天未满道运虚空之分量。"</li>
+            <li>须层层敛光，层层寂灭，直至空定衡极灭尽无余。</li>
+            <li>"必须大死一场，谨谨护持，毋容阳神再出。"</li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">练习时机</span>
+        <span class="field-content">三年乳哺功成之后；或百年千年一劫万劫，直至虚空粉碎与道合真。</span>
+      </div>
+
+      <div class="field">
+        <span class="field-label">进阶标准</span>
+        <span class="field-content">"虚空粉碎，与道合真"；"复放无量宝光充塞四大，与贤圣诸仙佛相会"——名曰天仙（代肉大觉金仙）。"万劫不坏金刚之体，书着于此，永无欠诀也矣。"</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer" id="footer">
+    <p>《大成捷要》修炼实操手册</p>
+    <p>基于清代丹经要语汇编整理 · 仅供学术研究参考</p>
+    <p style="margin-top:10px; font-style:italic;">"劈破鸿蒙寻妙妙，打开太极见玄玄。待看功满行圆行，留个芳名万古传。"</p>
+  </div>
+
+</div>
+</body>
+</html>

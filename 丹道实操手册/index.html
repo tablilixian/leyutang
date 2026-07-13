@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丹道实修实操手册 · 四经合参</title>
+<style>
+:root {
+  --bg: #f8f5f0;
+  --card-bg: #fff;
+  --text: #333;
+  --text-light: #666;
+  --accent: #8b4513;
+  --accent-light: #a0522d;
+  --border: #e0d5c8;
+  --stage-bg: #f0e6d8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 17px;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+header {
+  text-align: center;
+  padding: 50px 20px 35px;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 35px;
+}
+header h1 { font-size: 2.4em; color: var(--accent); margin-bottom: 12px; font-weight: 600; letter-spacing: 2px; }
+header p { color: var(--text-light); font-size: 1em; margin-bottom: 6px; }
+header .subtitle { font-size: 0.92em; color: var(--text-light); }
+.nav-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 20px; background: #fff; border-radius: 8px;
+  margin-bottom: 30px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-link { color: var(--accent); text-decoration: none; font-weight: 500; padding: 6px 14px; border-radius: 6px; transition: background 0.2s; }
+.nav-link:hover { background: var(--bg); }
+
+.intro {
+  background: var(--card-bg); border-radius: 12px; padding: 30px;
+  margin-bottom: 35px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+.intro h2 { font-size: 1.4em; color: var(--accent); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.intro p { margin-bottom: 12px; text-align: justify; }
+.intro blockquote {
+  border-left: 4px solid var(--accent); padding: 12px 18px;
+  margin: 14px 0; color: var(--text-light); font-style: italic;
+  background: #faf8f4; border-radius: 4px;
+}
+
+.books-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 22px; margin-bottom: 40px;
+}
+.book-card {
+  background: var(--card-bg); border-radius: 12px; padding: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid var(--border);
+  transition: all 0.25s; text-decoration: none; color: var(--text);
+  display: flex; flex-direction: column;
+}
+.book-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(139,69,19,0.15);
+  transform: translateY(-2px);
+}
+.book-card .book-title {
+  font-size: 1.5em; color: var(--accent); margin-bottom: 6px; font-weight: 600;
+}
+.book-card .book-meta {
+  color: var(--text-light); font-size: 0.88em; margin-bottom: 14px;
+  padding-bottom: 10px; border-bottom: 1px dashed var(--border);
+}
+.book-card .book-feature {
+  font-size: 0.92em; line-height: 1.7; margin-bottom: 14px;
+}
+.book-card .book-feature strong { color: var(--accent-light); }
+.book-card .book-stats {
+  display: flex; gap: 14px; margin-top: auto;
+  padding-top: 14px; border-top: 1px solid var(--border);
+  font-size: 0.82em; color: var(--text-light);
+}
+.book-card .book-stats span { display: inline-block; }
+.book-card .book-stats .stat-num { color: var(--accent); font-weight: 600; }
+
+.compare-section {
+  background: var(--card-bg); border-radius: 12px; padding: 30px;
+  margin-bottom: 35px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border); overflow-x: auto;
+}
+.compare-section h2 {
+  font-size: 1.4em; color: var(--accent); margin-bottom: 18px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.compare-table {
+  width: 100%; border-collapse: collapse; font-size: 0.9em; min-width: 700px;
+}
+.compare-table th, .compare-table td {
+  padding: 12px 14px; text-align: left; border: 1px solid var(--border);
+}
+.compare-table th {
+  background: var(--stage-bg); color: var(--accent); font-weight: 600;
+}
+.compare-table tr:nth-child(even) td { background: #faf8f4; }
+.compare-table .book-name { color: var(--accent); font-weight: 600; }
+
+.method-section {
+  background: var(--card-bg); border-radius: 12px; padding: 30px;
+  margin-bottom: 35px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+.method-section h2 {
+  font-size: 1.4em; color: var(--accent); margin-bottom: 18px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.method-list { list-style: none; padding-left: 0; }
+.method-list li {
+  padding: 14px 18px; margin-bottom: 10px; background: #faf8f4;
+  border-radius: 8px; border-left: 4px solid var(--accent);
+}
+.method-list .field-name {
+  display: inline-block; min-width: 120px;
+  font-weight: 600; color: var(--accent-light);
+  padding: 2px 10px; background: var(--stage-bg);
+  border-radius: 4px; font-size: 0.9em; margin-right: 10px;
+}
+
+.warning {
+  background: #fff8f0; border: 1px solid #e8c896; border-radius: 8px;
+  padding: 20px 24px; margin-bottom: 30px;
+  border-left: 4px solid #d97706;
+}
+.warning h3 { color: #d97706; font-size: 1.1em; margin-bottom: 10px; }
+.warning p { font-size: 0.92em; color: #6b4502; margin-bottom: 8px; }
+
+.footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--text-light); font-size: 0.85em;
+  border-top: 1px solid var(--border); margin-top: 40px;
+}
+.footer a { color: var(--accent); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  header h1 { font-size: 1.8em; }
+  .books-grid { grid-template-columns: 1fr; }
+  .book-card { padding: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav-bar">
+  <a href="../index.html" class="nav-link">← 返回乐育堂语录主页</a>
+  <a href="#footer" class="nav-link">↓ 底部</a>
+</div>
+
+<header>
+  <h1>丹道实修实操手册</h1>
+  <p>四经合参 · 从炼己筑基到炼虚合道</p>
+  <p class="subtitle">《大成捷要》《灵宝毕法》《道门语要》《伍柳仙宗》</p>
+</header>
+
+<div class="intro">
+  <h2>编撰说明</h2>
+  <p>本栏目汇集四部丹道经典著作的实修手册，按统一的"七字段标准"——<strong>目的、怎么操作、验证标准、身体反应（景验）、注意事项、练习时机、进阶标准</strong>——重新整理每一节功法，便于实修者按图索骥、循序而进。</p>
+  <blockquote>丹道有次第，功夫无躐等。四经合参，方知一法之中含万法，万法之中归一法。</blockquote>
+  <p>四部书各有所长：<strong>《大成捷要》</strong>提供最完整的"七次大混沌"次第框架；<strong>《灵宝毕法》</strong>以"三乘十法"明确操作时点（时辰、卦象、节气）；<strong>《道门语要》</strong>为黄元吉中派丹法的进阶纲领，以"守中"一字统摄全功，与《乐育堂语录》同源互参；<strong>《伍柳仙宗》</strong>以"三大铁律"破除歧途，火候景象最为详尽。</p>
+</div>
+
+<div class="books-grid">
+
+  <a href="大成捷要.html" class="book-card">
+    <div class="book-title">大成捷要</div>
+    <div class="book-meta">清代丹经要语汇编 · 天元大丹清净丹法</div>
+    <div class="book-feature">
+      <strong>特色：</strong>二十四节口诀贯通"七次大混沌"完整次第，从百日筑基至九年面壁，含详细的魔境对治法与六根震动、阳光三现等关键景象判断。
+    </div>
+    <div class="book-feature">
+      <strong>适合：</strong>需要完整次第框架、对最高阶段（出胎、面壁、粉碎虚空）有认知需求者。
+    </div>
+    <div class="book-stats">
+      <span>步骤：<span class="stat-num">25</span></span>
+      <span>阶段：<span class="stat-num">6</span></span>
+      <span>引证：<span class="stat-num">36</span></span>
+    </div>
+  </a>
+
+  <a href="灵宝毕法.html" class="book-card">
+    <div class="book-title">灵宝毕法</div>
+    <div class="book-meta">汉·钟离权著 吕洞宾传 · 钟吕派内丹学</div>
+    <div class="book-feature">
+      <strong>特色：</strong>首创"三乘十法"操作阶梯，明确标注每一法的练习时辰、卦象、节气（如"艮卦养元气，乾卦聚元气，离卦采药"），是内丹学最古老的实操规程。
+    </div>
+    <div class="book-feature">
+      <strong>适合：</strong>需要明确"何时练、按何节律练"者，重视天人合一的时辰火候。
+    </div>
+    <div class="book-stats">
+      <span>步骤：<span class="stat-num">10</span></span>
+      <span>阶段：<span class="stat-num">3</span></span>
+      <span>引证：<span class="stat-num">28</span></span>
+    </div>
+  </a>
+
+  <a href="道门语要.html" class="book-card">
+    <div class="book-title">道门语要</div>
+    <div class="book-meta">清·黄元吉 著 · 中派丹法实修纲领</div>
+    <div class="book-feature">
+      <strong>特色：</strong>黄元吉以"守中"一字为工夫特色，主张"中黄直透"，引尧舜禹"允执厥中"为据。与《乐育堂语录》《道德经讲义》互参，是同源进阶之作。
+    </div>
+    <div class="book-feature">
+      <strong>适合：</strong>《乐育堂语录》读者配套进阶，体认中派"始终只是一中"的工夫特色。
+    </div>
+    <div class="book-stats">
+      <span>步骤：<span class="stat-num">17</span></span>
+      <span>阶段：<span class="stat-num">6</span></span>
+      <span>引证：<span class="stat-num">30+</span></span>
+    </div>
+  </a>
+
+  <a href="伍柳仙宗.html" class="book-card">
+    <div class="book-title">伍柳仙宗</div>
+    <div class="book-meta">明·伍守阳 清·柳华阳 合著 · 伍柳派清净丹法</div>
+    <div class="book-feature">
+      <strong>特色：</strong>公认最直白系统的实修手册，以"三大铁律"破除歧途——意通周天为伪、气通周天为真；水源清浊辨真幻；严禁意念导气冲三关。火候细分武、文、沐浴、止火四节。
+    </div>
+    <div class="book-feature">
+      <strong>适合：</strong>自学参照者，需明辨真幻、严防走火入魔者。
+    </div>
+    <div class="book-stats">
+      <span>步骤：<span class="stat-num">20</span></span>
+      <span>阶段：<span class="stat-num">6</span></span>
+      <span>引证：<span class="stat-num">48</span></span>
+    </div>
+  </a>
+
+</div>
+
+<div class="compare-section">
+  <h2>四经特色对比</h2>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>维度</th>
+        <th>大成捷要</th>
+        <th>灵宝毕法</th>
+        <th>道门语要</th>
+        <th>伍柳仙宗</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>成书年代</td>
+        <td>清代（汇编）</td>
+        <td>汉（托名钟吕）</td>
+        <td>清代·黄元吉</td>
+        <td>明末清初·伍柳</td>
+      </tr>
+      <tr>
+        <td>丹法流派</td>
+        <td>天元大丹清净派</td>
+        <td>钟吕派</td>
+        <td>中派</td>
+        <td>伍柳派</td>
+      </tr>
+      <tr>
+        <td>组织结构</td>
+        <td>二十四节口诀</td>
+        <td>三乘十法</td>
+        <td>十四篇（按次第重组）</td>
+        <td>四部书合刻</td>
+      </tr>
+      <tr>
+        <td>次第完整性</td>
+        <td>★最完整（含最高阶段）</td>
+        <td>★★★★（人仙→天仙）</td>
+        <td>★★★（纲领性）</td>
+        <td>★★★★（最详尽）</td>
+      </tr>
+      <tr>
+        <td>操作具体性</td>
+        <td>★★★★</td>
+        <td>★★★★★（时点明确）</td>
+        <td>★★★</td>
+        <td>★★★★★（火候最细）</td>
+      </tr>
+      <tr>
+        <td>原文引证</td>
+        <td>多引前人丹经</td>
+        <td>《道要》口诀</td>
+        <td>黄元吉自述</td>
+        <td>伍冲虚、柳华阳语</td>
+      </tr>
+      <tr>
+        <td>独有特色</td>
+        <td>七次大混沌、魔境对治</td>
+        <td>时辰卦象节气对应</td>
+        <td>中黄直透、守中一字</td>
+        <td>三大铁律、水源清浊</td>
+      </tr>
+      <tr>
+        <td>主要风险提示</td>
+        <td>十类魔境</td>
+        <td>鬼仙、尸解</td>
+        <td>偏修一端</td>
+        <td>走火入魔、幻丹</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="method-section">
+  <h2>七字段标准说明</h2>
+  <p style="margin-bottom: 16px;">本栏目所有步骤均按以下七字段标准整理，便于实修者系统参照：</p>
+  <ul class="method-list">
+    <li><span class="field-name">目的</span>这步为的是什么——一句话定位本节功法在整个次第中的位置与目标。</li>
+    <li><span class="field-name">怎么操作</span>姿势/呼吸/意念/火候——含原文整段引证（blockquote包裹），保留原典文字以备参证。</li>
+    <li><span class="field-name">验证标准</span>怎么确认自己做对了——自我检验的内在指标，区别于外在景验。</li>
+    <li><span class="field-name">身体反应</span>会出现什么身心征象——即"景验"，包括气机感受、内景、身体变化等。</li>
+    <li><span class="field-name">注意事项</span>禁忌与常见偏失——包括火候过不及、魔境对治、走火入魔的防范。</li>
+    <li><span class="field-name">练习时机</span>何时练、是否随时可行——包括时辰、节气、身心状态、环境要求等。</li>
+    <li><span class="field-name">进阶标准</span>到什么程度可进入下一步——明确"何时该止、何时可进"的临界指标。</li>
+  </ul>
+</div>
+
+<div class="warning">
+  <h3>重要提示</h3>
+  <p>1. 本栏目内容仅供学术研究与文化传承参考，不构成医疗或修炼指导建议。</p>
+  <p>2. 丹道修炼涉及身心深层调整，自学易生偏差。如欲实修，务必寻访明师口传心授，切勿仅凭文字自行盲修瞎炼。</p>
+  <p>3. 文中所述火候、景象、验证标准等，多为前人经验总结，个体差异极大，不可执为定则。</p>
+  <p>4. 凡涉及"走火入魔""幻丹""魔境"等描述，皆为丹经传统术语，旨在警示风险，非鼓励猎奇。</p>
+</div>
+
+<div class="footer">
+  <p>丹道实修实操手册 · 四经合参</p>
+  <p>《大成捷要》《灵宝毕法》《道门语要》《伍柳仙宗》</p>
+  <p><a href="../index.html">← 返回乐育堂语录主页</a></p>
+</div>
+
+</div>
+</body>
+</html>
